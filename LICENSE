@@ -1,0 +1,27 @@
+Copyright (c) 2026 Martin Yeung (mStudio). All rights reserved.
+
+This repository and its contents (source code, design and app content
+written by mStudio) are the property of Martin Yeung, trading as mStudio.
+
+The source code is made public for viewing only. No licence is granted
+to copy, modify, distribute, publish, sublicense or sell any part of it,
+or to use it to build another app or website, without prior written
+permission from the copyright holder.
+
+Third-party material:
+- The practice questions are based on "Australian Citizenship: Our Common
+  Bond", published by the Department of Home Affairs.
+  (c) Commonwealth of Australia. That material remains the property of
+  its owner and is not covered by this notice.
+- Open-source libraries used by this project (such as React, Vite and
+  Tailwind CSS) keep their own licences.
+
+mPractice for Aussie Citizenship is an unofficial practice tool. It is not affiliated with,
+or endorsed by, the Australian Government or the Department of
+Home Affairs.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM THE USE OF THE SOFTWARE.
+
+Permission requests: mstudiosolutions@gmail.com
