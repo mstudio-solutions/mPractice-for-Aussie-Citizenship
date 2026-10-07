@@ -15,7 +15,8 @@ mPractice for Aussie Citizenship helps you get ready for the Australian Citizens
 - Fixed answer layout, with optional shuffle
 - Review mistakes with explanations
 - Large buttons and text, easy to read
-- No sign-up, no ads, no tracking – works without a backend
+- No sign-up, no ads, no cookies – works without a backend
+- Anonymous visit counts with Cloudflare Web Analytics (no cookies, no personal data)
 
 ## Privacy
 
