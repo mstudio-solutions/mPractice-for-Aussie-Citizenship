@@ -8,7 +8,7 @@ mPractice for Aussie Citizenship helps you get ready for the Australian Citizens
 
 ## Features
 
-- 88 practice questions across Parts 1–4
+- 111 practice questions across Parts 1–4
 - **Full Mock test** – 20 questions incl. 5 Values questions; pass = 75% + all Values correct (same rule as the real test)
 - Practice by Part, Values only, Key questions or Random
 - Timer per question (30s / 45s / 60s / 90s / 135s) or untimed
