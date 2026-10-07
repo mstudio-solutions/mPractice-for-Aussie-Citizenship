@@ -6,16 +6,18 @@
     "q_en": "Who are the traditional owners of the land in Australia?",
     "q_zh": "邊個係澳洲土地嘅原住民？",
     "options_en": [
-      "Aboriginal and Torres Strait Islander peoples",
       "British settlers",
-      "European explorers"
+      "European explorers",
+      "Chinese traders",
+      "Aboriginal and Torres Strait Islander peoples"
     ],
     "options_zh": [
-      "Aboriginal and Torres Strait Islander peoples",
       "British settlers",
-      "European explorers"
+      "European explorers",
+      "Chinese traders",
+      "Aboriginal and Torres Strait Islander peoples"
     ],
-    "correct": 0,
+    "correct": 3,
     "is_values": false,
     "is_key": true,
     "explanation_en": "Aboriginal and Torres Strait Islander peoples are the first inhabitants, with oldest continuous cultures.",
@@ -30,12 +32,14 @@
     "options_en": [
       "About 3%",
       "About 15%",
-      "About 25%"
+      "About 25%",
+      "About 10%"
     ],
     "options_zh": [
       "About 3%",
       "About 15%",
-      "About 25%"
+      "About 25%",
+      "About 10%"
     ],
     "correct": 0,
     "is_values": false,
@@ -50,16 +54,18 @@
     "q_en": "When did the First Fleet arrive at Sydney Cove?",
     "q_zh": "",
     "options_en": [
-      "26 January 1788",
       "1 January 1901",
-      "25 April 1915"
+      "25 April 1915",
+      "26 January 1788",
+      "29 April 1770"
     ],
     "options_zh": [
-      "26 January 1788",
       "1 January 1901",
-      "25 April 1915"
+      "25 April 1915",
+      "26 January 1788",
+      "29 April 1770"
     ],
-    "correct": 0,
+    "correct": 2,
     "is_values": false,
     "is_key": true,
     "explanation_en": "First Fleet 11 ships led by Captain Arthur Phillip arrived 26 Jan 1788.",
@@ -72,16 +78,18 @@
     "q_en": "How many ships were in the First Fleet?",
     "q_zh": "",
     "options_en": [
-      "11 ships",
       "6 ships",
-      "20 ships"
+      "11 ships",
+      "20 ships",
+      "15 ships"
     ],
     "options_zh": [
-      "11 ships",
       "6 ships",
-      "20 ships"
+      "11 ships",
+      "20 ships",
+      "15 ships"
     ],
-    "correct": 0,
+    "correct": 1,
     "is_values": false,
     "is_key": false,
     "explanation_en": "11 ships.",
@@ -94,16 +102,18 @@
     "q_en": "Who was the captain of the First Fleet?",
     "q_zh": "",
     "options_en": [
-      "Captain Arthur Phillip",
       "Captain James Cook",
-      "Captain William Bligh"
+      "Captain William Bligh",
+      "Captain Matthew Flinders",
+      "Captain Arthur Phillip"
     ],
     "options_zh": [
-      "Captain Arthur Phillip",
       "Captain James Cook",
-      "Captain William Bligh"
+      "Captain William Bligh",
+      "Captain Matthew Flinders",
+      "Captain Arthur Phillip"
     ],
-    "correct": 0,
+    "correct": 3,
     "is_values": false,
     "is_key": false,
     "explanation_en": "",
@@ -116,16 +126,18 @@
     "q_en": "When did the Commonwealth of Australia come into existence (Federation)?",
     "q_zh": "",
     "options_en": [
-      "1 January 1901",
       "26 January 1788",
-      "3 March 1986"
+      "3 March 1986",
+      "25 April 1915",
+      "1 January 1901"
     ],
     "options_zh": [
-      "1 January 1901",
       "26 January 1788",
-      "3 March 1986"
+      "3 March 1986",
+      "25 April 1915",
+      "1 January 1901"
     ],
-    "correct": 0,
+    "correct": 3,
     "is_values": false,
     "is_key": true,
     "explanation_en": "",
@@ -138,16 +150,18 @@
     "q_en": "How many states are there in Australia?",
     "q_zh": "",
     "options_en": [
-      "6 states",
       "8 states",
-      "4 states"
+      "4 states",
+      "7 states",
+      "6 states"
     ],
     "options_zh": [
-      "6 states",
       "8 states",
-      "4 states"
+      "4 states",
+      "7 states",
+      "6 states"
     ],
-    "correct": 0,
+    "correct": 3,
     "is_values": false,
     "is_key": true,
     "explanation_en": "",
@@ -160,16 +174,18 @@
     "q_en": "Which are Australia's two mainland territories?",
     "q_zh": "",
     "options_en": [
-      "Australian Capital Territory and Northern Territory",
       "Tasmania and Victoria",
-      "Jervis Bay and Norfolk Island"
+      "Jervis Bay and Norfolk Island",
+      "Australian Capital Territory and Northern Territory",
+      "Queensland and Western Australia"
     ],
     "options_zh": [
-      "Australian Capital Territory and Northern Territory",
       "Tasmania and Victoria",
-      "Jervis Bay and Norfolk Island"
+      "Jervis Bay and Norfolk Island",
+      "Australian Capital Territory and Northern Territory",
+      "Queensland and Western Australia"
     ],
-    "correct": 0,
+    "correct": 2,
     "is_values": false,
     "is_key": true,
     "explanation_en": "",
@@ -182,16 +198,18 @@
     "q_en": "What is the capital city of New South Wales?",
     "q_zh": "",
     "options_en": [
-      "Sydney",
       "Melbourne",
-      "Canberra"
+      "Canberra",
+      "Sydney",
+      "Newcastle"
     ],
     "options_zh": [
-      "Sydney",
       "Melbourne",
-      "Canberra"
+      "Canberra",
+      "Sydney",
+      "Newcastle"
     ],
-    "correct": 0,
+    "correct": 2,
     "is_values": false,
     "is_key": false,
     "explanation_en": "",
@@ -204,16 +222,18 @@
     "q_en": "What is the capital city of Australia?",
     "q_zh": "",
     "options_en": [
-      "Canberra",
       "Sydney",
-      "Melbourne"
+      "Melbourne",
+      "Brisbane",
+      "Canberra"
     ],
     "options_zh": [
-      "Canberra",
       "Sydney",
-      "Melbourne"
+      "Melbourne",
+      "Brisbane",
+      "Canberra"
     ],
-    "correct": 0,
+    "correct": 3,
     "is_values": false,
     "is_key": true,
     "explanation_en": "",
@@ -226,16 +246,18 @@
     "q_en": "What is the capital of Victoria?",
     "q_zh": "",
     "options_en": [
-      "Melbourne",
       "Adelaide",
-      "Brisbane"
+      "Brisbane",
+      "Melbourne",
+      "Geelong"
     ],
     "options_zh": [
-      "Melbourne",
       "Adelaide",
-      "Brisbane"
+      "Brisbane",
+      "Melbourne",
+      "Geelong"
     ],
-    "correct": 0,
+    "correct": 2,
     "is_values": false,
     "is_key": false,
     "explanation_en": "",
@@ -248,16 +270,18 @@
     "q_en": "What is the capital of Queensland?",
     "q_zh": "",
     "options_en": [
-      "Brisbane",
       "Perth",
-      "Darwin"
+      "Darwin",
+      "Cairns",
+      "Brisbane"
     ],
     "options_zh": [
-      "Brisbane",
       "Perth",
-      "Darwin"
+      "Darwin",
+      "Cairns",
+      "Brisbane"
     ],
-    "correct": 0,
+    "correct": 3,
     "is_values": false,
     "is_key": false,
     "explanation_en": "",
@@ -270,16 +294,18 @@
     "q_en": "What is the capital of South Australia?",
     "q_zh": "",
     "options_en": [
-      "Adelaide",
       "Hobart",
-      "Perth"
+      "Adelaide",
+      "Perth",
+      "Darwin"
     ],
     "options_zh": [
-      "Adelaide",
       "Hobart",
-      "Perth"
+      "Adelaide",
+      "Perth",
+      "Darwin"
     ],
-    "correct": 0,
+    "correct": 1,
     "is_values": false,
     "is_key": false,
     "explanation_en": "",
@@ -292,16 +318,18 @@
     "q_en": "What is the capital of Western Australia?",
     "q_zh": "",
     "options_en": [
-      "Perth",
       "Darwin",
-      "Hobart"
+      "Hobart",
+      "Perth",
+      "Adelaide"
     ],
     "options_zh": [
-      "Perth",
       "Darwin",
-      "Hobart"
+      "Hobart",
+      "Perth",
+      "Adelaide"
     ],
-    "correct": 0,
+    "correct": 2,
     "is_values": false,
     "is_key": false,
     "explanation_en": "",
@@ -316,12 +344,14 @@
     "options_en": [
       "Hobart",
       "Sydney",
-      "Canberra"
+      "Canberra",
+      "Launceston"
     ],
     "options_zh": [
       "Hobart",
       "Sydney",
-      "Canberra"
+      "Canberra",
+      "Launceston"
     ],
     "correct": 0,
     "is_values": false,
@@ -336,16 +366,18 @@
     "q_en": "What is the capital of Northern Territory?",
     "q_zh": "",
     "options_en": [
-      "Darwin",
       "Alice Springs",
-      "Canberra"
+      "Canberra",
+      "Darwin",
+      "Katherine"
     ],
     "options_zh": [
-      "Darwin",
       "Alice Springs",
-      "Canberra"
+      "Canberra",
+      "Darwin",
+      "Katherine"
     ],
-    "correct": 0,
+    "correct": 2,
     "is_values": false,
     "is_key": false,
     "explanation_en": "",
@@ -358,16 +390,18 @@
     "q_en": "What is Australia's national floral emblem?",
     "q_zh": "",
     "options_en": [
-      "Golden Wattle",
       "Waratah",
-      "Eucalyptus"
+      "Eucalyptus",
+      "Golden Wattle",
+      "Red Rose"
     ],
     "options_zh": [
-      "Golden Wattle",
       "Waratah",
-      "Eucalyptus"
+      "Eucalyptus",
+      "Golden Wattle",
+      "Red Rose"
     ],
-    "correct": 0,
+    "correct": 2,
     "is_values": false,
     "is_key": true,
     "explanation_en": "",
@@ -382,12 +416,14 @@
     "options_en": [
       "Green and Gold",
       "Red White Blue",
-      "Blue and Yellow"
+      "Blue and Yellow",
+      "Red and Black"
     ],
     "options_zh": [
       "Green and Gold",
       "Red White Blue",
-      "Blue and Yellow"
+      "Blue and Yellow",
+      "Red and Black"
     ],
     "correct": 0,
     "is_values": false,
@@ -402,16 +438,18 @@
     "q_en": "What is depicted on the Commonwealth Coat of Arms?",
     "q_zh": "",
     "options_en": [
-      "Kangaroo and Emu",
       "Koala and Platypus",
-      "Kangaroo and Koala"
+      "Kangaroo and Emu",
+      "Kangaroo and Koala",
+      "Lion and Unicorn"
     ],
     "options_zh": [
-      "Kangaroo and Emu",
       "Koala and Platypus",
-      "Kangaroo and Koala"
+      "Kangaroo and Emu",
+      "Kangaroo and Koala",
+      "Lion and Unicorn"
     ],
-    "correct": 0,
+    "correct": 1,
     "is_values": false,
     "is_key": false,
     "explanation_en": "",
@@ -424,16 +462,18 @@
     "q_en": "What does the Commonwealth Star on the Australian flag represent?",
     "q_zh": "",
     "options_en": [
-      "The federation of states and territories",
       "The British Empire",
-      "The Southern Cross"
+      "The federation of states and territories",
+      "The Southern Cross",
+      "The first Prime Minister"
     ],
     "options_zh": [
-      "The federation of states and territories",
       "The British Empire",
-      "The Southern Cross"
+      "The federation of states and territories",
+      "The Southern Cross",
+      "The first Prime Minister"
     ],
-    "correct": 0,
+    "correct": 1,
     "is_values": false,
     "is_key": true,
     "explanation_en": "",
@@ -446,16 +486,18 @@
     "q_en": "How many points does the Commonwealth Star have?",
     "q_zh": "",
     "options_en": [
-      "Seven points",
       "Six points",
-      "Five points"
+      "Seven points",
+      "Five points",
+      "Eight points"
     ],
     "options_zh": [
-      "Seven points",
       "Six points",
-      "Five points"
+      "Seven points",
+      "Five points",
+      "Eight points"
     ],
-    "correct": 0,
+    "correct": 1,
     "is_values": false,
     "is_key": true,
     "explanation_en": "",
@@ -470,12 +512,14 @@
     "options_en": [
       "Southern Cross (5 stars)",
       "Union Jack only",
-      "Map of Australia"
+      "Map of Australia",
+      "The Aboriginal flag"
     ],
     "options_zh": [
       "Southern Cross (5 stars)",
       "Union Jack only",
-      "Map of Australia"
+      "Map of Australia",
+      "The Aboriginal flag"
     ],
     "correct": 0,
     "is_values": false,
@@ -492,12 +536,14 @@
     "options_en": [
       "Advance Australia Fair",
       "God Save the King",
-      "Waltzing Matilda"
+      "Waltzing Matilda",
+      "Rule, Britannia"
     ],
     "options_zh": [
       "Advance Australia Fair",
       "God Save the King",
-      "Waltzing Matilda"
+      "Waltzing Matilda",
+      "Rule, Britannia"
     ],
     "correct": 0,
     "is_values": false,
@@ -512,16 +558,18 @@
     "q_en": "When is Australia Day celebrated?",
     "q_zh": "",
     "options_en": [
-      "26 January",
       "1 January",
-      "25 April"
+      "25 April",
+      "26 January",
+      "1 March"
     ],
     "options_zh": [
-      "26 January",
       "1 January",
-      "25 April"
+      "25 April",
+      "26 January",
+      "1 March"
     ],
-    "correct": 0,
+    "correct": 2,
     "is_values": false,
     "is_key": true,
     "explanation_en": "",
@@ -534,16 +582,18 @@
     "q_en": "When is Anzac Day?",
     "q_zh": "",
     "options_en": [
-      "25 April",
       "26 January",
-      "11 November"
+      "11 November",
+      "1 May",
+      "25 April"
     ],
     "options_zh": [
-      "25 April",
       "26 January",
-      "11 November"
+      "11 November",
+      "1 May",
+      "25 April"
     ],
-    "correct": 0,
+    "correct": 3,
     "is_values": false,
     "is_key": true,
     "explanation_en": "",
@@ -556,16 +606,18 @@
     "q_en": "What does ANZAC stand for?",
     "q_zh": "",
     "options_en": [
-      "Australian and New Zealand Army Corps",
       "Australian National Army Corps",
-      "Australian Navy and Air Corps"
+      "Australian Navy and Air Corps",
+      "Allied Nations Zone Army Command",
+      "Australian and New Zealand Army Corps"
     ],
     "options_zh": [
-      "Australian and New Zealand Army Corps",
       "Australian National Army Corps",
-      "Australian Navy and Air Corps"
+      "Australian Navy and Air Corps",
+      "Allied Nations Zone Army Command",
+      "Australian and New Zealand Army Corps"
     ],
-    "correct": 0,
+    "correct": 3,
     "is_values": false,
     "is_key": true,
     "explanation_en": "",
@@ -578,16 +630,18 @@
     "q_en": "On what day did ANZAC troops land at Gallipoli?",
     "q_zh": "",
     "options_en": [
-      "25 April 1915",
       "26 Jan 1788",
-      "1 Jan 1901"
+      "25 April 1915",
+      "1 Jan 1901",
+      "11 November 1918"
     ],
     "options_zh": [
-      "25 April 1915",
       "26 Jan 1788",
-      "1 Jan 1901"
+      "25 April 1915",
+      "1 Jan 1901",
+      "11 November 1918"
     ],
-    "correct": 0,
+    "correct": 1,
     "is_values": false,
     "is_key": false,
     "explanation_en": "",
@@ -602,12 +656,14 @@
     "options_en": [
       "People are free to say and write what they think",
       "People must not criticise the government",
-      "Only journalists have free speech"
+      "Only journalists have free speech",
+      "People can say anything, including threats of violence"
     ],
     "options_zh": [
       "People are free to say and write what they think",
       "People must not criticise the government",
-      "Only journalists have free speech"
+      "Only journalists have free speech",
+      "People can say anything, including threats of violence"
     ],
     "correct": 0,
     "is_values": false,
@@ -622,16 +678,18 @@
     "q_en": "What is freedom of association?",
     "q_zh": "",
     "options_en": [
-      "People are free to join or not join any organisation",
       "People must join a political party",
-      "People must join a union"
+      "People are free to join or not join any organisation",
+      "People must join a union",
+      "Only government groups are allowed"
     ],
     "options_zh": [
-      "People are free to join or not join any organisation",
       "People must join a political party",
-      "People must join a union"
+      "People are free to join or not join any organisation",
+      "People must join a union",
+      "Only government groups are allowed"
     ],
-    "correct": 0,
+    "correct": 1,
     "is_values": false,
     "is_key": false,
     "explanation_en": "",
@@ -646,12 +704,14 @@
     "options_en": [
       "Freedom of religion",
       "Freedom of assembly",
-      "Rule of law"
+      "Rule of law",
+      "Freedom of movement"
     ],
     "options_zh": [
       "Freedom of religion",
       "Freedom of assembly",
-      "Rule of law"
+      "Rule of law",
+      "Freedom of movement"
     ],
     "correct": 0,
     "is_values": false,
@@ -666,16 +726,18 @@
     "q_en": "What is the Rule of Law?",
     "q_zh": "",
     "options_en": [
-      "All people including government are bound by law",
       "The Prime Minister is above the law",
-      "Only citizens must obey law"
+      "All people including government are bound by law",
+      "Only citizens must obey law",
+      "Laws only apply to new migrants"
     ],
     "options_zh": [
-      "All people including government are bound by law",
       "The Prime Minister is above the law",
-      "Only citizens must obey law"
+      "All people including government are bound by law",
+      "Only citizens must obey law",
+      "Laws only apply to new migrants"
     ],
-    "correct": 0,
+    "correct": 1,
     "is_values": false,
     "is_key": true,
     "explanation_en": "",
@@ -688,16 +750,18 @@
     "q_en": "What does 'a fair go' mean?",
     "q_zh": "",
     "options_en": [
-      "Everyone should have equal opportunity",
       "Only rich people get opportunity",
-      "Government decides who succeeds"
+      "Government decides who succeeds",
+      "Everyone must earn the same money",
+      "Everyone should have equal opportunity"
     ],
     "options_zh": [
-      "Everyone should have equal opportunity",
       "Only rich people get opportunity",
-      "Government decides who succeeds"
+      "Government decides who succeeds",
+      "Everyone must earn the same money",
+      "Everyone should have equal opportunity"
     ],
-    "correct": 0,
+    "correct": 3,
     "is_values": true,
     "is_key": true,
     "explanation_en": "",
@@ -710,16 +774,18 @@
     "q_en": "What is mateship in Australian context?",
     "q_zh": "",
     "options_en": [
-      "Helping and receiving help, especially in difficult times",
       "Only helping family",
-      "Business partnership"
+      "Business partnership",
+      "Competing against your friends",
+      "Helping and receiving help, especially in difficult times"
     ],
     "options_zh": [
-      "Helping and receiving help, especially in difficult times",
       "Only helping family",
-      "Business partnership"
+      "Business partnership",
+      "Competing against your friends",
+      "Helping and receiving help, especially in difficult times"
     ],
-    "correct": 0,
+    "correct": 3,
     "is_values": true,
     "is_key": true,
     "explanation_en": "",
@@ -732,16 +798,18 @@
     "q_en": "What is the supreme law of Australia by which government must abide?",
     "q_zh": "",
     "options_en": [
-      "The Australian Constitution",
       "The Prime Minister's orders",
-      "The British Parliament"
+      "The Australian Constitution",
+      "The British Parliament",
+      "The Magna Carta"
     ],
     "options_zh": [
-      "The Australian Constitution",
       "The Prime Minister's orders",
-      "The British Parliament"
+      "The Australian Constitution",
+      "The British Parliament",
+      "The Magna Carta"
     ],
-    "correct": 0,
+    "correct": 1,
     "is_values": false,
     "is_key": true,
     "explanation_en": "",
@@ -754,16 +822,18 @@
     "q_en": "When did Australian Constitution come into effect?",
     "q_zh": "",
     "options_en": [
-      "1 January 1901",
       "26 January 1788",
-      "1900"
+      "1 January 1901",
+      "1900",
+      "25 April 1915"
     ],
     "options_zh": [
-      "1 January 1901",
       "26 January 1788",
-      "1900"
+      "1 January 1901",
+      "1900",
+      "25 April 1915"
     ],
-    "correct": 0,
+    "correct": 1,
     "is_values": false,
     "is_key": false,
     "explanation_en": "",
@@ -776,16 +846,18 @@
     "q_en": "How many levels of government in Australia?",
     "q_zh": "",
     "options_en": [
-      "Three - Federal, State/Territory, Local",
       "Two - Federal and State",
-      "Four"
+      "Four",
+      "Five",
+      "Three - Federal, State/Territory, Local"
     ],
     "options_zh": [
-      "Three - Federal, State/Territory, Local",
       "Two - Federal and State",
-      "Four"
+      "Four",
+      "Five",
+      "Three - Federal, State/Territory, Local"
     ],
-    "correct": 0,
+    "correct": 3,
     "is_values": false,
     "is_key": true,
     "explanation_en": "",
@@ -800,12 +872,14 @@
     "options_en": [
       "The King of Australia (King of UK as King of Australia)",
       "Prime Minister",
-      "Governor-General"
+      "Governor-General",
+      "Chief Justice of the High Court"
     ],
     "options_zh": [
       "The King of Australia (King of UK as King of Australia)",
       "Prime Minister",
-      "Governor-General"
+      "Governor-General",
+      "Chief Justice of the High Court"
     ],
     "correct": 0,
     "is_values": false,
@@ -820,16 +894,18 @@
     "q_en": "Who represents the King in Australia?",
     "q_zh": "",
     "options_en": [
-      "Governor-General",
       "Prime Minister",
-      "Chief Justice"
+      "Chief Justice",
+      "Governor-General",
+      "Premier of New South Wales"
     ],
     "options_zh": [
-      "Governor-General",
       "Prime Minister",
-      "Chief Justice"
+      "Chief Justice",
+      "Governor-General",
+      "Premier of New South Wales"
     ],
-    "correct": 0,
+    "correct": 2,
     "is_values": false,
     "is_key": true,
     "explanation_en": "",
@@ -842,16 +918,18 @@
     "q_en": "Who represents the King in each state?",
     "q_zh": "",
     "options_en": [
-      "Governor",
       "Premier",
-      "Mayor"
+      "Mayor",
+      "Police Commissioner",
+      "Governor"
     ],
     "options_zh": [
-      "Governor",
       "Premier",
-      "Mayor"
+      "Mayor",
+      "Police Commissioner",
+      "Governor"
     ],
-    "correct": 0,
+    "correct": 3,
     "is_values": false,
     "is_key": false,
     "explanation_en": "",
@@ -866,12 +944,14 @@
     "options_en": [
       "House of Representatives and Senate",
       "House of Lords and Commons",
-      "Congress and Senate"
+      "Congress and Senate",
+      "National Assembly and People's Congress"
     ],
     "options_zh": [
       "House of Representatives and Senate",
       "House of Lords and Commons",
-      "Congress and Senate"
+      "Congress and Senate",
+      "National Assembly and People's Congress"
     ],
     "correct": 0,
     "is_values": false,
@@ -886,16 +966,18 @@
     "q_en": "Where does Federal Parliament meet?",
     "q_zh": "",
     "options_en": [
-      "Parliament House, Canberra",
       "Sydney Opera House",
-      "Melbourne"
+      "Melbourne",
+      "Brisbane City Hall",
+      "Parliament House, Canberra"
     ],
     "options_zh": [
-      "Parliament House, Canberra",
       "Sydney Opera House",
-      "Melbourne"
+      "Melbourne",
+      "Brisbane City Hall",
+      "Parliament House, Canberra"
     ],
-    "correct": 0,
+    "correct": 3,
     "is_values": false,
     "is_key": false,
     "explanation_en": "",
@@ -910,12 +992,14 @@
     "options_en": [
       "Interprets and applies the law, including Constitution",
       "Makes laws",
-      "Runs elections"
+      "Runs elections",
+      "Chooses the Prime Minister"
     ],
     "options_zh": [
       "Interprets and applies the law, including Constitution",
       "Makes laws",
-      "Runs elections"
+      "Runs elections",
+      "Chooses the Prime Minister"
     ],
     "correct": 0,
     "is_values": false,
@@ -930,16 +1014,18 @@
     "q_en": "Who is the head of the Australian Government?",
     "q_zh": "",
     "options_en": [
-      "Prime Minister",
       "King",
-      "Governor-General"
+      "Prime Minister",
+      "Governor-General",
+      "Chief Justice"
     ],
     "options_zh": [
-      "Prime Minister",
       "King",
-      "Governor-General"
+      "Prime Minister",
+      "Governor-General",
+      "Chief Justice"
     ],
-    "correct": 0,
+    "correct": 1,
     "is_values": false,
     "is_key": true,
     "explanation_en": "",
@@ -952,16 +1038,18 @@
     "q_en": "How is the Prime Minister chosen?",
     "q_zh": "",
     "options_en": [
-      "Leader of party with majority in House of Representatives",
       "Chosen by King",
-      "Elected directly by all people"
+      "Leader of party with majority in House of Representatives",
+      "Elected directly by all people",
+      "The oldest member of Parliament"
     ],
     "options_zh": [
-      "Leader of party with majority in House of Representatives",
       "Chosen by King",
-      "Elected directly by all people"
+      "Leader of party with majority in House of Representatives",
+      "Elected directly by all people",
+      "The oldest member of Parliament"
     ],
-    "correct": 0,
+    "correct": 1,
     "is_values": false,
     "is_key": false,
     "explanation_en": "",
@@ -974,16 +1062,18 @@
     "q_en": "What is a referendum?",
     "q_zh": "",
     "options_en": [
-      "Vote by all voters on change to Constitution",
       "Election of Prime Minister",
-      "Vote by Parliament only"
+      "Vote by all voters on change to Constitution",
+      "Vote by Parliament only",
+      "A survey run by newspapers"
     ],
     "options_zh": [
-      "Vote by all voters on change to Constitution",
       "Election of Prime Minister",
-      "Vote by Parliament only"
+      "Vote by all voters on change to Constitution",
+      "Vote by Parliament only",
+      "A survey run by newspapers"
     ],
-    "correct": 0,
+    "correct": 1,
     "is_values": false,
     "is_key": true,
     "explanation_en": "",
@@ -996,16 +1086,18 @@
     "q_en": "What is compulsory for Australian citizens aged 18 and over?",
     "q_zh": "",
     "options_en": [
-      "Enrol and vote in federal and state elections",
       "Join a political party",
-      "Pay extra voting tax"
+      "Pay extra voting tax",
+      "Enrol and vote in federal and state elections",
+      "Join the Australian Army"
     ],
     "options_zh": [
-      "Enrol and vote in federal and state elections",
       "Join a political party",
-      "Pay extra voting tax"
+      "Pay extra voting tax",
+      "Enrol and vote in federal and state elections",
+      "Join the Australian Army"
     ],
-    "correct": 0,
+    "correct": 2,
     "is_values": false,
     "is_key": true,
     "explanation_en": "",
@@ -1018,16 +1110,18 @@
     "q_en": "What is the secret ballot?",
     "q_zh": "",
     "options_en": [
-      "People vote privately, no one can influence how they vote",
       "Everyone must show how they voted",
-      "Government watches you vote"
+      "Government watches you vote",
+      "People vote privately, no one can influence how they vote",
+      "Votes are counted only by the Prime Minister"
     ],
     "options_zh": [
-      "People vote privately, no one can influence how they vote",
       "Everyone must show how they voted",
-      "Government watches you vote"
+      "Government watches you vote",
+      "People vote privately, no one can influence how they vote",
+      "Votes are counted only by the Prime Minister"
     ],
-    "correct": 0,
+    "correct": 2,
     "is_values": false,
     "is_key": true,
     "explanation_en": "",
@@ -1040,16 +1134,18 @@
     "q_en": "What is on the electoral roll?",
     "q_zh": "",
     "options_en": [
-      "List of people registered to vote",
       "List of taxpayers",
-      "List of criminals"
+      "List of criminals",
+      "List of people registered to vote",
+      "List of people who own property"
     ],
     "options_zh": [
-      "List of people registered to vote",
       "List of taxpayers",
-      "List of criminals"
+      "List of criminals",
+      "List of people registered to vote",
+      "List of people who own property"
     ],
-    "correct": 0,
+    "correct": 2,
     "is_values": false,
     "is_key": false,
     "explanation_en": "",
@@ -1062,16 +1158,18 @@
     "q_en": "Who enforces the law and keeps peace?",
     "q_zh": "",
     "options_en": [
-      "Police",
       "Australian Tax Office",
-      "Parliament"
+      "Parliament",
+      "Australian Electoral Commission",
+      "Police"
     ],
     "options_zh": [
-      "Police",
       "Australian Tax Office",
-      "Parliament"
+      "Parliament",
+      "Australian Electoral Commission",
+      "Police"
     ],
-    "correct": 0,
+    "correct": 3,
     "is_values": false,
     "is_key": false,
     "explanation_en": "",
@@ -1084,16 +1182,18 @@
     "q_en": "What is jury service?",
     "q_zh": "",
     "options_en": [
-      "Citizens decide if person is guilty or not guilty",
       "Police decide guilt",
-      "Judge alone decides"
+      "Citizens decide if person is guilty or not guilty",
+      "Judge alone decides",
+      "Working for the police for one year"
     ],
     "options_zh": [
-      "Citizens decide if person is guilty or not guilty",
       "Police decide guilt",
-      "Judge alone decides"
+      "Citizens decide if person is guilty or not guilty",
+      "Judge alone decides",
+      "Working for the police for one year"
     ],
-    "correct": 0,
+    "correct": 1,
     "is_values": false,
     "is_key": false,
     "explanation_en": "",
@@ -1106,16 +1206,18 @@
     "q_en": "What must you do if you witness a crime?",
     "q_zh": "",
     "options_en": [
-      "Report it but not required by law unless court summons",
       "Ignore it",
-      "Pay fine"
+      "Report it but not required by law unless court summons",
+      "Pay fine",
+      "Take the law into your own hands"
     ],
     "options_zh": [
-      "Report it but not required by law unless court summons",
       "Ignore it",
-      "Pay fine"
+      "Report it but not required by law unless court summons",
+      "Pay fine",
+      "Take the law into your own hands"
     ],
-    "correct": 0,
+    "correct": 1,
     "is_values": false,
     "is_key": false,
     "explanation_en": "",
@@ -1128,16 +1230,18 @@
     "q_en": "Which value: Australia's society values equality of opportunity for all, regardless of background?",
     "q_zh": "",
     "options_en": [
-      "True - equality and a fair go",
       "False",
-      "Only for citizens"
+      "Only for citizens",
+      "True - equality and a fair go",
+      "Only for people born in Australia"
     ],
     "options_zh": [
-      "True - equality and a fair go",
       "False",
-      "Only for citizens"
+      "Only for citizens",
+      "True - equality and a fair go",
+      "Only for people born in Australia"
     ],
-    "correct": 0,
+    "correct": 2,
     "is_values": true,
     "is_key": true,
     "explanation_en": "Core value: equality",
@@ -1152,12 +1256,14 @@
     "options_en": [
       "Yes, it is against the law and should be reported to police",
       "No, it is private",
-      "Only if serious"
+      "Only if serious",
+      "Only if it happens in public"
     ],
     "options_zh": [
       "Yes, it is against the law and should be reported to police",
       "No, it is private",
-      "Only if serious"
+      "Only if serious",
+      "Only if it happens in public"
     ],
     "correct": 0,
     "is_values": true,
@@ -1172,16 +1278,18 @@
     "q_en": "In Australia, can you encourage violence against a person or group because of their culture or religion?",
     "q_zh": "",
     "options_en": [
-      "No",
       "Yes",
-      "Only if you disagree"
+      "Only if you disagree",
+      "Yes, if it is your tradition",
+      "No"
     ],
     "options_zh": [
-      "No",
       "Yes",
-      "Only if you disagree"
+      "Only if you disagree",
+      "Yes, if it is your tradition",
+      "No"
     ],
-    "correct": 0,
+    "correct": 3,
     "is_values": true,
     "is_key": true,
     "explanation_en": "",
@@ -1196,12 +1304,14 @@
     "options_en": [
       "Yes",
       "No",
-      "Only at work"
+      "Only at work",
+      "Only for citizens"
     ],
     "options_zh": [
       "Yes",
       "No",
-      "Only at work"
+      "Only at work",
+      "Only for citizens"
     ],
     "correct": 0,
     "is_values": true,
@@ -1216,16 +1326,18 @@
     "q_en": "Is it acceptable to refuse to rent a house to someone because of their race?",
     "q_zh": "",
     "options_en": [
-      "No, discrimination based on race is against the law",
       "Yes",
-      "Depends"
+      "Depends",
+      "Yes, if the owner prefers",
+      "No, discrimination based on race is against the law"
     ],
     "options_zh": [
-      "No, discrimination based on race is against the law",
       "Yes",
-      "Depends"
+      "Depends",
+      "Yes, if the owner prefers",
+      "No, discrimination based on race is against the law"
     ],
-    "correct": 0,
+    "correct": 3,
     "is_values": true,
     "is_key": true,
     "explanation_en": "",
@@ -1240,12 +1352,14 @@
     "options_en": [
       "Yes, English is national language important for participation",
       "No, not needed",
-      "Only citizens"
+      "Only citizens",
+      "Only children at school"
     ],
     "options_zh": [
       "Yes, English is national language important for participation",
       "No, not needed",
-      "Only citizens"
+      "Only citizens",
+      "Only children at school"
     ],
     "correct": 0,
     "is_values": true,
@@ -1260,16 +1374,18 @@
     "q_en": "What pledge do new citizens make?",
     "q_zh": "",
     "options_en": [
-      "Loyalty to Australia and its people, share democratic beliefs, respect rights and liberties, uphold and obey laws",
       "Loyalty to former country",
-      "No pledge"
+      "No pledge",
+      "Loyalty to a political party",
+      "Loyalty to Australia and its people, share democratic beliefs, respect rights and liberties, uphold and obey laws"
     ],
     "options_zh": [
-      "Loyalty to Australia and its people, share democratic beliefs, respect rights and liberties, uphold and obey laws",
       "Loyalty to former country",
-      "No pledge"
+      "No pledge",
+      "Loyalty to a political party",
+      "Loyalty to Australia and its people, share democratic beliefs, respect rights and liberties, uphold and obey laws"
     ],
-    "correct": 0,
+    "correct": 3,
     "is_values": true,
     "is_key": true,
     "explanation_en": "",
@@ -1282,16 +1398,18 @@
     "q_en": "Is forced marriage allowed in Australia?",
     "q_zh": "",
     "options_en": [
-      "No, it is against the law",
       "Yes",
-      "Only if cultural"
+      "Only if cultural",
+      "Only if families agree",
+      "No, it is against the law"
     ],
     "options_zh": [
-      "No, it is against the law",
       "Yes",
-      "Only if cultural"
+      "Only if cultural",
+      "Only if families agree",
+      "No, it is against the law"
     ],
-    "correct": 0,
+    "correct": 3,
     "is_values": true,
     "is_key": true,
     "explanation_en": "",
@@ -1304,16 +1422,18 @@
     "q_en": "What does freedom of religion include in Australia?",
     "q_zh": "",
     "options_en": [
-      "Freedom to follow any religion or no religion, but must obey law",
       "Must follow one religion",
-      "No religion allowed"
+      "No religion allowed",
+      "Freedom to follow any religion or no religion, but must obey law",
+      "Freedom to break the law for religious reasons"
     ],
     "options_zh": [
-      "Freedom to follow any religion or no religion, but must obey law",
       "Must follow one religion",
-      "No religion allowed"
+      "No religion allowed",
+      "Freedom to follow any religion or no religion, but must obey law",
+      "Freedom to break the law for religious reasons"
     ],
-    "correct": 0,
+    "correct": 2,
     "is_values": true,
     "is_key": false,
     "explanation_en": "",
@@ -1328,12 +1448,14 @@
     "options_en": [
       "No, freedom does not include inciting hatred",
       "Yes, anything allowed",
-      "Only online"
+      "Only online",
+      "Yes, if it is your opinion"
     ],
     "options_zh": [
       "No, freedom does not include inciting hatred",
       "Yes, anything allowed",
-      "Only online"
+      "Only online",
+      "Yes, if it is your opinion"
     ],
     "correct": 0,
     "is_values": true,
@@ -1348,16 +1470,18 @@
     "q_en": "What is expected about participation in Australian society?",
     "q_zh": "",
     "options_en": [
-      "Integrate, contribute, take responsibility, help when possible",
       "Live separately",
-      "No need to participate"
+      "Integrate, contribute, take responsibility, help when possible",
+      "No need to participate",
+      "Only follow your own community's rules"
     ],
     "options_zh": [
-      "Integrate, contribute, take responsibility, help when possible",
       "Live separately",
-      "No need to participate"
+      "Integrate, contribute, take responsibility, help when possible",
+      "No need to participate",
+      "Only follow your own community's rules"
     ],
-    "correct": 0,
+    "correct": 1,
     "is_values": true,
     "is_key": false,
     "explanation_en": "",
@@ -1370,16 +1494,18 @@
     "q_en": "Is it important to support mateship and help others in times of crisis as in bushfire example?",
     "q_zh": "",
     "options_en": [
-      "Yes, Australians come together in times of crisis",
       "No",
-      "Only for family"
+      "Only for family",
+      "Only if they are your neighbours",
+      "Yes, Australians come together in times of crisis"
     ],
     "options_zh": [
-      "Yes, Australians come together in times of crisis",
       "No",
-      "Only for family"
+      "Only for family",
+      "Only if they are your neighbours",
+      "Yes, Australians come together in times of crisis"
     ],
-    "correct": 0,
+    "correct": 3,
     "is_values": true,
     "is_key": true,
     "explanation_en": "",
@@ -1392,16 +1518,18 @@
     "q_en": "Who were the first people to live in Australia?",
     "q_zh": "",
     "options_en": [
-      "Aboriginal and Torres Strait Islander peoples",
       "British",
-      "Chinese"
+      "Chinese",
+      "Aboriginal and Torres Strait Islander peoples",
+      "Dutch explorers"
     ],
     "options_zh": [
-      "Aboriginal and Torres Strait Islander peoples",
       "British",
-      "Chinese"
+      "Chinese",
+      "Aboriginal and Torres Strait Islander peoples",
+      "Dutch explorers"
     ],
-    "correct": 0,
+    "correct": 2,
     "is_values": false,
     "is_key": true,
     "explanation_en": "",
@@ -1414,16 +1542,18 @@
     "q_en": "What is the Torres Strait?",
     "q_zh": "",
     "options_en": [
-      "Islands between Queensland and Papua New Guinea",
       "River in NSW",
-      "Desert in WA"
+      "Desert in WA",
+      "Islands between Queensland and Papua New Guinea",
+      "A mountain range in Tasmania"
     ],
     "options_zh": [
-      "Islands between Queensland and Papua New Guinea",
       "River in NSW",
-      "Desert in WA"
+      "Desert in WA",
+      "Islands between Queensland and Papua New Guinea",
+      "A mountain range in Tasmania"
     ],
-    "correct": 0,
+    "correct": 2,
     "is_values": false,
     "is_key": false,
     "explanation_en": "",
@@ -1436,16 +1566,18 @@
     "q_en": "What happened in 1930s Great Depression example relevant?",
     "q_zh": "",
     "options_en": [
-      "Many suffered hardship",
       "Australia became republic",
-      "Gold rush"
+      "Many suffered hardship",
+      "Gold rush",
+      "Federation of Australia"
     ],
     "options_zh": [
-      "Many suffered hardship",
       "Australia became republic",
-      "Gold rush"
+      "Many suffered hardship",
+      "Gold rush",
+      "Federation of Australia"
     ],
-    "correct": 0,
+    "correct": 1,
     "is_values": false,
     "is_key": false,
     "explanation_en": "",
@@ -1458,16 +1590,18 @@
     "q_en": "Australia is a constitutional monarchy. What does this mean?",
     "q_zh": "",
     "options_en": [
-      "King is Head of State whose powers limited by Constitution",
       "King rules directly",
-      "No King"
+      "King is Head of State whose powers limited by Constitution",
+      "No King",
+      "The King can remove Parliament at any time"
     ],
     "options_zh": [
-      "King is Head of State whose powers limited by Constitution",
       "King rules directly",
-      "No King"
+      "King is Head of State whose powers limited by Constitution",
+      "No King",
+      "The King can remove Parliament at any time"
     ],
-    "correct": 0,
+    "correct": 1,
     "is_values": false,
     "is_key": true,
     "explanation_en": "",
@@ -1482,12 +1616,14 @@
     "options_en": [
       "State and Territory governments",
       "Federal government",
-      "Local councils"
+      "Local councils",
+      "The United Nations"
     ],
     "options_zh": [
       "State and Territory governments",
       "Federal government",
-      "Local councils"
+      "Local councils",
+      "The United Nations"
     ],
     "correct": 0,
     "is_values": false,
@@ -1504,12 +1640,14 @@
     "options_en": [
       "Federal government",
       "Local government",
-      "State"
+      "State",
+      "Private companies"
     ],
     "options_zh": [
       "Federal government",
       "Local government",
-      "State"
+      "State",
+      "Private companies"
     ],
     "correct": 0,
     "is_values": false,
@@ -1524,16 +1662,18 @@
     "q_en": "Which government is responsible for local roads and rubbish collection?",
     "q_zh": "",
     "options_en": [
-      "Local government",
       "Federal",
-      "State"
+      "State",
+      "Local government",
+      "Australian Army"
     ],
     "options_zh": [
-      "Local government",
       "Federal",
-      "State"
+      "State",
+      "Local government",
+      "Australian Army"
     ],
-    "correct": 0,
+    "correct": 2,
     "is_values": false,
     "is_key": false,
     "explanation_en": "",
@@ -1546,16 +1686,18 @@
     "q_en": "What is the role of local government?",
     "q_zh": "",
     "options_en": [
-      "Local services like parks, libraries, rubbish",
       "Defence",
-      "Immigration"
+      "Immigration",
+      "Local services like parks, libraries, rubbish",
+      "Printing money"
     ],
     "options_zh": [
-      "Local services like parks, libraries, rubbish",
       "Defence",
-      "Immigration"
+      "Immigration",
+      "Local services like parks, libraries, rubbish",
+      "Printing money"
     ],
-    "correct": 0,
+    "correct": 2,
     "is_values": false,
     "is_key": false,
     "explanation_en": "",
@@ -1570,12 +1712,14 @@
     "options_en": [
       "At least every 3 years",
       "Every year",
-      "Every 5 years"
+      "Every 5 years",
+      "Every 10 years"
     ],
     "options_zh": [
       "At least every 3 years",
       "Every year",
-      "Every 5 years"
+      "Every 5 years",
+      "Every 10 years"
     ],
     "correct": 0,
     "is_values": false,
@@ -1590,16 +1734,18 @@
     "q_en": "What does coalition mean?",
     "q_zh": "",
     "options_en": [
-      "Joining of two or more political parties to form government",
       "Single party",
-      "Court decision"
+      "Court decision",
+      "Joining of two or more political parties to form government",
+      "A trade agreement between Australia and the UK"
     ],
     "options_zh": [
-      "Joining of two or more political parties to form government",
       "Single party",
-      "Court decision"
+      "Court decision",
+      "Joining of two or more political parties to form government",
+      "A trade agreement between Australia and the UK"
     ],
-    "correct": 0,
+    "correct": 2,
     "is_values": false,
     "is_key": false,
     "explanation_en": "",
@@ -1614,12 +1760,14 @@
     "options_en": [
       "18 years",
       "21 years",
-      "25 years"
+      "25 years",
+      "30 years"
     ],
     "options_zh": [
       "18 years",
       "21 years",
-      "25 years"
+      "25 years",
+      "30 years"
     ],
     "correct": 0,
     "is_values": false,
@@ -1634,16 +1782,18 @@
     "q_en": "What should you do if you do not know who to vote for?",
     "q_zh": "",
     "options_en": [
-      "Vote using your own judgement or seek info from AEC",
       "Copy someone else",
-      "Not vote"
+      "Not vote",
+      "Vote using your own judgement or seek info from AEC",
+      "Vote for whoever your boss tells you"
     ],
     "options_zh": [
-      "Vote using your own judgement or seek info from AEC",
       "Copy someone else",
-      "Not vote"
+      "Not vote",
+      "Vote using your own judgement or seek info from AEC",
+      "Vote for whoever your boss tells you"
     ],
-    "correct": 0,
+    "correct": 2,
     "is_values": false,
     "is_key": false,
     "explanation_en": "",
@@ -1656,16 +1806,18 @@
     "q_en": "Is voting by secret ballot in Australia?",
     "q_zh": "",
     "options_en": [
-      "Yes",
       "No",
-      "Only for some"
+      "Only for some",
+      "Yes",
+      "Only in state elections"
     ],
     "options_zh": [
-      "Yes",
       "No",
-      "Only for some"
+      "Only for some",
+      "Yes",
+      "Only in state elections"
     ],
-    "correct": 0,
+    "correct": 2,
     "is_values": false,
     "is_key": true,
     "explanation_en": "",
@@ -1678,16 +1830,18 @@
     "q_en": "What does secular mean in Australian society?",
     "q_zh": "",
     "options_en": [
-      "Separate from religion, no official religion",
       "Must follow religion",
-      "Government controls religion"
+      "Separate from religion, no official religion",
+      "Government controls religion",
+      "Everyone must go to church"
     ],
     "options_zh": [
-      "Separate from religion, no official religion",
       "Must follow religion",
-      "Government controls religion"
+      "Separate from religion, no official religion",
+      "Government controls religion",
+      "Everyone must go to church"
     ],
-    "correct": 0,
+    "correct": 1,
     "is_values": true,
     "is_key": false,
     "explanation_en": "",
@@ -1700,16 +1854,18 @@
     "q_en": "In a parliamentary democracy, how do people vote?",
     "q_zh": "",
     "options_en": [
-      "For their representatives",
       "Directly for laws",
-      "King decides"
+      "For their representatives",
+      "King decides",
+      "Only rich people vote"
     ],
     "options_zh": [
-      "For their representatives",
       "Directly for laws",
-      "King decides"
+      "For their representatives",
+      "King decides",
+      "Only rich people vote"
     ],
-    "correct": 0,
+    "correct": 1,
     "is_values": false,
     "is_key": true,
     "explanation_en": "",
@@ -1722,16 +1878,18 @@
     "q_en": "What is the Australian Taxation Office (ATO) responsible for?",
     "q_zh": "",
     "options_en": [
-      "Manages tax and superannuation to fund services",
       "Runs hospitals",
-      "Makes laws"
+      "Makes laws",
+      "Issues passports",
+      "Manages tax and superannuation to fund services"
     ],
     "options_zh": [
-      "Manages tax and superannuation to fund services",
       "Runs hospitals",
-      "Makes laws"
+      "Makes laws",
+      "Issues passports",
+      "Manages tax and superannuation to fund services"
     ],
-    "correct": 0,
+    "correct": 3,
     "is_values": false,
     "is_key": false,
     "explanation_en": "",
@@ -1744,16 +1902,18 @@
     "q_en": "What is Services Australia?",
     "q_zh": "",
     "options_en": [
-      "Delivers health, social, welfare payments via Medicare, Centrelink",
       "Defence force",
-      "Court"
+      "Court",
+      "Police force",
+      "Delivers health, social, welfare payments via Medicare, Centrelink"
     ],
     "options_zh": [
-      "Delivers health, social, welfare payments via Medicare, Centrelink",
       "Defence force",
-      "Court"
+      "Court",
+      "Police force",
+      "Delivers health, social, welfare payments via Medicare, Centrelink"
     ],
-    "correct": 0,
+    "correct": 3,
     "is_values": false,
     "is_key": false,
     "explanation_en": "",
@@ -1768,12 +1928,14 @@
     "options_en": [
       "Using technology to threaten, harass someone, against law",
       "Using internet",
-      "Playing games"
+      "Playing games",
+      "Online shopping"
     ],
     "options_zh": [
       "Using technology to threaten, harass someone, against law",
       "Using internet",
-      "Playing games"
+      "Playing games",
+      "Online shopping"
     ],
     "correct": 0,
     "is_values": true,
@@ -1790,12 +1952,14 @@
     "options_en": [
       "Report to police and platform",
       "Ignore always",
-      "Retaliate"
+      "Retaliate",
+      "Post the person's private details online"
     ],
     "options_zh": [
       "Report to police and platform",
       "Ignore always",
-      "Retaliate"
+      "Retaliate",
+      "Post the person's private details online"
     ],
     "correct": 0,
     "is_values": true,
@@ -1810,16 +1974,18 @@
     "q_en": "Which emblem is the golden wattle?",
     "q_zh": "",
     "options_en": [
-      "Floral emblem",
       "Animal emblem",
-      "Military emblem"
+      "Floral emblem",
+      "Military emblem",
+      "Bird emblem"
     ],
     "options_zh": [
-      "Floral emblem",
       "Animal emblem",
-      "Military emblem"
+      "Floral emblem",
+      "Military emblem",
+      "Bird emblem"
     ],
-    "correct": 0,
+    "correct": 1,
     "is_values": false,
     "is_key": true,
     "explanation_en": "",
@@ -1832,16 +1998,18 @@
     "q_en": "Where is Torres Strait Islander flag from?",
     "q_zh": "",
     "options_en": [
-      "Islands between QLD and PNG",
       "Sydney Harbour",
-      "Melbourne"
+      "Melbourne",
+      "Islands between QLD and PNG",
+      "Northern Territory"
     ],
     "options_zh": [
-      "Islands between QLD and PNG",
       "Sydney Harbour",
-      "Melbourne"
+      "Melbourne",
+      "Islands between QLD and PNG",
+      "Northern Territory"
     ],
-    "correct": 0,
+    "correct": 2,
     "is_values": false,
     "is_key": false,
     "explanation_en": "",
@@ -1854,16 +2022,18 @@
     "q_en": "What is the name of first colony?",
     "q_zh": "",
     "options_en": [
-      "New South Wales",
       "Victoria",
-      "Queensland"
+      "New South Wales",
+      "Queensland",
+      "Western Australia"
     ],
     "options_zh": [
-      "New South Wales",
       "Victoria",
-      "Queensland"
+      "New South Wales",
+      "Queensland",
+      "Western Australia"
     ],
-    "correct": 0,
+    "correct": 1,
     "is_values": false,
     "is_key": false,
     "explanation_en": "",
@@ -1878,12 +2048,14 @@
     "options_en": [
       "Appointed by King on advice of PM",
       "Elected by public",
-      "Appointed by High Court"
+      "Appointed by High Court",
+      "Chosen by the Senate"
     ],
     "options_zh": [
       "Appointed by King on advice of PM",
       "Elected by public",
-      "Appointed by High Court"
+      "Appointed by High Court",
+      "Chosen by the Senate"
     ],
     "correct": 0,
     "is_values": false,
@@ -1900,12 +2072,14 @@
     "options_en": [
       "Signs Bills into law, performs ceremonial duties",
       "Makes laws alone",
-      "Leads army daily"
+      "Leads army daily",
+      "Decides court cases"
     ],
     "options_zh": [
       "Signs Bills into law, performs ceremonial duties",
       "Makes laws alone",
-      "Leads army daily"
+      "Leads army daily",
+      "Decides court cases"
     ],
     "correct": 0,
     "is_values": false,
@@ -1920,16 +2094,18 @@
     "q_en": "What is the role of Senate?",
     "q_zh": "",
     "options_en": [
-      "Reviews laws, represents states",
       "Chooses PM alone",
-      "Runs local councils"
+      "Runs local councils",
+      "Collects taxes",
+      "Reviews laws, represents states"
     ],
     "options_zh": [
-      "Reviews laws, represents states",
       "Chooses PM alone",
-      "Runs local councils"
+      "Runs local councils",
+      "Collects taxes",
+      "Reviews laws, represents states"
     ],
-    "correct": 0,
+    "correct": 3,
     "is_values": false,
     "is_key": false,
     "explanation_en": "",
