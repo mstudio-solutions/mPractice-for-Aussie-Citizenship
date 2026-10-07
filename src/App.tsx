@@ -334,14 +334,14 @@ export default function App() {
                     <span className="px-3 py-1 rounded-full bg-white text-[var(--green)] text-[12px] font-bold">{stats.values} Values Questions</span>
                   </div>
                   <h2 className="serif text-[28px] md:text-[42px] leading-[0.95] font-bold">Practice without limits.<br />Until you know every answer.</h2>
-                  <p className="mt-4 text-[15px] md:text-[16px] text-[#D7E8E2] max-w-[560px] leading-[1.6]">Simple, free and private – no sign-up, no tracking. Large buttons, fixed answer layout, same timer for every question. Based on the testable sections of <em>Our Common Bond</em> from the Department of Home Affairs.</p>
+                  <p className="mt-4 text-[15px] md:text-[16px] text-[#D7E8E2] max-w-[560px] leading-[1.6]">Simple, free and private – no sign-up, no ads, no cookies. Large buttons, fixed answer layout, same timer for every question. Based on the testable sections of <em>Our Common Bond</em> from the Department of Home Affairs.</p>
                   <div className="mt-6 flex flex-wrap gap-2">
                     <div className="px-4 py-2 rounded-full bg-[var(--paper)] text-[var(--green)] text-[13px] font-bold shadow flex items-center gap-2">
                       <span className="w-5 h-5 rounded-full bg-[var(--green)] text-white grid place-items-center text-[11px]">i</span> Pass Rule: 75% + 5 Values questions all correct
                     </div>
                     <div className="px-4 py-2 rounded-full bg-[#0B3E38] border border-white/10 text-[13px] text-[#CDE3DD]">Choose 135s for real exam speed</div>
                   </div>
-                  <div className="mt-4 text-[12px] text-[#A7C4BC]">Free · No sign-up · No tracking · Made by mStudio</div>
+                  <div className="mt-4 text-[12px] text-[#A7C4BC]">Free · No sign-up · No ads · No cookies · Made by mStudio</div>
                 </div>
                 <div className="bg-[#0B3E38] rounded-[20px] p-4 border border-white/10">
                   <div className="text-[12px] font-bold tracking-widest text-[#8FBEB1] uppercase">What is inside?</div>
@@ -546,7 +546,7 @@ export default function App() {
 
                 <div className="rounded-[20px] bg-[#0E4D45] text-[#D7E8E2] p-4 border border-white/10">
                   <div className="text-[12px] font-bold uppercase tracking-widest text-[#8FBEB1]">About {APP_SHORT}</div>
-                  <div className="mt-2 text-[13px] leading-[1.5]">Made by mStudio. Free to use, no sign-up, no tracking. All questions are built into the app – nothing is sent anywhere.</div>
+                  <div className="mt-2 text-[13px] leading-[1.5]">Made by mStudio. Free to use, no sign-up, no ads, no cookies. All questions are built into the app – nothing is sent anywhere.</div>
                   <div className="mt-3 flex flex-wrap gap-2">
                     <button onClick={() => openPage("about")} className="text-[12px] px-3 py-1.5 rounded-full bg-[#FFCC33] text-[#0E4D45] font-bold">About mStudio</button>
                     <button onClick={() => openPage("privacy")} className="text-[12px] px-3 py-1.5 rounded-full bg-white/10 border border-white/15 font-bold">Privacy Policy</button>
@@ -788,7 +788,7 @@ export default function App() {
                 <li>Timer per question, or untimed</li>
                 <li>Fixed answer layout, with optional shuffle</li>
                 <li>Review your mistakes with explanations</li>
-                <li>No sign-up, no ads, no tracking</li>
+                <li>No sign-up, no ads, no cookies</li>
               </ul>
             </section>
 
@@ -834,11 +834,11 @@ export default function App() {
             <div className="mt-5 rounded-[20px] bg-[var(--paper)] border border-[var(--line)] p-5 space-y-5 text-[15px] leading-[1.6]">
               <section>
                 <h3 className="font-bold text-[17px]">The short version</h3>
-                <p className="mt-1">{APP_SHORT} does not collect, store or share any personal information. There is no account, no sign-up, no ads and no tracking.</p>
+                <p className="mt-1">{APP_SHORT} does not collect, store or share any personal information. There is no account, no sign-up, no ads and no cookies. We count visits anonymously.</p>
               </section>
               <section>
                 <h3 className="font-bold text-[17px]">What we collect</h3>
-                <p className="mt-1">Nothing. All questions are built into the app. Your answers and scores are never sent to us or to anyone else.</p>
+                <p className="mt-1">No personal information. All questions are built into the app. Your answers and scores are never sent to us or to anyone else. We only see anonymous visit counts (see below).</p>
               </section>
               <section>
                 <h3 className="font-bold text-[17px]">Your practice history</h3>
@@ -846,7 +846,7 @@ export default function App() {
               </section>
               <section>
                 <h3 className="font-bold text-[17px]">Cookies, analytics and ads</h3>
-                <p className="mt-1">{APP_SHORT} does not use cookies, analytics or advertising.</p>
+                <p className="mt-1">{APP_SHORT} does not use cookies or advertising. We use <a href="https://www.cloudflare.com/web-analytics/" target="_blank" rel="noopener" className="text-[var(--green)] font-bold underline underline-offset-2">Cloudflare Web Analytics ↗</a> to count visits anonymously. It does not use cookies and does not collect personal information. We only see totals, such as page views, country, browser and whether you use a phone or a computer. See the <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener" className="text-[var(--green)] font-bold underline underline-offset-2">Cloudflare Privacy Policy ↗</a>.</p>
               </section>
               <section>
                 <h3 className="font-bold text-[17px]">Hosting</h3>
