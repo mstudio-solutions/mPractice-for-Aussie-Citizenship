@@ -42,7 +42,6 @@ const APP_TAGLINE = "for Aussie Citizenship";
 const APP_NAME = `${APP_SHORT} ${APP_TAGLINE}`;
 const APP_VERSION = "1.0.0";
 const COMPANY = "mStudio";
-const DEVELOPER = "Martin Yeung";
 const CONTACT_EMAIL = "mstudiosolutions@gmail.com";
 const LOCATION = "Australia";
 const COPYRIGHT_YEAR = "2026";
@@ -772,7 +771,7 @@ export default function App() {
               <h2 className="mt-4 text-[30px] font-bold leading-tight">{APP_SHORT}</h2>
               <div className="text-[18px] font-bold text-[var(--green)]">{APP_TAGLINE}</div>
               <div className="mt-1 text-[15px] text-[var(--muted)]">by {COMPANY}</div>
-              <div className="mt-2 text-[13px] text-[var(--muted)]">Version {APP_VERSION} · Developed by {DEVELOPER} · {COMPANY}, {LOCATION}</div>
+              <div className="mt-2 text-[13px] text-[var(--muted)]">Version {APP_VERSION} · {COMPANY}, {LOCATION}</div>
             </div>
 
             <section className="mt-6 rounded-[20px] bg-[var(--paper)] border border-[var(--line)] p-5">
@@ -818,12 +817,10 @@ export default function App() {
                 <dd>{COMPANY}</dd>
                 <dt className="text-[#8FBEB1]">Location</dt>
                 <dd>{LOCATION}</dd>
-                <dt className="text-[#8FBEB1]">Developer</dt>
-                <dd>{DEVELOPER}</dd>
               </dl>
             </section>
 
-            <div className="mt-5 text-center text-[12px] text-[var(--muted)]">© {COPYRIGHT_YEAR} {DEVELOPER}. All rights reserved.</div>
+            <div className="mt-5 text-center text-[12px] text-[var(--muted)]">© {COPYRIGHT_YEAR} {COMPANY}. All rights reserved.</div>
           </div>
         )}
 
@@ -883,7 +880,7 @@ export default function App() {
           <div className="text-[11px] text-[var(--muted)] mt-2 leading-[1.5] max-w-[720px] mx-auto">
             Unofficial practice tool – not affiliated with the Australian Government. Based on <em>Our Common Bond</em> from the Department of Home Affairs.
           </div>
-          <div className="text-[11px] text-[var(--muted)] mt-1">© {COPYRIGHT_YEAR} {DEVELOPER}. All rights reserved.</div>
+          <div className="text-[11px] text-[var(--muted)] mt-1">© {COPYRIGHT_YEAR} {COMPANY}. All rights reserved.</div>
         </div>
       </footer>
     </div>
