@@ -6,7 +6,7 @@
   "description": "mPractice for Aussie Citizenship by mStudio – practice app for the Australian Citizenship Test (Our Common Bond)",
   "author": "Martin Yeung (mStudio) <mstudiosolutions@gmail.com>",
   "license": "UNLICENSED",
-  "homepage": "https://mstudio-solutions.github.io/mPractice/",
+  "homepage": "https://mstudio-solutions.github.io/mPractice-for-Aussie-Citizenship/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

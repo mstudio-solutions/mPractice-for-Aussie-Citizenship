@@ -4,7 +4,7 @@
 
 mPractice for Aussie Citizenship helps you get ready for the Australian Citizenship Test. Practise as many times as you like with questions based on the testable sections of *Our Common Bond*.
 
-🌐 **Try it:** https://mstudio-solutions.github.io/mPractice/
+🌐 **Try it:** https://mstudio-solutions.github.io/mPractice-for-Aussie-Citizenship/
 
 ## Features
 
