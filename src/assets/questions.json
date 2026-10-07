@@ -1203,24 +1203,24 @@
     "id": 51,
     "part": 3,
     "topic": "Law",
-    "q_en": "What must you do if you witness a crime?",
+    "q_en": "What should you do if you see a crime or know someone is planning a serious crime?",
     "q_zh": "",
     "options_en": [
       "Ignore it",
-      "Report it but not required by law unless court summons",
+      "Report it to the police",
       "Pay fine",
       "Take the law into your own hands"
     ],
     "options_zh": [
       "Ignore it",
-      "Report it but not required by law unless court summons",
+      "Report it to the police",
       "Pay fine",
       "Take the law into your own hands"
     ],
     "correct": 1,
     "is_values": false,
     "is_key": false,
-    "explanation_en": "",
+    "explanation_en": "If people suspect someone may be planning a serious crime, they should report it to the authorities as soon as possible, to help keep the community safe.",
     "explanation_zh": ""
   },
   {
@@ -1560,30 +1560,6 @@
     "explanation_zh": ""
   },
   {
-    "id": 66,
-    "part": 1,
-    "topic": "History",
-    "q_en": "What happened in 1930s Great Depression example relevant?",
-    "q_zh": "",
-    "options_en": [
-      "Australia became republic",
-      "Many suffered hardship",
-      "Gold rush",
-      "Federation of Australia"
-    ],
-    "options_zh": [
-      "Australia became republic",
-      "Many suffered hardship",
-      "Gold rush",
-      "Federation of Australia"
-    ],
-    "correct": 1,
-    "is_values": false,
-    "is_key": false,
-    "explanation_en": "",
-    "explanation_zh": ""
-  },
-  {
     "id": 67,
     "part": 3,
     "topic": "Constitutional monarchy",
@@ -1770,30 +1746,6 @@
       "30 years"
     ],
     "correct": 0,
-    "is_values": false,
-    "is_key": false,
-    "explanation_en": "",
-    "explanation_zh": ""
-  },
-  {
-    "id": 75,
-    "part": 3,
-    "topic": "Voting",
-    "q_en": "What should you do if you do not know who to vote for?",
-    "q_zh": "",
-    "options_en": [
-      "Copy someone else",
-      "Not vote",
-      "Vote using your own judgement or seek info from AEC",
-      "Vote for whoever your boss tells you"
-    ],
-    "options_zh": [
-      "Copy someone else",
-      "Not vote",
-      "Vote using your own judgement or seek info from AEC",
-      "Vote for whoever your boss tells you"
-    ],
-    "correct": 2,
     "is_values": false,
     "is_key": false,
     "explanation_en": "",
@@ -2109,6 +2061,606 @@
     "is_values": false,
     "is_key": false,
     "explanation_en": "",
+    "explanation_zh": ""
+  },
+  {
+    "id": 89,
+    "part": 1,
+    "topic": "Symbols",
+    "q_en": "What is Australia's national gemstone?",
+    "q_zh": "",
+    "options_en": [
+      "Diamond",
+      "Sapphire",
+      "Opal",
+      "Pearl"
+    ],
+    "options_zh": [
+      "Diamond",
+      "Sapphire",
+      "Opal",
+      "Pearl"
+    ],
+    "correct": 2,
+    "is_values": false,
+    "is_key": false,
+    "explanation_en": "The opal is Australia's national gemstone. According to Aboriginal legend, a rainbow touched the earth and created the colours of the opal.",
+    "explanation_zh": ""
+  },
+  {
+    "id": 90,
+    "part": 1,
+    "topic": "Symbols",
+    "q_en": "What does the yellow circle on the Australian Aboriginal Flag represent?",
+    "q_zh": "",
+    "options_en": [
+      "The moon",
+      "Gold",
+      "The sun",
+      "The desert"
+    ],
+    "options_zh": [
+      "The moon",
+      "Gold",
+      "The sun",
+      "The desert"
+    ],
+    "correct": 2,
+    "is_values": false,
+    "is_key": false,
+    "explanation_en": "On the Aboriginal Flag, the black top half represents the Aboriginal peoples, the red bottom half represents the earth, and the yellow circle represents the sun.",
+    "explanation_zh": ""
+  },
+  {
+    "id": 91,
+    "part": 1,
+    "topic": "Symbols",
+    "q_en": "What is the white symbol in the centre of the Torres Strait Islander Flag?",
+    "q_zh": "",
+    "options_en": [
+      "A boomerang",
+      "A kangaroo",
+      "The Southern Cross",
+      "A dancer's headdress"
+    ],
+    "options_zh": [
+      "A boomerang",
+      "A kangaroo",
+      "The Southern Cross",
+      "A dancer's headdress"
+    ],
+    "correct": 3,
+    "is_values": false,
+    "is_key": false,
+    "explanation_en": "The white dancer's headdress is a symbol for all Torres Strait Islanders. The points of the white star represent the island groups.",
+    "explanation_zh": ""
+  },
+  {
+    "id": 92,
+    "part": 1,
+    "topic": "Symbols",
+    "q_en": "Which flags are officially recognised in Australia?",
+    "q_zh": "",
+    "options_en": [
+      "Only the Australian National Flag",
+      "The Australian National Flag, the Australian Aboriginal Flag and the Torres Strait Islander Flag",
+      "The Union Jack and the Australian National Flag",
+      "The Eureka Flag and the Australian National Flag"
+    ],
+    "options_zh": [
+      "Only the Australian National Flag",
+      "The Australian National Flag, the Australian Aboriginal Flag and the Torres Strait Islander Flag",
+      "The Union Jack and the Australian National Flag",
+      "The Eureka Flag and the Australian National Flag"
+    ],
+    "correct": 1,
+    "is_values": false,
+    "is_key": false,
+    "explanation_en": "The Australian National Flag is the official flag of the nation. The Australian Aboriginal Flag and the Torres Strait Islander Flag are also officially recognised.",
+    "explanation_zh": ""
+  },
+  {
+    "id": 93,
+    "part": 2,
+    "topic": "Democracy",
+    "q_en": "In Australia's parliamentary democracy, where does the power of the government come from?",
+    "q_zh": "",
+    "options_en": [
+      "The King alone",
+      "The army",
+      "The Australian people, who vote for representatives in parliament",
+      "The Prime Minister alone"
+    ],
+    "options_zh": [
+      "The King alone",
+      "The army",
+      "The Australian people, who vote for representatives in parliament",
+      "The Prime Minister alone"
+    ],
+    "correct": 2,
+    "is_values": false,
+    "is_key": false,
+    "explanation_en": "The power of the government comes from the Australian people, because citizens vote for people to represent them in parliament.",
+    "explanation_zh": ""
+  },
+  {
+    "id": 94,
+    "part": 2,
+    "topic": "Freedoms",
+    "q_en": "Can people in Australia protest against the government?",
+    "q_zh": "",
+    "options_en": [
+      "No, protests are never allowed",
+      "Yes, and they can damage property",
+      "Only with the Prime Minister's permission",
+      "Yes, if the protest is peaceful and within the law"
+    ],
+    "options_zh": [
+      "No, protests are never allowed",
+      "Yes, and they can damage property",
+      "Only with the Prime Minister's permission",
+      "Yes, if the protest is peaceful and within the law"
+    ],
+    "correct": 3,
+    "is_values": false,
+    "is_key": false,
+    "explanation_en": "Australians can gather to protest, but protests must be peaceful and must not injure any person or damage property.",
+    "explanation_zh": ""
+  },
+  {
+    "id": 95,
+    "part": 2,
+    "topic": "Values",
+    "q_en": "Do men and women have equal rights in Australia?",
+    "q_zh": "",
+    "options_en": [
+      "No, men have more rights",
+      "Only at work",
+      "Yes, men and women have equal rights",
+      "Only if they are married"
+    ],
+    "options_zh": [
+      "No, men have more rights",
+      "Only at work",
+      "Yes, men and women have equal rights",
+      "Only if they are married"
+    ],
+    "correct": 2,
+    "is_values": false,
+    "is_key": false,
+    "explanation_en": "Men and women have equal rights in Australia. It is against the law to discriminate against a person because of their gender.",
+    "explanation_zh": ""
+  },
+  {
+    "id": 96,
+    "part": 2,
+    "topic": "Rule of Law",
+    "q_en": "Under the Rule of Law, who must obey Australia's laws?",
+    "q_zh": "",
+    "options_en": [
+      "Everyone except the Prime Minister",
+      "Only people born in Australia",
+      "Everyone, including government, religious and business leaders and the police",
+      "Only people without power"
+    ],
+    "options_zh": [
+      "Everyone except the Prime Minister",
+      "Only people born in Australia",
+      "Everyone, including government, religious and business leaders and the police",
+      "Only people without power"
+    ],
+    "correct": 2,
+    "is_values": false,
+    "is_key": false,
+    "explanation_en": "No person, group or religious rule is above the law. Everyone, including people in positions of power, must obey Australia's laws.",
+    "explanation_zh": ""
+  },
+  {
+    "id": 97,
+    "part": 2,
+    "topic": "Rule of Law",
+    "q_en": "If an Australian law and a religious practice conflict, which one must be followed?",
+    "q_zh": "",
+    "options_en": [
+      "The religious practice",
+      "Whichever the person prefers",
+      "Neither",
+      "Australian law"
+    ],
+    "options_zh": [
+      "The religious practice",
+      "Whichever the person prefers",
+      "Neither",
+      "Australian law"
+    ],
+    "correct": 3,
+    "is_values": false,
+    "is_key": false,
+    "explanation_en": "Where there is a conflict between an Australian law and a religious practice, Australian law prevails. Religious laws have no legal status in Australia.",
+    "explanation_zh": ""
+  },
+  {
+    "id": 98,
+    "part": 2,
+    "topic": "Democracy",
+    "q_en": "Which of these is a privilege of Australian citizenship?",
+    "q_zh": "",
+    "options_en": [
+      "Applying for an Australian passport",
+      "Not paying tax",
+      "Not obeying the law",
+      "Free housing"
+    ],
+    "options_zh": [
+      "Applying for an Australian passport",
+      "Not paying tax",
+      "Not obeying the law",
+      "Free housing"
+    ],
+    "correct": 0,
+    "is_values": false,
+    "is_key": false,
+    "explanation_en": "Australian citizens can apply for an Australian passport and re-enter Australia freely.",
+    "explanation_zh": ""
+  },
+  {
+    "id": 99,
+    "part": 2,
+    "topic": "Democracy",
+    "q_en": "Which of these is a responsibility of Australian citizens?",
+    "q_zh": "",
+    "options_en": [
+      "Joining the army at 18",
+      "Serving on a jury if called to do so",
+      "Speaking only English at home",
+      "Joining a political party"
+    ],
+    "options_zh": [
+      "Joining the army at 18",
+      "Serving on a jury if called to do so",
+      "Speaking only English at home",
+      "Joining a political party"
+    ],
+    "correct": 1,
+    "is_values": false,
+    "is_key": false,
+    "explanation_en": "Citizens must obey the law, vote, defend Australia should the need arise, and serve on a jury if called to do so. Service in the Defence Force is voluntary.",
+    "explanation_zh": ""
+  },
+  {
+    "id": 100,
+    "part": 2,
+    "topic": "Democracy",
+    "q_en": "Who must vote in federal and state or territory elections?",
+    "q_zh": "",
+    "options_en": [
+      "Everyone living in Australia",
+      "Only people born in Australia",
+      "Australian citizens aged 18 years or over",
+      "Only people who own property"
+    ],
+    "options_zh": [
+      "Everyone living in Australia",
+      "Only people born in Australia",
+      "Australian citizens aged 18 years or over",
+      "Only people who own property"
+    ],
+    "correct": 2,
+    "is_values": false,
+    "is_key": false,
+    "explanation_en": "Voting is a responsibility for Australian citizens aged 18 years or over, and it is compulsory.",
+    "explanation_zh": ""
+  },
+  {
+    "id": 101,
+    "part": 2,
+    "topic": "Democracy",
+    "q_en": "While overseas, what can Australian citizens ask for in times of need?",
+    "q_zh": "",
+    "options_en": [
+      "Consular help from an Australian government official",
+      "Free flights home every year",
+      "Help from the Australian army",
+      "Permission to break local laws"
+    ],
+    "options_zh": [
+      "Consular help from an Australian government official",
+      "Free flights home every year",
+      "Help from the Australian army",
+      "Permission to break local laws"
+    ],
+    "correct": 0,
+    "is_values": false,
+    "is_key": false,
+    "explanation_en": "Australian citizens can ask for help from an Australian embassy, high commission or consulate overseas. They must still obey the laws of that country.",
+    "explanation_zh": ""
+  },
+  {
+    "id": 102,
+    "part": 2,
+    "topic": "Democracy",
+    "q_en": "How do representatives in parliament answer to the people for their decisions?",
+    "q_zh": "",
+    "options_en": [
+      "Through the courts only",
+      "Through elections",
+      "Through the King",
+      "They do not have to answer to anyone"
+    ],
+    "options_zh": [
+      "Through the courts only",
+      "Through elections",
+      "Through the King",
+      "They do not have to answer to anyone"
+    ],
+    "correct": 1,
+    "is_values": false,
+    "is_key": false,
+    "explanation_en": "In a parliamentary democracy, representatives in parliament must answer to the people, through elections, for the decisions they make.",
+    "explanation_zh": ""
+  },
+  {
+    "id": 103,
+    "part": 3,
+    "topic": "Government",
+    "q_en": "Why does the Australian Constitution divide the power of government between Parliament, the Executive and the judges?",
+    "q_zh": "",
+    "options_en": [
+      "To stop one person or group from holding all the power",
+      "To give the Prime Minister all the power",
+      "So the King can run the government",
+      "So the courts can make all the laws"
+    ],
+    "options_zh": [
+      "To stop one person or group from holding all the power",
+      "To give the Prime Minister all the power",
+      "So the King can run the government",
+      "So the courts can make all the laws"
+    ],
+    "correct": 0,
+    "is_values": false,
+    "is_key": false,
+    "explanation_en": "The Constitution divides power between the legislative (Parliament), executive and judicial (judges) powers, to stop one person or one group from holding all the power.",
+    "explanation_zh": ""
+  },
+  {
+    "id": 104,
+    "part": 3,
+    "topic": "Parliament",
+    "q_en": "Who has the power to make and change laws in Australia?",
+    "q_zh": "",
+    "options_en": [
+      "The courts",
+      "Parliament",
+      "The police",
+      "The Governor-General alone"
+    ],
+    "options_zh": [
+      "The courts",
+      "Parliament",
+      "The police",
+      "The Governor-General alone"
+    ],
+    "correct": 1,
+    "is_values": false,
+    "is_key": false,
+    "explanation_en": "Legislative power is the power to make laws. Parliament has the power to make and change the laws in Australia.",
+    "explanation_zh": ""
+  },
+  {
+    "id": 105,
+    "part": 3,
+    "topic": "Senate",
+    "q_en": "How many senators does each state elect?",
+    "q_zh": "",
+    "options_en": [
+      "6",
+      "12",
+      "2",
+      "20"
+    ],
+    "options_zh": [
+      "6",
+      "12",
+      "2",
+      "20"
+    ],
+    "correct": 1,
+    "is_values": false,
+    "is_key": false,
+    "explanation_en": "Each state elects 12 senators, and the ACT and Northern Territory elect two each, a total of 76 senators.",
+    "explanation_zh": ""
+  },
+  {
+    "id": 106,
+    "part": 3,
+    "topic": "Parliament",
+    "q_en": "After a federal election, who forms the Opposition?",
+    "q_zh": "",
+    "options_en": [
+      "The party with the most members in the Senate",
+      "The King's advisers",
+      "The judges of the High Court",
+      "The party or coalition with the second largest number of members in the House of Representatives"
+    ],
+    "options_zh": [
+      "The party with the most members in the Senate",
+      "The King's advisers",
+      "The judges of the High Court",
+      "The party or coalition with the second largest number of members in the House of Representatives"
+    ],
+    "correct": 3,
+    "is_values": false,
+    "is_key": false,
+    "explanation_en": "The party or coalition with the second largest number of members in the House of Representatives forms the Opposition. Its leader is the Leader of the Opposition.",
+    "explanation_zh": ""
+  },
+  {
+    "id": 107,
+    "part": 4,
+    "topic": "Values",
+    "q_en": "In Australia, can an employer refuse to hire someone because she is a woman?",
+    "q_zh": "",
+    "options_en": [
+      "Yes, it is the employer's choice",
+      "Only for office jobs",
+      "Only if the boss prefers men",
+      "No, this is discrimination and is against the law"
+    ],
+    "options_zh": [
+      "Yes, it is the employer's choice",
+      "Only for office jobs",
+      "Only if the boss prefers men",
+      "No, this is discrimination and is against the law"
+    ],
+    "correct": 3,
+    "is_values": true,
+    "is_key": false,
+    "explanation_en": "It is against the law to discriminate against a person because of their gender. A person should get a job based on their skills and experience.",
+    "explanation_zh": ""
+  },
+  {
+    "id": 108,
+    "part": 4,
+    "topic": "Law",
+    "q_en": "Is it acceptable to use violence to settle a disagreement with your neighbour?",
+    "q_zh": "",
+    "options_en": [
+      "Yes, if they started it",
+      "No, violence is against the law",
+      "Only if no one sees it",
+      "Only if the police are too slow"
+    ],
+    "options_zh": [
+      "Yes, if they started it",
+      "No, violence is against the law",
+      "Only if no one sees it",
+      "Only if the police are too slow"
+    ],
+    "correct": 1,
+    "is_values": true,
+    "is_key": false,
+    "explanation_en": "It is against the law to be violent towards another person. Australians believe in peaceful disagreement.",
+    "explanation_zh": ""
+  },
+  {
+    "id": 109,
+    "part": 4,
+    "topic": "Law",
+    "q_en": "Can a person in Australia be married to more than one person at the same time?",
+    "q_zh": "",
+    "options_en": [
+      "Yes",
+      "Only if their religion allows it",
+      "Only if their first spouse agrees",
+      "No, polygamy is against the law"
+    ],
+    "options_zh": [
+      "Yes",
+      "Only if their religion allows it",
+      "Only if their first spouse agrees",
+      "No, polygamy is against the law"
+    ],
+    "correct": 3,
+    "is_values": true,
+    "is_key": false,
+    "explanation_en": "Polygamy (being married to more than one person at the same time) is against the law in Australia and can result in severe penalties, including prison.",
+    "explanation_zh": ""
+  },
+  {
+    "id": 110,
+    "part": 4,
+    "topic": "Values",
+    "q_en": "What does mutual respect and tolerance mean in Australia?",
+    "q_zh": "",
+    "options_en": [
+      "Listening to others and respecting their views, even when they are different from your own",
+      "Only respecting people from your own culture",
+      "Only respecting people who agree with you",
+      "Respecting only government officials"
+    ],
+    "options_zh": [
+      "Listening to others and respecting their views, even when they are different from your own",
+      "Only respecting people from your own culture",
+      "Only respecting people who agree with you",
+      "Respecting only government officials"
+    ],
+    "correct": 0,
+    "is_values": true,
+    "is_key": false,
+    "explanation_en": "Mutual respect and tolerance means listening to others and respecting their views and opinions, even when they are different from your own.",
+    "explanation_zh": ""
+  },
+  {
+    "id": 111,
+    "part": 4,
+    "topic": "Law",
+    "q_en": "Do Australian laws apply to people from other cultures and backgrounds living in Australia?",
+    "q_zh": "",
+    "options_en": [
+      "Yes, Australian laws apply to all people in Australia",
+      "No, they can follow the laws of their former country",
+      "Only after they become citizens",
+      "Only after five years"
+    ],
+    "options_zh": [
+      "Yes, Australian laws apply to all people in Australia",
+      "No, they can follow the laws of their former country",
+      "Only after they become citizens",
+      "Only after five years"
+    ],
+    "correct": 0,
+    "is_values": true,
+    "is_key": false,
+    "explanation_en": "Australian laws apply to all people in Australia. Regardless of your background or culture, you must follow Australian laws.",
+    "explanation_zh": ""
+  },
+  {
+    "id": 112,
+    "part": 4,
+    "topic": "Values",
+    "q_en": "In Australia, who can make their own choices about personal matters such as marriage and religion?",
+    "q_zh": "",
+    "options_en": [
+      "Both men and women",
+      "Only men",
+      "Only parents",
+      "Only religious leaders"
+    ],
+    "options_zh": [
+      "Both men and women",
+      "Only men",
+      "Only parents",
+      "Only religious leaders"
+    ],
+    "correct": 0,
+    "is_values": true,
+    "is_key": false,
+    "explanation_en": "Both men and women have the right to make their own independent choices about personal matters, such as marriage and religion.",
+    "explanation_zh": ""
+  },
+  {
+    "id": 113,
+    "part": 4,
+    "topic": "Law",
+    "q_en": "Is it acceptable to offer money to a police officer to avoid a fine?",
+    "q_zh": "",
+    "options_en": [
+      "No, even offering a bribe to a police officer is a crime",
+      "Yes, it is normal",
+      "Only small amounts",
+      "Only if the officer agrees"
+    ],
+    "options_zh": [
+      "No, even offering a bribe to a police officer is a crime",
+      "Yes, it is normal",
+      "Only small amounts",
+      "Only if the officer agrees"
+    ],
+    "correct": 0,
+    "is_values": true,
+    "is_key": false,
+    "explanation_en": "In Australia, it is a serious crime to bribe the police. It is a crime to even offer a bribe to a police officer.",
     "explanation_zh": ""
   }
 ]
