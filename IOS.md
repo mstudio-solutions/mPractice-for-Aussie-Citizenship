@@ -1,9 +1,9 @@
 # iOS app – build and release
 
-The iOS app is the same app as the website, wrapped with [Capacitor](https://capacitorjs.com). The app version:
+The iOS app is the same page as the website, wrapped with [Capacitor](https://capacitorjs.com). The app version:
 
-- works offline (everything is bundled, no CDN)
-- has no analytics (`npm run build:app` removes the Cloudflare tag from the app build)
+- works offline (Tailwind is compiled to `www/app.css`, no CDN)
+- has no analytics (`npm run build:www` removes the Cloudflare tag from the app build)
 - saves settings, recent scores and progress on the device (the website only keeps them while the tab is open)
 
 App Store listing text, icon and screenshots are in [`appstore/`](appstore/).
@@ -24,7 +24,7 @@ npm run ios        # builds www/ and copies it into the Xcode project
 npm run ios:open   # opens Xcode
 ```
 
-Run `npm run ios` again every time the app or the questions change.
+Run `npm run ios` again every time `index.html` changes.
 
 ## 2. Test on the simulator or your iPhone
 

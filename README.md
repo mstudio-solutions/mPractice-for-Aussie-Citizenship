@@ -22,28 +22,29 @@ mPractice for Aussie Citizenship helps you get ready for the Australian Citizens
 
 mPractice does not collect any personal information. On the website, recent scores stay in your browser only and are cleared when you close the tab. In the iOS app, settings, recent scores and progress are saved on the device only. Full policy: open the app → **About** → **Privacy Policy**, or [privacy.html](https://mstudio-solutions.github.io/mPractice-for-Aussie-Citizenship/privacy.html).
 
-## Development
-
-```bash
-npm install
-npm run dev      # local dev server
-npm run build    # production build into dist/
-npm run ios      # iOS app: build www/ (no analytics) and copy it into Xcode
-```
-
-Every push to `main` is built and deployed to GitHub Pages by GitHub Actions (`.github/workflows/deploy.yml`).
-
 ## Project structure
 
-- `src/App.tsx` – app logic and pages (practice, results, About, Privacy Policy)
-- `src/assets/questions.json` – question bank
-- `public/privacy.html` – standalone Privacy Policy page (used by the App Store listing)
-- `ios/`, `capacitor.config.json` – the iOS app (see [IOS.md](IOS.md))
+- `index.html` – the full app: practice, results, About and Privacy Policy pages (question bank is embedded)
+- `questions.json` – the question bank as plain JSON (generated)
+- `data/part1.json` … `data/part4.json` – question source, one file per testable part of *Our Common Bond*
+- `scripts/build.py` – checks the questions and rebuilds `questions.json` and `index.html`
+- `privacy.html` – standalone Privacy Policy page (used by the App Store listing)
+- `ios/`, `capacitor.config.json`, `package.json`, `scripts/build-www.mjs` – the iOS app (see [IOS.md](IOS.md))
 - `appstore/` – App Store listing text, icon and screenshots
 
 ## iOS app
 
-The same app is also packaged as an iPhone app with Capacitor. It works offline, has no analytics, and saves settings and progress on the device. See [IOS.md](IOS.md) for how to build and submit it.
+The same page is also packaged as an iPhone app with Capacitor. It works offline, has no analytics, and saves settings and progress on the device. See [IOS.md](IOS.md) for how to build and submit it.
+
+## Edit or add questions
+
+1. Edit a file in `data/`. Put the correct answer in `a` and the two wrong answers in `w`. Answer order is shuffled automatically. Keep the `id` of a question you edit; give a new question the next free number.
+2. Run `python3 scripts/build.py`
+3. Commit `data/`, `questions.json` and `index.html`. For the iOS app, also run `npm run ios` on the Mac before archiving.
+
+`python3 scripts/build.py --check` fails if the generated files are out of date.
+
+Every push to `main` is published to GitHub Pages by GitHub Actions (`.github/workflows/deploy.yml`). It checks the question bank, then publishes `index.html` and `privacy.html`.
 
 ## Disclaimer
 
