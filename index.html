@@ -1,15 +1,696 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mPractice for Aussie Citizenship</title>
-    <meta name="author" content="mStudio" />
-    <meta name="description" content="mPractice for Aussie Citizenship by mStudio – free practice for the Australian Citizenship Test, based on Our Common Bond. No sign-up, no ads, no cookies." />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "bf5ca290267741a49d1cf48c17cac9a7"}'></script><!-- End Cloudflare Web Analytics -->
-  </body>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>mPractice for Aussie Citizenship</title>
+<meta name="author" content="mStudio"/>
+<meta name="description" content="mPractice for Aussie Citizenship by mStudio – free practice for the Australian Citizenship Test, based on Our Common Bond. No sign-up, no ads, no cookies."/>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+:root{--green:#0E4D45;--green-2:#134F45;--gold:#FFCC33;--beige:#F6F1E7;--paper:#FFFBF2;--ink:#1E2B28;--muted:#6B7D79;--line:#E8DDC5;--danger:#C4503A;--ok:#1B7A5A}
+body{background:var(--paper);color:var(--ink);font-family:ui-sans-system,-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.serif{font-family:Georgia,"Times New Roman",Times,serif;letter-spacing:-0.02em}
+*{min-width:0}
+.is-app .web-only{display:none}
+body:not(.is-app) .app-only{display:none}
+</style>
+</head>
+<body>
+<div class="min-h-screen w-full bg-[var(--beige)] text-[var(--ink)] selection:bg-[var(--gold)]">
+
+<header class="sticky top-0 z-30 backdrop-blur-xl bg-[var(--paper)]/90 border-b border-[var(--line)]" style="padding-top:var(--safe-area-inset-top)">
+  <div class="mx-auto max-w-[1120px] px-4 md:px-6 py-3.5 flex items-center justify-between gap-3">
+    <div class="flex items-center gap-3 min-w-0">
+      <div class="w-10 h-10 rounded-full bg-[var(--green)] text-[var(--gold)] grid place-items-center font-bold text-[18px] serif shrink-0">AU</div>
+      <div class="min-w-0">
+        <h1 class="text-[18px] md:text-[21px] font-bold leading-tight tracking-tight truncate"><button data-act="page" data-v="dashboard" class="hover:opacity-80">mPractice</button></h1>
+        <p class="text-[11px] md:text-[12px] text-[var(--muted)] leading-tight mt-[2px] truncate">for Aussie Citizenship · by mStudio</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-2 shrink-0">
+      <span class="hidden lg:inline px-2.5 py-1 rounded-full bg-[var(--green)] text-white text-[11px] font-bold tracking-wide">REAL TEST: 20 Q · 45 MIN</span>
+      <span class="hidden lg:inline px-2.5 py-1 rounded-full bg-[var(--gold)] text-[var(--green)] text-[11px] font-bold">VALUES MUST PASS</span>
+      <a class="js-official hidden lg:inline px-2.5 py-1 rounded-full bg-white border border-[var(--line)] text-[11px] hover:border-[var(--green)]" target="_blank" rel="noopener">Official Source ↗</a>
+      <button id="aboutBtn" data-act="page" data-v="about" class="h-[36px] px-4 rounded-full bg-white border border-[var(--line)] text-[13px] font-bold hover:border-[var(--green)]/40">About</button>
+    </div>
+  </div>
+  <div id="quizBar" class="hidden h-[6px] w-full bg-[#EDE3CC]"><div id="quizBarFill" class="h-full bg-[var(--green)] transition-all duration-500" style="width:0"></div></div>
+</header>
+
+<main class="mx-auto max-w-[1120px] px-4 md:px-6 py-5 md:py-8">
+  <div id="dashboard"></div>
+  <div id="quiz" class="hidden max-w-[800px] mx-auto"></div>
+  <div id="result" class="hidden max-w-[860px] mx-auto"></div>
+
+  <div id="about" class="hidden max-w-[760px] mx-auto">
+    <button data-act="page" data-v="dashboard" class="h-[40px] px-4 rounded-full bg-white border border-[var(--line)] text-[13px] font-bold hover:border-[var(--green)]/40">← Back</button>
+    <div class="mt-5 text-center">
+      <div class="mx-auto w-[96px] h-[96px] rounded-[24px] bg-[var(--green)] text-[var(--gold)] grid place-items-center font-bold text-[40px] serif shadow-[0_12px_30px_rgba(14,77,69,0.25)]">AU</div>
+      <h2 class="mt-4 text-[30px] font-bold leading-tight">mPractice</h2>
+      <div class="text-[18px] font-bold text-[var(--green)]">for Aussie Citizenship</div>
+      <div class="mt-1 text-[15px] text-[var(--muted)]">by mStudio</div>
+      <div class="mt-2 text-[13px] text-[var(--muted)]">Version 1.0.0 · mStudio, Australia</div>
+    </div>
+    <section class="mt-6 rounded-[20px] bg-[var(--paper)] border border-[var(--line)] p-5">
+      <h3 class="font-bold text-[17px]">Introduction</h3>
+      <p class="mt-2 text-[15px] leading-[1.6]">mPractice for Aussie Citizenship helps you get ready for the Australian Citizenship Test. Practise as many times as you like with questions based on the testable sections of <em>Our Common Bond</em>. Large buttons and clear text make it easy to use for everyone.</p>
+    </section>
+    <section class="mt-4 rounded-[20px] bg-[var(--paper)] border border-[var(--line)] p-5">
+      <h3 class="font-bold text-[17px]">Features</h3>
+      <ul class="mt-2 text-[15px] leading-[1.7] list-disc pl-5">
+        <li><span class="js-total">0</span> practice questions across Parts 1–4</li>
+        <li>Full Mock test – 20 questions, 5 Values questions, 75% + all Values correct to pass</li>
+        <li>Practice by Part, Values only, Key questions or Random</li>
+        <li>Timer per question, or untimed</li>
+        <li>Fixed answer layout, with optional shuffle</li>
+        <li>Review your mistakes with explanations</li>
+        <li>No sign-up, no ads, no cookies</li>
+      </ul>
+    </section>
+    <section class="mt-4 rounded-[20px] bg-[var(--paper)] border border-[var(--line)] p-5">
+      <h3 class="font-bold text-[17px]">Terms &amp; Conditions</h3>
+      <ul class="mt-2 text-[15px] leading-[1.7] list-disc pl-5">
+        <li>mPractice for Aussie Citizenship is an unofficial practice tool. It is not made by, linked to or approved by the Australian Government or the Department of Home Affairs.</li>
+        <li>The practice questions are based on <em>Our Common Bond</em>, published by the Department of Home Affairs (© Commonwealth of Australia). They are not the real test questions.</li>
+        <li>We try to keep the content correct, but we can't promise it is complete or up to date. Please always check the <a class="js-official text-[var(--green)] font-bold underline underline-offset-2" target="_blank" rel="noopener">official source ↗</a>.</li>
+        <li>Using this app does not guarantee you will pass the test.</li>
+        <li>The app is provided "as is", free of charge, without any warranty.</li>
+      </ul>
+    </section>
+    <button data-act="page" data-v="privacy" class="mt-4 w-full flex items-center justify-between rounded-[20px] bg-[var(--paper)] border border-[var(--line)] p-5 text-left hover:border-[var(--green)]/40">
+      <span class="font-bold text-[17px]">Privacy Policy</span>
+      <span class="text-[20px] text-[var(--muted)]">›</span>
+    </button>
+    <section class="mt-4 rounded-[20px] bg-[var(--green)] text-[#F6F1E7] p-5">
+      <h3 class="font-bold text-[17px]">Contact</h3>
+      <dl class="mt-3 grid grid-cols-[100px_1fr] gap-y-2 text-[15px]">
+        <dt class="text-[#8FBEB1]">Email</dt>
+        <dd><a href="mailto:mstudiosolutions@gmail.com" class="underline underline-offset-2 break-all">mstudiosolutions@gmail.com</a></dd>
+        <dt class="text-[#8FBEB1]">Company</dt>
+        <dd>mStudio</dd>
+        <dt class="text-[#8FBEB1]">Location</dt>
+        <dd>Australia</dd>
+      </dl>
+    </section>
+    <div class="mt-5 text-center text-[12px] text-[var(--muted)]">© 2026 mStudio. All rights reserved.</div>
+  </div>
+
+  <div id="privacy" class="hidden max-w-[760px] mx-auto">
+    <button data-act="page" data-v="about" class="h-[40px] px-4 rounded-full bg-white border border-[var(--line)] text-[13px] font-bold hover:border-[var(--green)]/40">← Back</button>
+    <h2 class="mt-5 text-[30px] font-bold leading-tight">Privacy Policy</h2>
+    <div class="text-[13px] text-[var(--muted)] mt-1">mPractice for Aussie Citizenship by mStudio · Last updated 8 October 2026</div>
+    <div class="mt-5 rounded-[20px] bg-[var(--paper)] border border-[var(--line)] p-5 space-y-5 text-[15px] leading-[1.6]">
+      <section>
+        <h3 class="font-bold text-[17px]">The short version</h3>
+        <p class="mt-1">mPractice does not collect, store or share any personal information. There is no account, no sign-up, no ads and no cookies. <span class="web-only">We count visits anonymously.</span><span class="app-only">The iPhone app does not collect any data at all.</span></p>
+      </section>
+      <section>
+        <h3 class="font-bold text-[17px]">What we collect</h3>
+        <p class="mt-1">No personal information. All questions are built into the app. Your answers and scores are never sent to us or to anyone else.<span class="web-only"> We only see anonymous visit counts (see below).</span></p>
+      </section>
+      <section>
+        <h3 class="font-bold text-[17px]">Your practice history</h3>
+        <p class="mt-1 web-only">Recent scores are kept only in your browser while the page is open. They are cleared when you close the tab. Nothing is saved on a server.</p>
+        <p class="mt-1 app-only">Your recent scores, your settings and the questions you have already done are saved only on your device, so you can carry on next time. They are never sent to us. You can remove them with the Clear button under Recent Sessions, or by deleting the app.</p>
+      </section>
+      <section>
+        <h3 class="font-bold text-[17px]">Cookies, analytics and ads</h3>
+        <p class="mt-1 app-only">The iPhone app does not use cookies, analytics, tracking or advertising.</p>
+        <p class="mt-1 web-only">mPractice does not use cookies or advertising. We use <a href="https://www.cloudflare.com/web-analytics/" target="_blank" rel="noopener" class="text-[var(--green)] font-bold underline underline-offset-2">Cloudflare Web Analytics ↗</a> to count visits anonymously. It does not use cookies and does not collect personal information. We only see totals, such as page views, country, browser and whether you use a phone or a computer. See the <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener" class="text-[var(--green)] font-bold underline underline-offset-2">Cloudflare Privacy Policy ↗</a>.</p>
+      </section>
+      <section>
+        <h3 class="font-bold text-[17px]">Hosting</h3>
+        <p class="mt-1">The website is hosted on GitHub Pages. Like most web hosts, GitHub may log basic technical data (such as your IP address) for security. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener" class="text-[var(--green)] font-bold underline underline-offset-2">GitHub Privacy Statement ↗</a>. The iPhone app is downloaded from the App Store, and Apple's own privacy policy applies to the App Store.</p>
+      </section>
+      <section>
+        <h3 class="font-bold text-[17px]">Links to other sites</h3>
+        <p class="mt-1">The app links to the Department of Home Affairs website. Their own privacy policy applies when you visit it.</p>
+      </section>
+      <section>
+        <h3 class="font-bold text-[17px]">Changes</h3>
+        <p class="mt-1">If this policy changes, we will update this page and the date above.</p>
+      </section>
+      <section>
+        <h3 class="font-bold text-[17px]">Contact</h3>
+        <p class="mt-1">Questions? Email <a href="mailto:mstudiosolutions@gmail.com" class="text-[var(--green)] font-bold underline underline-offset-2 break-all">mstudiosolutions@gmail.com</a>.</p>
+      </section>
+    </div>
+  </div>
+</main>
+
+<footer class="mt-8 border-t border-[var(--line)] py-6 text-center">
+  <div class="mx-auto max-w-[1120px] px-4">
+    <div class="text-[12px] font-bold">mPractice for Aussie Citizenship · Made by mStudio</div>
+    <div class="mt-2 flex justify-center gap-4 text-[12px] font-bold">
+      <button data-act="page" data-v="about" class="text-[var(--green)] underline underline-offset-2">About</button>
+      <button data-act="page" data-v="privacy" class="text-[var(--green)] underline underline-offset-2">Privacy Policy</button>
+      <a href="mailto:mstudiosolutions@gmail.com" class="text-[var(--green)] underline underline-offset-2">Contact</a>
+    </div>
+    <div class="text-[11px] text-[var(--muted)] mt-2 leading-[1.5] max-w-[720px] mx-auto">
+      Unofficial practice tool – not affiliated with the Australian Government. Based on <em>Our Common Bond</em> from the Department of Home Affairs.
+    </div>
+    <div class="text-[11px] text-[var(--muted)] mt-1">© 2026 mStudio. All rights reserved.</div>
+  </div>
+</footer>
+
+</div>
+
+<script>
+const BANK = /*QUESTIONS_START*/{"parts":[{"part":1,"title":"Australia and its people"},{"part":2,"title":"Australia's democratic beliefs, rights and liberties"},{"part":3,"title":"Government and the law in Australia"},{"part":4,"title":"Australian values"}],"questions":[{"id":1,"part":1,"topic":"Aboriginal peoples","q":"Who are the traditional owners of the land in Australia?","options":["European explorers","Aboriginal and Torres Strait Islander peoples","British settlers"],"answer":1,"values":false,"key":true,"explanation":"Aboriginal and Torres Strait Islander peoples are the first inhabitants, with oldest continuous cultures."},{"id":2,"part":1,"topic":"Aboriginal peoples","q":"Approximately what percentage of Australia's population are Aboriginal and Torres Strait Islander peoples?","options":["About 15%","About 3%","About 25%"],"answer":1,"values":false,"key":true,"explanation":"About 3% of population."},{"id":3,"part":1,"topic":"Early settlement","q":"When did the First Fleet arrive at Sydney Cove?","options":["25 April 1915","26 January 1788","1 January 1901"],"answer":1,"values":false,"key":true,"explanation":"First Fleet 11 ships led by Captain Arthur Phillip arrived 26 Jan 1788."},{"id":4,"part":1,"topic":"Early settlement","q":"How many ships were in the First Fleet?","options":["6 ships","11 ships","20 ships"],"answer":1,"values":false,"key":false,"explanation":"11 ships."},{"id":5,"part":1,"topic":"Early settlement","q":"Who was the captain of the First Fleet?","options":["Captain Arthur Phillip","Captain William Bligh","Captain James Cook"],"answer":0,"values":false,"key":false,"explanation":""},{"id":6,"part":1,"topic":"Federation","q":"When did the Commonwealth of Australia come into existence (Federation)?","options":["3 March 1986","26 January 1788","1 January 1901"],"answer":2,"values":false,"key":true,"explanation":""},{"id":7,"part":1,"topic":"States and territories","q":"How many states are there in Australia?","options":["8 states","4 states","6 states"],"answer":2,"values":false,"key":true,"explanation":""},{"id":8,"part":1,"topic":"States and territories","q":"Which are Australia's two mainland territories?","options":["Tasmania and Victoria","Jervis Bay and Norfolk Island","Australian Capital Territory and Northern Territory"],"answer":2,"values":false,"key":true,"explanation":""},{"id":9,"part":1,"topic":"States and territories","q":"What is the capital city of New South Wales?","options":["Melbourne","Sydney","Canberra"],"answer":1,"values":false,"key":false,"explanation":""},{"id":10,"part":1,"topic":"States and territories","q":"What is the capital city of Australia?","options":["Canberra","Melbourne","Sydney"],"answer":0,"values":false,"key":true,"explanation":""},{"id":11,"part":1,"topic":"States","q":"What is the capital of Victoria?","options":["Brisbane","Melbourne","Adelaide"],"answer":1,"values":false,"key":false,"explanation":""},{"id":12,"part":1,"topic":"States","q":"What is the capital of Queensland?","options":["Perth","Brisbane","Darwin"],"answer":1,"values":false,"key":false,"explanation":""},{"id":13,"part":1,"topic":"States","q":"What is the capital of South Australia?","options":["Perth","Adelaide","Hobart"],"answer":1,"values":false,"key":false,"explanation":""},{"id":14,"part":1,"topic":"States","q":"What is the capital of Western Australia?","options":["Perth","Darwin","Hobart"],"answer":0,"values":false,"key":false,"explanation":""},{"id":15,"part":1,"topic":"States","q":"What is the capital of Tasmania?","options":["Hobart","Sydney","Canberra"],"answer":0,"values":false,"key":false,"explanation":""},{"id":16,"part":1,"topic":"States","q":"What is the capital of Northern Territory?","options":["Alice Springs","Darwin","Canberra"],"answer":1,"values":false,"key":false,"explanation":""},{"id":17,"part":1,"topic":"Symbols","q":"What is Australia's national floral emblem?","options":["Waratah","Golden Wattle","Eucalyptus"],"answer":1,"values":false,"key":true,"explanation":""},{"id":18,"part":1,"topic":"Symbols","q":"What are Australia's national colours?","options":["Red White Blue","Green and Gold","Blue and Yellow"],"answer":1,"values":false,"key":true,"explanation":""},{"id":19,"part":1,"topic":"Symbols","q":"What is depicted on the Commonwealth Coat of Arms?","options":["Kangaroo and Koala","Kangaroo and Emu","Koala and Platypus"],"answer":1,"values":false,"key":false,"explanation":""},{"id":20,"part":1,"topic":"Symbols","q":"What does the Commonwealth Star on the Australian flag represent?","options":["The Southern Cross","The British Empire","The federation of states and territories"],"answer":2,"values":false,"key":true,"explanation":""},{"id":21,"part":1,"topic":"Symbols","q":"How many points does the Commonwealth Star have?","options":["Six points","Five points","Seven points"],"answer":2,"values":false,"key":true,"explanation":""},{"id":22,"part":1,"topic":"Symbols","q":"What is on the other half of Australian flag?","options":["Map of Australia","Southern Cross (5 stars)","Union Jack only"],"answer":1,"values":false,"key":false,"explanation":""},{"id":23,"part":1,"topic":"Symbols","q":"What is Australia's national anthem?","options":["Waltzing Matilda","Advance Australia Fair","God Save the King"],"answer":1,"values":false,"key":true,"explanation":""},{"id":24,"part":1,"topic":"Symbols","q":"When is Australia Day celebrated?","options":["1 January","26 January","25 April"],"answer":1,"values":false,"key":true,"explanation":""},{"id":25,"part":1,"topic":"History","q":"When is Anzac Day?","options":["11 November","25 April","26 January"],"answer":1,"values":false,"key":true,"explanation":""},{"id":26,"part":1,"topic":"History","q":"What does ANZAC stand for?","options":["Australian and New Zealand Army Corps","Australian National Army Corps","Australian Navy and Air Corps"],"answer":0,"values":false,"key":true,"explanation":""},{"id":27,"part":1,"topic":"History","q":"On what day did ANZAC troops land at Gallipoli?","options":["26 Jan 1788","1 Jan 1901","25 April 1915"],"answer":2,"values":false,"key":false,"explanation":""},{"id":28,"part":2,"topic":"Freedoms","q":"Which statement reflects freedom of speech in Australia?","options":["People must not criticise the government","People are free to say and write what they think","Only journalists have free speech"],"answer":1,"values":false,"key":true,"explanation":""},{"id":29,"part":2,"topic":"Freedoms","q":"What is freedom of association?","options":["People must join a union","People must join a political party","People are free to join or not join any organisation"],"answer":2,"values":false,"key":false,"explanation":""},{"id":30,"part":2,"topic":"Freedoms","q":"In Australia, people are free to follow any religion or no religion. This is called?","options":["Freedom of assembly","Rule of law","Freedom of religion"],"answer":2,"values":false,"key":true,"explanation":""},{"id":31,"part":2,"topic":"Rule of Law","q":"What is the Rule of Law?","options":["All people including government are bound by law","Only citizens must obey law","The Prime Minister is above the law"],"answer":0,"values":false,"key":true,"explanation":""},{"id":32,"part":2,"topic":"Values phrase","q":"What does 'a fair go' mean?","options":["Everyone should have equal opportunity","Only rich people get opportunity","Government decides who succeeds"],"answer":0,"values":true,"key":true,"explanation":""},{"id":33,"part":2,"topic":"Values","q":"What is mateship in Australian context?","options":["Helping and receiving help, especially in difficult times","Business partnership","Only helping family"],"answer":0,"values":true,"key":true,"explanation":""},{"id":34,"part":3,"topic":"Constitution","q":"What is the supreme law of Australia by which government must abide?","options":["The Australian Constitution","The British Parliament","The Prime Minister's orders"],"answer":0,"values":false,"key":true,"explanation":""},{"id":35,"part":3,"topic":"Constitution","q":"When did Australian Constitution come into effect?","options":["26 January 1788","1 January 1901","1900"],"answer":1,"values":false,"key":false,"explanation":""},{"id":36,"part":3,"topic":"Government levels","q":"How many levels of government in Australia?","options":["Two - Federal and State","Three - Federal, State/Territory, Local","Four"],"answer":1,"values":false,"key":true,"explanation":""},{"id":37,"part":3,"topic":"Head of State","q":"Who is the Head of State of Australia under constitutional monarchy?","options":["Prime Minister","The King of Australia (King of UK as King of Australia)","Governor-General"],"answer":1,"values":false,"key":true,"explanation":""},{"id":38,"part":3,"topic":"Governor-General","q":"Who represents the King in Australia?","options":["Governor-General","Prime Minister","Chief Justice"],"answer":0,"values":false,"key":true,"explanation":""},{"id":39,"part":3,"topic":"Governor","q":"Who represents the King in each state?","options":["Mayor","Governor","Premier"],"answer":1,"values":false,"key":false,"explanation":""},{"id":40,"part":3,"topic":"Parliament","q":"What are the two houses of Federal Parliament?","options":["House of Lords and Commons","House of Representatives and Senate","Congress and Senate"],"answer":1,"values":false,"key":true,"explanation":""},{"id":41,"part":3,"topic":"Parliament","q":"Where does Federal Parliament meet?","options":["Melbourne","Sydney Opera House","Parliament House, Canberra"],"answer":2,"values":false,"key":false,"explanation":""},{"id":42,"part":3,"topic":"Courts","q":"What is the role of the High Court?","options":["Interprets and applies the law, including Constitution","Makes laws","Runs elections"],"answer":0,"values":false,"key":true,"explanation":""},{"id":43,"part":3,"topic":"Executive","q":"Who is the head of the Australian Government?","options":["Prime Minister","King","Governor-General"],"answer":0,"values":false,"key":true,"explanation":""},{"id":44,"part":3,"topic":"Executive","q":"How is the Prime Minister chosen?","options":["Elected directly by all people","Chosen by King","Leader of party with majority in House of Representatives"],"answer":2,"values":false,"key":false,"explanation":""},{"id":45,"part":3,"topic":"Referendum","q":"What is a referendum?","options":["Vote by Parliament only","Election of Prime Minister","Vote by all voters on change to Constitution"],"answer":2,"values":false,"key":true,"explanation":""},{"id":46,"part":3,"topic":"Voting","q":"What is compulsory for Australian citizens aged 18 and over?","options":["Enrol and vote in federal and state elections","Join a political party","Pay extra voting tax"],"answer":0,"values":false,"key":true,"explanation":""},{"id":47,"part":3,"topic":"Voting","q":"What is the secret ballot?","options":["People vote privately, no one can influence how they vote","Everyone must show how they voted","Government watches you vote"],"answer":0,"values":false,"key":true,"explanation":""},{"id":48,"part":3,"topic":"Electoral","q":"What is on the electoral roll?","options":["List of criminals","List of people registered to vote","List of taxpayers"],"answer":1,"values":false,"key":false,"explanation":""},{"id":49,"part":3,"topic":"Law","q":"Who enforces the law and keeps peace?","options":["Parliament","Police","Australian Tax Office"],"answer":1,"values":false,"key":false,"explanation":""},{"id":50,"part":3,"topic":"Law","q":"What is jury service?","options":["Police decide guilt","Judge alone decides","Citizens decide if person is guilty or not guilty"],"answer":2,"values":false,"key":false,"explanation":""},{"id":51,"part":3,"topic":"Law","q":"What should you do if you see a crime or know someone is planning a serious crime?","options":["Ignore it","Take the law into your own hands","Report it to the police"],"answer":2,"values":false,"key":false,"explanation":"If people suspect someone may be planning a serious crime, they should report it to the authorities as soon as possible, to help keep the community safe."},{"id":52,"part":4,"topic":"Values","q":"Which value: Australia's society values equality of opportunity for all, regardless of background?","options":["True - equality and a fair go","False","Only for citizens"],"answer":0,"values":true,"key":true,"explanation":"Core value: equality"},{"id":53,"part":4,"topic":"Values","q":"Is domestic and family violence against the law in Australia?","options":["Only if serious","No, it is private","Yes, it is against the law and should be reported to police"],"answer":2,"values":true,"key":true,"explanation":""},{"id":54,"part":4,"topic":"Values","q":"In Australia, can you encourage violence against a person or group because of their culture or religion?","options":["Yes","No","Only if you disagree"],"answer":1,"values":true,"key":true,"explanation":""},{"id":55,"part":4,"topic":"Values","q":"Do people in Australia have to follow an Australian value of mutual respect and tolerance for others?","options":["Only at work","Yes","No"],"answer":1,"values":true,"key":true,"explanation":""},{"id":56,"part":4,"topic":"Values","q":"Is it acceptable to refuse to rent a house to someone because of their race?","options":["No, discrimination based on race is against the law","Depends","Yes"],"answer":0,"values":true,"key":true,"explanation":""},{"id":57,"part":4,"topic":"Values","q":"Should people in Australia make an effort to learn English?","options":["No, not needed","Only citizens","Yes, English is national language important for participation"],"answer":2,"values":true,"key":true,"explanation":""},{"id":58,"part":4,"topic":"Values","q":"What pledge do new citizens make?","options":["No pledge","Loyalty to Australia and its people, share democratic beliefs, respect rights and liberties, uphold and obey laws","Loyalty to former country"],"answer":1,"values":true,"key":true,"explanation":""},{"id":59,"part":4,"topic":"Values","q":"Is forced marriage allowed in Australia?","options":["Only if cultural","Yes","No, it is against the law"],"answer":2,"values":true,"key":true,"explanation":""},{"id":60,"part":4,"topic":"Values","q":"What does freedom of religion include in Australia?","options":["Must follow one religion","Freedom to follow any religion or no religion, but must obey law","No religion allowed"],"answer":1,"values":true,"key":false,"explanation":""},{"id":61,"part":4,"topic":"Values","q":"Does Australia allow freedom of speech to include inciting hatred against others?","options":["Only online","Yes, anything allowed","No, freedom does not include inciting hatred"],"answer":2,"values":true,"key":true,"explanation":""},{"id":62,"part":4,"topic":"Values","q":"What is expected about participation in Australian society?","options":["Integrate, contribute, take responsibility, help when possible","No need to participate","Live separately"],"answer":0,"values":true,"key":false,"explanation":""},{"id":63,"part":4,"topic":"Values","q":"Is it important to support mateship and help others in times of crisis as in bushfire example?","options":["Only for family","Yes, Australians come together in times of crisis","No"],"answer":1,"values":true,"key":true,"explanation":""},{"id":64,"part":1,"topic":"History","q":"Who were the first people to live in Australia?","options":["Chinese","Aboriginal and Torres Strait Islander peoples","British"],"answer":1,"values":false,"key":true,"explanation":""},{"id":65,"part":1,"topic":"Geography","q":"What is the Torres Strait?","options":["Islands between Queensland and Papua New Guinea","River in NSW","Desert in WA"],"answer":0,"values":false,"key":false,"explanation":""},{"id":67,"part":3,"topic":"Constitutional monarchy","q":"Australia is a constitutional monarchy. What does this mean?","options":["King is Head of State whose powers limited by Constitution","No King","King rules directly"],"answer":0,"values":false,"key":true,"explanation":""},{"id":68,"part":3,"topic":"Government levels","q":"Which government is responsible for hospitals and schools?","options":["Local councils","State and Territory governments","Federal government"],"answer":1,"values":false,"key":false,"explanation":""},{"id":69,"part":3,"topic":"Government levels","q":"Which government is responsible for passports and defence?","options":["Local government","State","Federal government"],"answer":2,"values":false,"key":true,"explanation":""},{"id":70,"part":3,"topic":"Government levels","q":"Which government is responsible for local roads and rubbish collection?","options":["State","Federal","Local government"],"answer":2,"values":false,"key":false,"explanation":""},{"id":71,"part":3,"topic":"Government","q":"What is the role of local government?","options":["Immigration","Local services like parks, libraries, rubbish","Defence"],"answer":1,"values":false,"key":false,"explanation":""},{"id":72,"part":3,"topic":"Elections","q":"How often are federal elections held?","options":["Every year","Every 5 years","At least every 3 years"],"answer":2,"values":false,"key":false,"explanation":""},{"id":73,"part":3,"topic":"Glossary","q":"What does coalition mean?","options":["Joining of two or more political parties to form government","Court decision","Single party"],"answer":0,"values":false,"key":false,"explanation":""},{"id":74,"part":3,"topic":"Parliament","q":"What is the minimum age to stand for Federal Parliament?","options":["21 years","25 years","18 years"],"answer":2,"values":false,"key":false,"explanation":""},{"id":76,"part":3,"topic":"Voting","q":"Is voting by secret ballot in Australia?","options":["Only for some","No","Yes"],"answer":2,"values":false,"key":true,"explanation":""},{"id":77,"part":4,"topic":"Values","q":"What does secular mean in Australian society?","options":["Must follow religion","Government controls religion","Separate from religion, no official religion"],"answer":2,"values":true,"key":false,"explanation":""},{"id":78,"part":2,"topic":"Democracy","q":"In a parliamentary democracy, how do people vote?","options":["For their representatives","King decides","Directly for laws"],"answer":0,"values":false,"key":true,"explanation":""},{"id":79,"part":3,"topic":"ATO","q":"What is the Australian Taxation Office (ATO) responsible for?","options":["Runs hospitals","Manages tax and superannuation to fund services","Makes laws"],"answer":1,"values":false,"key":false,"explanation":""},{"id":80,"part":3,"topic":"Services","q":"What is Services Australia?","options":["Delivers health, social, welfare payments via Medicare, Centrelink","Court","Defence force"],"answer":0,"values":false,"key":false,"explanation":""},{"id":81,"part":4,"topic":"Law","q":"What is cyber abuse?","options":["Using technology to threaten, harass someone, against law","Playing games","Using internet"],"answer":0,"values":true,"key":false,"explanation":""},{"id":82,"part":4,"topic":"Law","q":"What should you do about cyber abuse in Australia?","options":["Retaliate","Ignore always","Report to police and platform"],"answer":2,"values":true,"key":false,"explanation":""},{"id":83,"part":1,"topic":"Symbols","q":"Which emblem is the golden wattle?","options":["Floral emblem","Animal emblem","Military emblem"],"answer":0,"values":false,"key":true,"explanation":""},{"id":84,"part":1,"topic":"Symbols","q":"Where is Torres Strait Islander flag from?","options":["Sydney Harbour","Islands between QLD and PNG","Melbourne"],"answer":1,"values":false,"key":false,"explanation":""},{"id":85,"part":1,"topic":"History","q":"What is the name of first colony?","options":["New South Wales","Victoria","Queensland"],"answer":0,"values":false,"key":false,"explanation":""},{"id":86,"part":3,"topic":"GG","q":"Who are eligible to be Governor-General?","options":["Elected by public","Appointed by High Court","Appointed by King on advice of PM"],"answer":2,"values":false,"key":false,"explanation":""},{"id":87,"part":3,"topic":"GG","q":"What does Governor-General do?","options":["Leads army daily","Makes laws alone","Signs Bills into law, performs ceremonial duties"],"answer":2,"values":false,"key":true,"explanation":""},{"id":88,"part":3,"topic":"Senate","q":"What is the role of Senate?","options":["Chooses PM alone","Runs local councils","Reviews laws, represents states"],"answer":2,"values":false,"key":false,"explanation":""},{"id":89,"part":1,"topic":"Symbols","q":"What is Australia's national gemstone?","options":["Sapphire","Opal","Diamond"],"answer":1,"values":false,"key":false,"explanation":"The opal is Australia's national gemstone. According to Aboriginal legend, a rainbow touched the earth and created the colours of the opal."},{"id":90,"part":1,"topic":"Symbols","q":"What does the yellow circle on the Australian Aboriginal Flag represent?","options":["The sun","The moon","The desert"],"answer":0,"values":false,"key":false,"explanation":"On the Aboriginal Flag, the black top half represents the Aboriginal peoples, the red bottom half represents the earth, and the yellow circle represents the sun."},{"id":91,"part":1,"topic":"Symbols","q":"What is the white symbol in the centre of the Torres Strait Islander Flag?","options":["The Southern Cross","A boomerang","A dancer's headdress"],"answer":2,"values":false,"key":false,"explanation":"The white dancer's headdress is a symbol for all Torres Strait Islanders. The points of the white star represent the island groups."},{"id":92,"part":1,"topic":"Symbols","q":"Which flags are officially recognised in Australia?","options":["The Australian National Flag, the Australian Aboriginal Flag and the Torres Strait Islander Flag","The Union Jack and the Australian National Flag","Only the Australian National Flag"],"answer":0,"values":false,"key":false,"explanation":"The Australian National Flag is the official flag of the nation. The Australian Aboriginal Flag and the Torres Strait Islander Flag are also officially recognised."},{"id":93,"part":2,"topic":"Democracy","q":"In Australia's parliamentary democracy, where does the power of the government come from?","options":["The Prime Minister alone","The King alone","The Australian people, who vote for representatives in parliament"],"answer":2,"values":false,"key":false,"explanation":"The power of the government comes from the Australian people, because citizens vote for people to represent them in parliament."},{"id":94,"part":2,"topic":"Freedoms","q":"Can people in Australia protest against the government?","options":["Yes, if the protest is peaceful and within the law","No, protests are never allowed","Yes, and they can damage property"],"answer":0,"values":false,"key":false,"explanation":"Australians can gather to protest, but protests must be peaceful and must not injure any person or damage property."},{"id":95,"part":2,"topic":"Values","q":"Do men and women have equal rights in Australia?","options":["Yes, men and women have equal rights","Only at work","No, men have more rights"],"answer":0,"values":false,"key":false,"explanation":"Men and women have equal rights in Australia. It is against the law to discriminate against a person because of their gender."},{"id":96,"part":2,"topic":"Rule of Law","q":"Under the Rule of Law, who must obey Australia's laws?","options":["Only people born in Australia","Everyone except the Prime Minister","Everyone, including government, religious and business leaders and the police"],"answer":2,"values":false,"key":false,"explanation":"No person, group or religious rule is above the law. Everyone, including people in positions of power, must obey Australia's laws."},{"id":97,"part":2,"topic":"Rule of Law","q":"If an Australian law and a religious practice conflict, which one must be followed?","options":["The religious practice","Whichever the person prefers","Australian law"],"answer":2,"values":false,"key":false,"explanation":"Where there is a conflict between an Australian law and a religious practice, Australian law prevails. Religious laws have no legal status in Australia."},{"id":98,"part":2,"topic":"Democracy","q":"Which of these is a privilege of Australian citizenship?","options":["Not obeying the law","Applying for an Australian passport","Not paying tax"],"answer":1,"values":false,"key":false,"explanation":"Australian citizens can apply for an Australian passport and re-enter Australia freely."},{"id":99,"part":2,"topic":"Democracy","q":"Which of these is a responsibility of Australian citizens?","options":["Joining the army at 18","Joining a political party","Serving on a jury if called to do so"],"answer":2,"values":false,"key":false,"explanation":"Citizens must obey the law, vote, defend Australia should the need arise, and serve on a jury if called to do so. Service in the Defence Force is voluntary."},{"id":100,"part":2,"topic":"Democracy","q":"Who must vote in federal and state or territory elections?","options":["Only people born in Australia","Everyone living in Australia","Australian citizens aged 18 years or over"],"answer":2,"values":false,"key":false,"explanation":"Voting is a responsibility for Australian citizens aged 18 years or over, and it is compulsory."},{"id":101,"part":2,"topic":"Democracy","q":"While overseas, what can Australian citizens ask for in times of need?","options":["Consular help from an Australian government official","Permission to break local laws","Help from the Australian army"],"answer":0,"values":false,"key":false,"explanation":"Australian citizens can ask for help from an Australian embassy, high commission or consulate overseas. They must still obey the laws of that country."},{"id":102,"part":2,"topic":"Democracy","q":"How do representatives in parliament answer to the people for their decisions?","options":["Through the courts only","Through elections","They do not have to answer to anyone"],"answer":1,"values":false,"key":false,"explanation":"In a parliamentary democracy, representatives in parliament must answer to the people, through elections, for the decisions they make."},{"id":103,"part":3,"topic":"Government","q":"Why does the Australian Constitution divide the power of government between Parliament, the Executive and the judges?","options":["So the courts can make all the laws","To give the Prime Minister all the power","To stop one person or group from holding all the power"],"answer":2,"values":false,"key":false,"explanation":"The Constitution divides power between the legislative (Parliament), executive and judicial (judges) powers, to stop one person or one group from holding all the power."},{"id":104,"part":3,"topic":"Parliament","q":"Who has the power to make and change laws in Australia?","options":["Parliament","The courts","The Governor-General alone"],"answer":0,"values":false,"key":false,"explanation":"Legislative power is the power to make laws. Parliament has the power to make and change the laws in Australia."},{"id":105,"part":3,"topic":"Senate","q":"How many senators does each state elect?","options":["12","6","2"],"answer":0,"values":false,"key":false,"explanation":"Each state elects 12 senators, and the ACT and Northern Territory elect two each, a total of 76 senators."},{"id":106,"part":3,"topic":"Parliament","q":"After a federal election, who forms the Opposition?","options":["The judges of the High Court","The party with the most members in the Senate","The party or coalition with the second largest number of members in the House of Representatives"],"answer":2,"values":false,"key":false,"explanation":"The party or coalition with the second largest number of members in the House of Representatives forms the Opposition. Its leader is the Leader of the Opposition."},{"id":107,"part":4,"topic":"Values","q":"In Australia, can an employer refuse to hire someone because she is a woman?","options":["No, this is discrimination and is against the law","Only if the boss prefers men","Yes, it is the employer's choice"],"answer":0,"values":true,"key":false,"explanation":"It is against the law to discriminate against a person because of their gender. A person should get a job based on their skills and experience."},{"id":108,"part":4,"topic":"Law","q":"Is it acceptable to use violence to settle a disagreement with your neighbour?","options":["No, violence is against the law","Yes, if they started it","Only if no one sees it"],"answer":0,"values":true,"key":false,"explanation":"It is against the law to be violent towards another person. Australians believe in peaceful disagreement."},{"id":109,"part":4,"topic":"Law","q":"Can a person in Australia be married to more than one person at the same time?","options":["Yes","Only if their religion allows it","No, polygamy is against the law"],"answer":2,"values":true,"key":false,"explanation":"Polygamy (being married to more than one person at the same time) is against the law in Australia and can result in severe penalties, including prison."},{"id":110,"part":4,"topic":"Values","q":"What does mutual respect and tolerance mean in Australia?","options":["Only respecting people who agree with you","Only respecting people from your own culture","Listening to others and respecting their views, even when they are different from your own"],"answer":2,"values":true,"key":false,"explanation":"Mutual respect and tolerance means listening to others and respecting their views and opinions, even when they are different from your own."},{"id":111,"part":4,"topic":"Law","q":"Do Australian laws apply to people from other cultures and backgrounds living in Australia?","options":["No, they can follow the laws of their former country","Yes, Australian laws apply to all people in Australia","Only after they become citizens"],"answer":1,"values":true,"key":false,"explanation":"Australian laws apply to all people in Australia. Regardless of your background or culture, you must follow Australian laws."},{"id":112,"part":4,"topic":"Values","q":"In Australia, who can make their own choices about personal matters such as marriage and religion?","options":["Only men","Both men and women","Only religious leaders"],"answer":1,"values":true,"key":false,"explanation":"Both men and women have the right to make their own independent choices about personal matters, such as marriage and religion."},{"id":113,"part":4,"topic":"Law","q":"Is it acceptable to offer money to a police officer to avoid a fine?","options":["Only small amounts","No, even offering a bribe to a police officer is a crime","Yes, it is normal"],"answer":1,"values":true,"key":false,"explanation":"In Australia, it is a serious crime to bribe the police. It is a crime to even offer a bribe to a police officer."}]}/*QUESTIONS_END*/;
+const QUESTIONS = BANK.questions;
+const BY_ID = Object.fromEntries(QUESTIONS.map(q => [q.id, q]));
+const OFFICIAL_URL = 'https://immi.homeaffairs.gov.au/citizenship/test-and-interview/our-common-bond';
+const PART_META = {
+  1: { title: 'Australia and its people', color: '#0E4D45', desc: 'History, Indigenous culture, states & symbols' },
+  2: { title: 'Democratic beliefs, rights and liberties', color: '#1A6B5A', desc: 'Freedoms, rule of law, equality' },
+  3: { title: 'Government and the law in Australia', color: '#2C7A6B', desc: 'Constitution, parliament, courts, voting' },
+  4: { title: 'Australian values', color: '#8A6A00', desc: 'Must-pass values statements' },
+};
+const SYLLABUS = {
+  1: 'Part 1 Australia and its people',
+  2: 'Part 2 Democratic beliefs, rights & liberties',
+  3: 'Part 3 Government and the law',
+  4: 'Part 4 Australian values',
+};
+
+const S = {
+  view: 'dashboard', mode: 'exam', part: 1, batch: 20, time: 45, shuffle: true,
+  qs: [], idx: 0, answers: [], feedback: false, timeLeft: 45, history: [],
+  deck: [],  // ids not used yet, so Random and Full Mock don't repeat until the deck is used up
+};
+let timer = null;
+
+/* In the iOS app, settings, scores and progress are kept on the device. The website keeps them only for the open tab. */
+const IS_APP = !!(window.Capacitor && window.Capacitor.isNativePlatform && window.Capacitor.isNativePlatform());
+const STORE_KEY = 'mpractice-au';
+const BANK_SIG = QUESTIONS.map(q => q.id).join(',');
+function loadSaved(){
+  if(!IS_APP) return;
+  try{
+    const d = JSON.parse(localStorage.getItem(STORE_KEY) || 'null');
+    if(!d) return;
+    if(['exam','random','part','values','key'].includes(d.mode)) S.mode = d.mode;
+    if([1,2,3,4].includes(d.part)) S.part = d.part;
+    if([10,20,30].includes(d.batch)) S.batch = d.batch;
+    if(d.time===null || [30,45,60,90,135].includes(d.time)) S.time = d.time;
+    if(typeof d.shuffle==='boolean') S.shuffle = d.shuffle;
+    if(Array.isArray(d.history)) S.history = d.history.slice(0,20);
+    if(d.sig===BANK_SIG && Array.isArray(d.deck) && d.deck.length) S.deck = d.deck;  // question ids change when the bank changes
+  }catch(e){}
+}
+function save(){
+  if(!IS_APP) return;
+  try{
+    localStorage.setItem(STORE_KEY, JSON.stringify({sig:BANK_SIG, mode:S.mode, part:S.part, batch:S.batch, time:S.time, shuffle:S.shuffle, history:S.history, deck:S.deck}));
+  }catch(e){}
+}
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const letter = i => String.fromCharCode(65 + i);
+const byPart = p => QUESTIONS.filter(q => q.part === p).length;
+const stats = {
+  total: QUESTIONS.length,
+  values: QUESTIONS.filter(q => q.values).length,
+  keys: QUESTIONS.filter(q => q.key).length,
+  parts: {1: byPart(1), 2: byPart(2), 3: byPart(3), 4: byPart(4)},
+};
+
+function shuffle(a){ const b=[...a]; for(let i=b.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [b[i],b[j]]=[b[j],b[i]]; } return b; }
+function allIds(){ return QUESTIONS.map(q => q.id); }
+function modeLabel(m, part){ return {exam:'Full Mock', random:'Random', part:`Part ${part}`, values:'Values Only', key:'Key Questions'}[m]; }
+
+/* Take up to `count` questions from `candidates`, in deck order (questions not in the deck come last). */
+function takeFromDeck(candidates, count, deck){
+  const pos = id => { const i = deck.indexOf(id); return i === -1 ? Infinity : i; };
+  const picked = [...candidates].sort((a,b) => pos(a.id) - pos(b.id)).slice(0, count);
+  const ids = picked.map(q => q.id);
+  return {picked, rest: deck.filter(id => !ids.includes(id))};
+}
+function pickBatch(){
+  let pool = [];
+  let deck = S.deck.length < S.batch ? shuffle(allIds()) : [...S.deck];
+  if(S.mode==='exam'){
+    const values = shuffle(QUESTIONS.filter(q => q.values)).slice(0, 5);
+    const {picked, rest} = takeFromDeck(QUESTIONS.filter(q => !q.values), S.batch - values.length, deck);
+    pool = shuffle([...values, ...picked]);
+    const used = pool.map(q => q.id);
+    const nd = rest.filter(id => !values.some(v => v.id === id));
+    S.deck = nd.length ? nd : shuffle(allIds().filter(id => !used.includes(id)));
+  } else if(S.mode==='random'){
+    const {picked, rest} = takeFromDeck(QUESTIONS, S.batch, deck);
+    pool = picked;
+    S.deck = rest.length ? rest : shuffle(allIds());
+  } else if(S.mode==='part'){
+    pool = shuffle(QUESTIONS.filter(q => q.part === S.part)).slice(0, S.batch);
+    const used = pool.map(q => q.id);
+    const nd = S.deck.filter(id => !used.includes(id));
+    S.deck = nd.length ? nd : shuffle(allIds());
+  } else if(S.mode==='values'){
+    pool = shuffle(QUESTIONS.filter(q => q.values)).slice(0, S.batch);
+  } else if(S.mode==='key'){
+    pool = shuffle(QUESTIONS.filter(q => q.key)).slice(0, S.batch);
+  }
+  return pool.map(raw => {
+    const order = raw.options.map((_,i) => i);
+    const opts = S.shuffle ? shuffle(order) : order;
+    return {raw, opts, correct: opts.indexOf(raw.answer)};
+  });
+}
+
+/* ---------- views ---------- */
+function showView(name, scroll=true){
+  S.view = name;
+  ['dashboard','quiz','result','about','privacy'].forEach(v => $(v).classList.toggle('hidden', v!==name));
+  $('aboutBtn').classList.toggle('hidden', name==='quiz');
+  $('quizBar').classList.toggle('hidden', name!=='quiz');
+  if(name==='dashboard') renderDashboard();
+  if(scroll) window.scrollTo(0,0);
+}
+
+function renderDashboard(){
+  const partCards = [1,2,3,4].map(p=>{
+    const meta = PART_META[p], active = S.part===p && S.mode==='part';
+    return `<button data-act="part" data-v="${p}" class="text-left rounded-[20px] p-4 md:p-5 bg-[var(--paper)] border shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition-all hover:shadow-[0_12px_32px_rgba(0,0,0,0.10)] hover:-translate-y-[1px] ${active? 'border-[var(--green)] ring-2 ring-[var(--green)]/20' : 'border-[var(--line)]'}">
+      <div class="flex justify-between items-start">
+        <div class="w-8 h-8 rounded-full grid place-items-center text-[13px] font-bold text-white" style="background:${meta.color}">${p}</div>
+        <span class="text-[11px] px-2.5 py-1 rounded-full bg-[#F1E9D5] border border-[var(--line)] font-bold">${stats.parts[p]} Qs</span>
+      </div>
+      <div class="mt-3">
+        <div class="text-[13px] font-bold leading-tight">Part ${p}: ${esc(meta.title)}</div>
+        <div class="text-[11px] text-[var(--muted)] leading-[1.3] mt-1">${esc(meta.desc)}</div>
+      </div>
+      <div class="mt-3 text-[11px] font-bold flex items-center gap-1" style="color:${meta.color}">${active? '● Selected – Practicing this Part' : 'Filter this Part →'}</div>
+    </button>`;
+  }).join('');
+
+  const modes = [
+    {k:'exam', title:'Full Mock – 20 Questions with 5 Values Mandatory', sub:'Closest to real test, 5 Values must be all correct'},
+    {k:'random', title:'Random 20 – Infinite Pool', sub:'Non-repeating until deck exhausted, then auto reshuffle'},
+    {k:'part', title:`Part ${S.part} Focus`, sub:`Only practice Part ${S.part} questions`},
+    {k:'values', title:'Australian Values Only', sub:`${stats.values} Values questions – the must-pass hurdle`},
+    {k:'key', title:'Key Questions', sub:`${stats.keys} key + commonly missed questions`},
+  ].map(m=>{
+    const on = S.mode===m.k;
+    return `<button data-act="mode" data-v="${m.k}" class="text-left rounded-[16px] border px-4 py-3 transition-all ${on? 'bg-[var(--green)] text-white border-[var(--green)] shadow-[0_6px_20px_rgba(14,77,69,0.25)]' : 'bg-[#FFFEFB] border-[var(--line)] hover:border-[var(--green)]/40'}">
+      <div class="text-[13px] font-bold leading-tight ${on? 'text-white' : 'text-[var(--ink)]'}">${esc(m.title)}</div>
+      <div class="text-[11px] mt-1 leading-[1.3] ${on? 'text-[#CDE3DD]' : 'text-[var(--muted)]'}">${esc(m.sub)}</div>
+    </button>`;
+  }).join('');
+
+  const batchBtns = [10,20,30].map(n=>`<button data-act="batch" data-v="${n}" class="flex-1 h-[44px] rounded-full border font-bold text-[14px] transition-colors ${S.batch===n? 'bg-[var(--green)] text-white border-[var(--green)]' : 'bg-white border-[var(--line)] hover:border-[var(--green)]/30'}">${n}</button>`).join('');
+  const timeBtns = [[30,'30s'],[45,'45s'],[60,'60s'],[90,'90s'],[135,'135s Real Exam'],[null,'Unlimited']].map(([v,l])=>
+    `<button data-act="time" data-v="${v===null?'none':v}" class="h-[40px] px-3.5 rounded-full border text-[12px] font-bold transition-colors ${S.time===v? 'bg-[var(--gold)] border-[var(--gold)] text-[var(--green)]' : 'bg-white border-[var(--line)] hover:border-[var(--green)]/30'}">${l}</button>`).join('');
+
+  const syllabus = [1,2,3,4].map(p=>`<div class="flex gap-3 items-center">
+      <div class="w-[36px] h-[36px] rounded-full bg-[#F1E9D5] grid place-items-center text-[12px] font-bold border border-[var(--line)] shrink-0">${p}</div>
+      <div class="flex-1 min-w-0">
+        <div class="text-[12px] font-bold truncate">${esc(SYLLABUS[p])}</div>
+        <div class="h-[6px] rounded-full bg-[#EEE6D1] mt-1 overflow-hidden"><div class="h-full bg-[var(--green)]" style="width:${stats.parts[p]/stats.total*100}%"></div></div>
+      </div>
+      <div class="text-[12px] font-bold shrink-0">${stats.parts[p]} Qs</div>
+    </div>`).join('');
+
+  const history = S.history.length===0
+    ? `<div class="mt-3 text-[13px] text-[var(--muted)] leading-[1.6]">No history yet. Click Start to begin – scoring will appear here. ${IS_APP? 'Saved on this device only.' : 'Cleared when you close the tab for privacy.'}</div>`
+    : `<div class="mt-3 space-y-2 max-h-[260px] overflow-auto pr-1">${S.history.map(h=>`
+        <div class="flex items-center justify-between rounded-[12px] border border-[var(--line)] px-3 py-2.5 bg-[#FFFEFB]">
+          <div>
+            <div class="text-[12px] font-bold">${esc(h.label)} · ${h.score}/${h.total}</div>
+            <div class="text-[10px] text-[var(--muted)]">${esc(h.date)}</div>
+          </div>
+          <div class="text-[11px] px-2.5 py-1 rounded-full font-bold ${h.passed? 'bg-[#DDF0E7] text-[#1B7A5A]' : 'bg-[#FBE2DD] text-[#C4503A]'}">${h.passed? 'PASSED' : 'RETRY'}</div>
+        </div>`).join('')}</div>`;
+
+  $('dashboard').innerHTML = `
+  <div class="rounded-[24px] bg-[var(--green)] text-[#F6F1E7] p-5 md:p-8 relative overflow-hidden shadow-[0_20px_50px_rgba(14,77,69,0.25)]">
+    <div class="absolute right-[-20px] top-[-30px] w-[200px] h-[200px] rounded-full bg-[#FFCC33]/15 pointer-events-none"></div>
+    <div class="absolute right-[60px] bottom-[-40px] w-[120px] h-[120px] rounded-full bg-white/5 pointer-events-none"></div>
+    <div class="relative grid md:grid-cols-[1.2fr_0.8fr] gap-6 items-start">
+      <div>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="px-3 py-1 rounded-full bg-white/10 text-[12px] border border-white/15 backdrop-blur">Question Bank · ${stats.total} Questions</span>
+          <span class="px-3 py-1 rounded-full bg-[var(--gold)] text-[var(--green)] text-[12px] font-bold">${stats.keys} Key Questions</span>
+          <span class="px-3 py-1 rounded-full bg-white text-[var(--green)] text-[12px] font-bold">${stats.values} Values Questions</span>
+        </div>
+        <h2 class="serif text-[28px] md:text-[42px] leading-[0.95] font-bold">Practice without limits.<br/>Until you know every answer.</h2>
+        <p class="mt-4 text-[15px] md:text-[16px] text-[#D7E8E2] max-w-[560px] leading-[1.6]">Simple, free and private – no sign-up, no ads, no cookies. Large buttons, fixed answer layout, same timer for every question. Based on the testable sections of <em>Our Common Bond</em> from the Department of Home Affairs.</p>
+        <div class="mt-6 flex flex-wrap gap-2">
+          <div class="px-4 py-2 rounded-full bg-[var(--paper)] text-[var(--green)] text-[13px] font-bold shadow flex items-center gap-2">
+            <span class="w-5 h-5 rounded-full bg-[var(--green)] text-white grid place-items-center text-[11px]">i</span> Pass Rule: 75% + 5 Values questions all correct
+          </div>
+          <div class="px-4 py-2 rounded-full bg-[#0B3E38] border border-white/10 text-[13px] text-[#CDE3DD]">Choose 135s for real exam speed</div>
+        </div>
+        <div class="mt-4 text-[12px] text-[#A7C4BC]">Free · No sign-up · No ads · No cookies · Made by mStudio</div>
+      </div>
+      <div class="bg-[#0B3E38] rounded-[20px] p-4 border border-white/10">
+        <div class="text-[12px] font-bold tracking-widest text-[#8FBEB1] uppercase">What is inside?</div>
+        <div class="mt-3 grid grid-cols-2 gap-2">
+          ${[['Total Questions',stats.total],['Values Must-Pass',stats.values],['Key / Tricky',stats.keys],['Practice Mode','Infinite']].map(([l,v])=>`
+          <div class="rounded-[14px] bg-white/[0.06] border border-white/10 p-3">
+            <div class="text-[20px] font-bold leading-none">${v}</div>
+            <div class="text-[10px] text-[#A7C4BC] mt-1 uppercase tracking-wide">${l}</div>
+          </div>`).join('')}
+        </div>
+        <div class="mt-4 rounded-[12px] bg-[#FFCC33] text-[#0E4D45] p-3 text-[12px] leading-[1.4] font-medium">
+          <strong>Real test format:</strong> 20 questions, 45 min total (~135s per Q). 5 Australian values questions appear every time and you must answer all 5 correctly.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-6 grid grid-cols-1 md:grid-cols-4 gap-3">${partCards}</div>
+
+  <div class="mt-6 grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-4 items-start">
+    <div class="rounded-[24px] bg-[var(--paper)] border border-[var(--line)] p-5 md:p-6 shadow-[0_8px_24px_rgba(0,0,0,0.06)]">
+      <div class="flex items-center justify-between gap-2">
+        <h3 class="font-bold text-[16px]">Practice Settings</h3>
+        <span class="text-[11px] px-2 py-1 rounded-full bg-[#F6F1E7] border border-[var(--line)]">Large tap targets · Accessible</span>
+      </div>
+      <p class="text-[13px] text-[var(--muted)] mt-1">Pick a mode, hit start, get ${S.batch} questions instantly. Answers are always vertical with fixed size.</p>
+
+      <div class="mt-5">
+        <div class="text-[12px] font-bold tracking-wide text-[var(--muted)] uppercase">Mode Selection</div>
+        <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-2">${modes}</div>
+      </div>
+
+      <div class="mt-5 grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div>
+          <div class="text-[11px] font-bold text-[var(--muted)] uppercase tracking-wide">Batch Size</div>
+          <div class="mt-2 flex gap-2">${batchBtns}</div>
+          <div class="text-[10px] text-[var(--muted)] mt-1">20 recommended for real exam</div>
+        </div>
+        <div class="md:col-span-2">
+          <div class="text-[11px] font-bold text-[var(--muted)] uppercase tracking-wide">Time per Question (Same for all)</div>
+          <div class="mt-2 flex flex-wrap gap-2">${timeBtns}</div>
+        </div>
+      </div>
+
+      <div class="mt-5 flex items-center justify-between rounded-[14px] bg-[#F8F1DC] border border-[#EADFAE] px-4 py-3 gap-3">
+        <div>
+          <div class="text-[13px] font-bold">Shuffle Answer Positions</div>
+          <div class="text-[11px] text-[var(--muted)] leading-[1.3]">On for exam realism – button size and vertical layout never change</div>
+        </div>
+        <button data-act="shuffle" aria-label="Toggle shuffle" class="w-[54px] h-[32px] rounded-full p-1 transition-colors shrink-0 ${S.shuffle? 'bg-[var(--green)]' : 'bg-[#D6CBB0]'}">
+          <div class="w-[24px] h-[24px] rounded-full bg-white shadow transition-transform ${S.shuffle? 'translate-x-[22px]' : 'translate-x-0'}"></div>
+        </button>
+      </div>
+
+      <button data-act="start" class="mt-6 w-full h-[60px] rounded-full bg-[var(--green)] text-white font-bold text-[18px] shadow-[0_12px_24px_rgba(14,77,69,0.3)] hover:bg-[#103F38] active:scale-[0.99] transition-all flex items-center justify-center gap-2">
+        ▶ Start ${S.batch} Questions
+        <span class="text-[11px] font-normal bg-[var(--gold)] text-[var(--green)] px-2.5 py-1 rounded-full ml-1 uppercase tracking-wide">Large Buttons</span>
+      </button>
+      <div class="mt-3 text-center text-[11px] text-[var(--muted)]">Used ${stats.total - S.deck.length}/${stats.total} · No repeat until reshuffle · ${new Date().toLocaleDateString('en-AU')}</div>
+    </div>
+
+    <div class="space-y-4">
+      <div class="rounded-[24px] bg-[#FFFBF2] border border-[var(--line)] p-5 shadow-[0_8px_24px_rgba(0,0,0,0.06)]">
+        <div class="flex items-center justify-between">
+          <h4 class="font-bold text-[14px]">Syllabus Overview</h4>
+          <span class="text-[11px] px-2 py-1 rounded-full bg-[var(--green)] text-white font-bold">OUR COMMON BOND</span>
+        </div>
+        <div class="mt-4 space-y-3">${syllabus}</div>
+        <div class="mt-5 grid grid-cols-3 gap-2 text-center">
+          <div class="rounded-[14px] bg-[#F6F1E7] border border-[var(--line)] py-2.5"><div class="text-[18px] font-bold">${stats.total}</div><div class="text-[10px] text-[var(--muted)] uppercase tracking-wide">Total Bank</div></div>
+          <div class="rounded-[14px] bg-[#FFF6D1] border border-[#F2E4A8] py-2.5"><div class="text-[18px] font-bold">${stats.values}</div><div class="text-[10px] text-[var(--muted)] uppercase tracking-wide">Values Must-Pass</div></div>
+          <div class="rounded-[14px] bg-[#EAF5F1] border border-[#C6E2D8] py-2.5"><div class="text-[18px] font-bold">${stats.keys}</div><div class="text-[10px] text-[var(--muted)] uppercase tracking-wide">Key Marked</div></div>
+        </div>
+        <div class="mt-4 text-[11px] leading-[1.5] text-[var(--muted)] bg-[#F6F1E7] border border-[var(--line)] rounded-[12px] p-3">
+          Based on the testable sections PDF from Home Affairs. This is an unofficial practice tool, not affiliated with the Australian Government. Questions are for study aid.
+        </div>
+      </div>
+
+      <div class="rounded-[24px] bg-[var(--paper)] border border-[var(--line)] p-5">
+        <div class="flex items-center justify-between gap-2">
+          <h4 class="font-bold text-[14px]">Recent Sessions (${IS_APP? 'Saved on This Device' : 'This Tab Only'})</h4>
+          ${IS_APP && S.history.length? '<button data-act="clear" class="text-[12px] font-bold text-[var(--green)] underline underline-offset-2">Clear</button>' : ''}
+        </div>
+        ${history}
+      </div>
+
+      <div class="rounded-[20px] bg-[#0E4D45] text-[#D7E8E2] p-4 border border-white/10">
+        <div class="text-[12px] font-bold uppercase tracking-widest text-[#8FBEB1]">About mPractice</div>
+        <div class="mt-2 text-[13px] leading-[1.5]">Made by mStudio. Free to use, no sign-up, no ads, no cookies. All questions are built into the app – your answers are never sent anywhere.</div>
+        <div class="mt-3 flex flex-wrap gap-2">
+          <button data-act="page" data-v="about" class="text-[12px] px-3 py-1.5 rounded-full bg-[#FFCC33] text-[#0E4D45] font-bold">About mStudio</button>
+          <button data-act="page" data-v="privacy" class="text-[12px] px-3 py-1.5 rounded-full bg-white/10 border border-white/15 font-bold">Privacy Policy</button>
+        </div>
+      </div>
+    </div>
+  </div>`;
+}
+
+function qChips(raw, short){
+  return `<span class="px-2.5 py-1 rounded-full bg-[#F1E9D5] border border-[var(--line)] text-[11px] font-bold">Part ${raw.part}</span>`
+    + `<span class="px-2.5 py-1 rounded-full bg-[#FFF6D1] border border-[#F2E4A8] text-[11px]">${esc(raw.topic)}</span>`
+    + (raw.values? `<span class="px-2.5 py-1 rounded-full bg-[var(--green)] text-white text-[11px] font-bold">${short? 'VALUES' : 'VALUES MUST-PASS'}</span>` : '')
+    + (raw.key? `<span class="px-2.5 py-1 rounded-full bg-[var(--gold)] text-[var(--green)] text-[11px] font-bold">${short? 'KEY' : 'KEY QUESTION'}</span>` : '');
+}
+
+function renderQuiz(){
+  const q = S.qs[S.idx], total = S.qs.length;
+  const ans = S.answers[S.idx];
+  const exam = S.mode==='exam';
+  const showFb = !exam && S.feedback;
+  const pct = ((S.idx+1)/total)*100;
+  $('quizBarFill').style.width = pct+'%';
+
+  const opts = q.opts.map((orig,i)=>{
+    const selected = !!ans && ans.selected===i, right = i===q.correct;
+    let cls = 'bg-white border-[var(--line)] hover:border-[var(--green)]/40 hover:bg-[#FFFEFB]';
+    if(showFb){
+      if(right) cls = 'bg-[#E6F4EF] border-[#1B7A5A] text-[#0E4D45]';
+      else if(selected) cls = 'bg-[#FBE9E5] border-[#C4503A] text-[#6B2A20]';
+      else cls = 'bg-white border-[var(--line)] opacity-70';
+    } else if(selected && exam){
+      cls = 'bg-[#F6F1E7] border-[var(--green)]';
+    }
+    const dot = (selected? 'bg-[var(--green)] text-white border-[var(--green)]' : 'bg-[#F6F1E7] border-[var(--line)] text-[var(--muted)]')
+      + (showFb && right? ' !bg-[#1B7A5A] !text-white !border-[#1B7A5A]' : '');
+    return `<button data-act="answer" data-v="${i}" ${showFb? 'disabled' : ''} class="group w-full text-left min-h-[64px] rounded-[16px] border-[1.5px] px-4 md:px-5 py-4 flex items-center gap-4 transition-all active:scale-[0.99] ${cls}">
+      <div class="w-[36px] h-[36px] shrink-0 rounded-full grid place-items-center text-[14px] font-bold border ${dot}">${letter(i)}</div>
+      <div class="flex-1"><div class="text-[17px] md:text-[18px] font-bold leading-[1.3]">${esc(q.raw.options[orig])}</div></div>
+      ${showFb && right? '<span class="text-[12px] font-bold text-[#1B7A5A]">✓ Correct</span>' : ''}
+      ${showFb && selected && !right? '<span class="text-[12px] font-bold text-[#C4503A]">✗ Your choice</span>' : ''}
+    </button>`;
+  }).join('');
+
+  let fb = '';
+  if(showFb){
+    const msg = ans.timedOut? "⏰ Time's up – counted as incorrect. Keep going!" : ans.correct? '🎉 Correct! Well done!' : "💪 Not quite – review this one, you'll get it next time!";
+    fb = `<div class="mt-6 rounded-[16px] border p-4 bg-[#FFFEFB] border-[var(--line)]">
+      <div class="text-[14px] font-bold ${ans.correct? 'text-[#1B7A5A]' : 'text-[#C4503A]'}">${msg}</div>
+      ${q.raw.explanation? `<div class="mt-2 text-[13px] leading-[1.6] text-[var(--ink)]"><span class="font-bold">Explanation:</span> ${esc(q.raw.explanation)}</div>` : ''}
+      <button data-act="next" class="mt-4 w-full h-[52px] rounded-full bg-[var(--green)] text-white font-bold text-[16px] hover:bg-[#103F38]">Next Question →</button>
+    </div>`;
+  } else if(exam && ans){
+    fb = `<div class="mt-4 text-center text-[12px] text-[var(--muted)]">Answered – auto-advancing to next question… (Explanations shown after full mock)</div>`;
+  }
+
+  const C = 2*Math.PI*22;
+  $('quiz').innerHTML = `
+  <div class="flex items-center justify-between gap-3 mb-4">
+    <div class="flex items-center gap-2">
+      <div class="flex items-center gap-2 bg-[var(--paper)] border border-[var(--line)] rounded-full px-3 py-2 shadow-sm">
+        <span class="text-[11px] font-bold tracking-wide uppercase">Progress</span>
+        <span class="text-[14px] font-bold">${S.idx+1} / ${total}</span>
+        <div class="w-[84px] h-[6px] rounded-full bg-[#EEE6D1] overflow-hidden"><div class="h-full bg-[var(--green)] transition-all" style="width:${pct}%"></div></div>
+      </div>
+      <div class="hidden md:flex gap-2">${qChips(q.raw,false)}</div>
+    </div>
+    <div class="flex items-center gap-3">
+      <div class="relative w-[56px] h-[56px] grid place-items-center">
+        <svg width="56" height="56" class="-rotate-90">
+          <circle cx="28" cy="28" r="22" stroke="#EEE6D1" stroke-width="6" fill="none"/>
+          <circle id="timerRing" cx="28" cy="28" r="22" stroke="#0E4D45" stroke-width="6" fill="none" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="0" class="transition-all duration-1000"/>
+        </svg>
+        <div class="absolute text-center">
+          <div id="timerText" class="text-[16px] font-bold leading-none"></div>
+          <div class="text-[9px] text-[var(--muted)] -mt-[1px] uppercase">sec</div>
+        </div>
+      </div>
+      <button data-act="exit" class="h-[36px] px-4 rounded-full bg-white border border-[var(--line)] text-[12px] font-bold hover:border-[var(--green)]/40">Exit</button>
+    </div>
+  </div>
+
+  <div class="flex md:hidden gap-2 mb-3 flex-wrap">${qChips(q.raw,true)}</div>
+
+  <div class="rounded-[24px] bg-[var(--paper)] border border-[var(--line)] shadow-[0_12px_32px_rgba(0,0,0,0.08)] overflow-hidden">
+    <div class="p-6 md:p-8">
+      <div class="flex items-start gap-3">
+        <div class="min-w-[32px] h-[32px] rounded-full bg-[var(--green)] text-white grid place-items-center text-[14px] font-bold">${S.idx+1}</div>
+        <div class="flex-1">
+          <h2 class="text-[21px] md:text-[24px] font-bold leading-[1.25] tracking-tight">${esc(q.raw.q)}</h2>
+        </div>
+      </div>
+      <div class="mt-6 grid gap-3">${opts}</div>
+      ${fb}
+    </div>
+    <div class="px-6 md:px-8 pb-5 flex justify-between items-center text-[11px] text-[var(--muted)]">
+      <span>Fixed vertical layout · Large buttons · ${S.shuffle? 'Shuffled' : 'Not shuffled'}</span>
+      <span>Bank ID #${q.raw.id}</span>
+    </div>
+  </div>`;
+  updateTimer();
+}
+
+function updateTimer(){
+  const text = $('timerText'), ring = $('timerRing');
+  if(!text || !ring) return;
+  const C = 2*Math.PI*22;
+  text.textContent = S.time===null? '∞' : S.timeLeft;
+  ring.style.strokeDashoffset = C*(1 - S.timeLeft/(S.time ?? 60));
+  ring.setAttribute('stroke', S.timeLeft < 10? '#C4503A' : '#0E4D45');
+}
+function startTimer(){
+  clearInterval(timer);
+  if(S.time===null) return;
+  timer = setInterval(()=>{
+    if(S.timeLeft <= 1){ S.timeLeft = S.time; answer(null); }
+    else { S.timeLeft--; updateTimer(); }
+  },1000);
+}
+
+function startQuiz(){
+  S.qs = pickBatch();
+  save();
+  S.idx = 0; S.answers = new Array(S.qs.length).fill(null); S.feedback = false;
+  S.timeLeft = S.time ?? 60;
+  showView('quiz');
+  renderQuiz(); startTimer();
+}
+function answer(i){
+  if(S.view!=='quiz' || S.answers[S.idx]) return;
+  const q = S.qs[S.idx];
+  S.answers[S.idx] = {id: q.raw.id, selected: i, correct: i!==null && i===q.correct, timedOut: i===null};
+  if(S.mode==='exam'){
+    if(i===null) return next();
+    renderQuiz();
+    const at = S.idx;
+    setTimeout(()=>{ if(S.view==='quiz' && S.idx===at) next(); }, 350);
+  } else {
+    clearInterval(timer);
+    S.feedback = true; renderQuiz();
+  }
+}
+function next(){
+  if(S.idx+1 >= S.qs.length) return finish();
+  S.idx++; S.feedback = false;
+  S.timeLeft = S.time ?? 60;
+  renderQuiz(); startTimer();
+}
+function finish(){
+  clearInterval(timer);
+  const total = S.qs.length, correct = S.answers.filter(a=>a&&a.correct).length;
+  const valuesOk = S.qs.every((q,i)=> !q.raw.values || (S.answers[i] && S.answers[i].correct));
+  const passed = S.mode==='exam' ? correct/total >= 0.75 && valuesOk : correct/total >= 0.6;
+  S.history = [{label: modeLabel(S.mode, S.part), score: correct, total, passed, date: new Date().toLocaleString('en-AU')}, ...S.history].slice(0,20);
+  save();
+  renderResult();
+  showView('result', false);
+}
+
+function renderResult(){
+  const total = S.qs.length, exam = S.mode==='exam';
+  const correct = S.answers.filter(a=>a&&a.correct).length;
+  const wrong = S.qs.map((q,i)=>({q,a:S.answers[i]})).filter(x=>x.a && !x.a.correct);
+  const valuesWrong = wrong.filter(x=>x.q.raw.values).length;
+  const good = correct/total >= 0.75;
+  const ringOk = good && (!exam || valuesWrong===0);
+  const head = exam
+    ? (good && valuesWrong===0? "🎉 Mock Passed! You're ready!" : "💪 Keep practicing – you'll pass next time!")
+    : (good? '👏 Great score! Strong work!' : '📚 Review the mistakes below – then try again!');
+  const text = exam
+    ? `Real test requires 75% + all 5 Values correct. You got ${correct} correct, Values wrong: ${valuesWrong}. ${valuesWrong===0? 'All Values correct – excellent!' : 'Values questions are must-pass – focus on Part 4.'}`
+    : `You completed ${total} questions, ${correct} correct. Mistakes are collected below for review.`;
+  const parts = [1,2,3,4].map(p=>{
+    const items = S.qs.map((q,i)=>({q,a:S.answers[i]})).filter(x=>x.q.raw.part===p);
+    if(!items.length) return '';
+    const cor = items.filter(x=>x.a&&x.a.correct).length;
+    return `<div class="rounded-[12px] bg-[#F6F1E7] border border-[var(--line)] p-2 text-center">
+      <div class="text-[10px] text-[var(--muted)] uppercase tracking-wide font-bold">Part ${p}</div>
+      <div class="text-[14px] font-bold">${cor}/${items.length}</div>
+    </div>`;
+  }).join('');
+  const review = wrong.length? `
+    <div class="mt-8">
+      <h3 class="font-bold text-[16px]">Review Mistakes (${wrong.length}) – Take your time</h3>
+      <div class="mt-3 grid gap-3">${wrong.map(({q,a})=>`
+        <div class="rounded-[16px] border border-[#F0D6D0] bg-[#FFF8F6] p-4">
+          <div class="flex gap-2 text-[11px] mb-2 flex-wrap">
+            <span class="px-2 py-1 rounded-full bg-[#F1E9D5] border font-bold">Part ${q.raw.part}</span>
+            ${q.raw.values? '<span class="px-2 py-1 rounded-full bg-[#0E4D45] text-white font-bold">VALUES</span>' : ''}
+            ${q.raw.key? '<span class="px-2 py-1 rounded-full bg-[#FFCC33] text-[#0E4D45] font-bold">KEY</span>' : ''}
+            <span class="px-2 py-1 rounded-full bg-white border">${esc(q.raw.topic)}</span>
+          </div>
+          <div class="font-bold text-[15px] leading-[1.4]">${esc(q.raw.q)}</div>
+          <div class="mt-3 grid gap-2">${q.opts.map((orig,i)=>{
+            const right = i===q.correct, yours = a.selected===i;
+            return `<div class="rounded-[10px] border px-3 py-2.5 text-[13px] flex justify-between gap-3 ${right? 'bg-[#E6F4EF] border-[#1B7A5A] font-bold' : yours? 'bg-[#FBE9E5] border-[#C4503A]' : 'bg-white border-[var(--line)]'}">
+              <span>${letter(i)}. ${esc(q.raw.options[orig])}</span>
+              <span class="text-[11px] font-bold shrink-0">${right? 'Correct answer' : yours? 'Your choice' : ''}</span>
+            </div>`;
+          }).join('')}</div>
+          ${q.raw.explanation? `<div class="mt-3 text-[12px] text-[var(--muted)] leading-[1.5]"><span class="font-bold text-[var(--ink)]">Explanation:</span> ${esc(q.raw.explanation)}</div>` : ''}
+        </div>`).join('')}</div>
+    </div>` : `
+    <div class="mt-8 rounded-[16px] bg-[#EAF5F1] border border-[#C6E2D8] p-6 text-center">
+      <div class="text-[20px] font-bold">Perfect Score! 🎉</div>
+      <div class="text-[13px] text-[var(--muted)] mt-1 leading-[1.5]">All ${total} correct! Try 135s real exam speed or switch to a different Part to stay sharp.</div>
+    </div>`;
+
+  $('result').innerHTML = `
+  <div class="rounded-[28px] bg-[var(--paper)] border border-[var(--line)] shadow-[0_16px_40px_rgba(0,0,0,0.08)] p-6 md:p-8">
+    <div class="flex flex-col md:flex-row gap-6 items-start">
+      <div class="w-[120px] h-[120px] rounded-full grid place-items-center border-[8px] shrink-0" style="border-color:${ringOk? '#1B7A5A' : '#C4503A'};background:#FFFBF2">
+        <div class="text-center">
+          <div class="text-[32px] font-bold leading-none">${correct}/${total}</div>
+          <div class="text-[11px] text-[var(--muted)] mt-1 font-bold">${Math.round(correct/total*100)}%</div>
+        </div>
+      </div>
+      <div class="flex-1 min-w-0">
+        <h2 class="serif text-[26px] md:text-[30px] font-bold leading-[1.1]">${head}</h2>
+        <p class="mt-3 text-[14px] leading-[1.6] text-[var(--muted)]">${text}</p>
+        <div class="mt-4 grid grid-cols-4 gap-2">${parts}</div>
+      </div>
+    </div>
+    <div class="mt-8 grid md:grid-cols-2 gap-3">
+      <button data-act="start" class="h-[56px] rounded-full bg-[var(--green)] text-white font-bold text-[16px] shadow hover:bg-[#103F38] transition-colors">Next ${S.batch} Questions → Infinite Practice</button>
+      <button data-act="settings" class="h-[56px] rounded-full bg-white border border-[var(--line)] font-bold text-[16px] hover:border-[var(--green)]/30">Back to Settings</button>
+    </div>
+    ${review}
+  </div>`;
+}
+
+/* ---------- events ---------- */
+document.addEventListener('click', e=>{
+  const b = e.target.closest('[data-act]');
+  if(!b || b.disabled) return;
+  const v = b.dataset.v;
+  switch(b.dataset.act){
+    case 'page': clearInterval(timer); showView(v); break;
+    case 'mode': S.mode = v; save(); renderDashboard(); break;
+    case 'part': S.mode = 'part'; S.part = parseInt(v); save(); renderDashboard(); break;
+    case 'batch': S.batch = parseInt(v); save(); renderDashboard(); break;
+    case 'time': S.time = v==='none'? null : parseInt(v); save(); renderDashboard(); break;
+    case 'shuffle': S.shuffle = !S.shuffle; save(); renderDashboard(); break;
+    case 'clear': S.history = []; save(); renderDashboard(); break;
+    case 'start': startQuiz(); break;
+    case 'answer': answer(parseInt(v)); break;
+    case 'next': next(); break;
+    case 'exit': clearInterval(timer); showView('dashboard', false); break;
+    case 'settings': showView('dashboard', false); break;
+  }
+});
+
+if(IS_APP) document.body.classList.add('is-app');
+loadSaved();
+if(!S.deck.length) S.deck = shuffle(allIds());
+document.querySelectorAll('.js-total').forEach(e=> e.textContent = stats.total);
+document.querySelectorAll('.js-official').forEach(a=> a.href = OFFICIAL_URL);
+showView('dashboard');
+</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "bf5ca290267741a49d1cf48c17cac9a7"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
 </html>

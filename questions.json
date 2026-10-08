@@ -1,0 +1,1687 @@
+{
+ "parts": [
+  {
+   "part": 1,
+   "title": "Australia and its people"
+  },
+  {
+   "part": 2,
+   "title": "Australia's democratic beliefs, rights and liberties"
+  },
+  {
+   "part": 3,
+   "title": "Government and the law in Australia"
+  },
+  {
+   "part": 4,
+   "title": "Australian values"
+  }
+ ],
+ "questions": [
+  {
+   "id": 1,
+   "part": 1,
+   "topic": "Aboriginal peoples",
+   "q": "Who are the traditional owners of the land in Australia?",
+   "options": [
+    "European explorers",
+    "Aboriginal and Torres Strait Islander peoples",
+    "British settlers"
+   ],
+   "answer": 1,
+   "values": false,
+   "key": true,
+   "explanation": "Aboriginal and Torres Strait Islander peoples are the first inhabitants, with oldest continuous cultures."
+  },
+  {
+   "id": 2,
+   "part": 1,
+   "topic": "Aboriginal peoples",
+   "q": "Approximately what percentage of Australia's population are Aboriginal and Torres Strait Islander peoples?",
+   "options": [
+    "About 15%",
+    "About 3%",
+    "About 25%"
+   ],
+   "answer": 1,
+   "values": false,
+   "key": true,
+   "explanation": "About 3% of population."
+  },
+  {
+   "id": 3,
+   "part": 1,
+   "topic": "Early settlement",
+   "q": "When did the First Fleet arrive at Sydney Cove?",
+   "options": [
+    "25 April 1915",
+    "26 January 1788",
+    "1 January 1901"
+   ],
+   "answer": 1,
+   "values": false,
+   "key": true,
+   "explanation": "First Fleet 11 ships led by Captain Arthur Phillip arrived 26 Jan 1788."
+  },
+  {
+   "id": 4,
+   "part": 1,
+   "topic": "Early settlement",
+   "q": "How many ships were in the First Fleet?",
+   "options": [
+    "6 ships",
+    "11 ships",
+    "20 ships"
+   ],
+   "answer": 1,
+   "values": false,
+   "key": false,
+   "explanation": "11 ships."
+  },
+  {
+   "id": 5,
+   "part": 1,
+   "topic": "Early settlement",
+   "q": "Who was the captain of the First Fleet?",
+   "options": [
+    "Captain Arthur Phillip",
+    "Captain William Bligh",
+    "Captain James Cook"
+   ],
+   "answer": 0,
+   "values": false,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 6,
+   "part": 1,
+   "topic": "Federation",
+   "q": "When did the Commonwealth of Australia come into existence (Federation)?",
+   "options": [
+    "3 March 1986",
+    "26 January 1788",
+    "1 January 1901"
+   ],
+   "answer": 2,
+   "values": false,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 7,
+   "part": 1,
+   "topic": "States and territories",
+   "q": "How many states are there in Australia?",
+   "options": [
+    "8 states",
+    "4 states",
+    "6 states"
+   ],
+   "answer": 2,
+   "values": false,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 8,
+   "part": 1,
+   "topic": "States and territories",
+   "q": "Which are Australia's two mainland territories?",
+   "options": [
+    "Tasmania and Victoria",
+    "Jervis Bay and Norfolk Island",
+    "Australian Capital Territory and Northern Territory"
+   ],
+   "answer": 2,
+   "values": false,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 9,
+   "part": 1,
+   "topic": "States and territories",
+   "q": "What is the capital city of New South Wales?",
+   "options": [
+    "Melbourne",
+    "Sydney",
+    "Canberra"
+   ],
+   "answer": 1,
+   "values": false,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 10,
+   "part": 1,
+   "topic": "States and territories",
+   "q": "What is the capital city of Australia?",
+   "options": [
+    "Canberra",
+    "Melbourne",
+    "Sydney"
+   ],
+   "answer": 0,
+   "values": false,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 11,
+   "part": 1,
+   "topic": "States",
+   "q": "What is the capital of Victoria?",
+   "options": [
+    "Brisbane",
+    "Melbourne",
+    "Adelaide"
+   ],
+   "answer": 1,
+   "values": false,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 12,
+   "part": 1,
+   "topic": "States",
+   "q": "What is the capital of Queensland?",
+   "options": [
+    "Perth",
+    "Brisbane",
+    "Darwin"
+   ],
+   "answer": 1,
+   "values": false,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 13,
+   "part": 1,
+   "topic": "States",
+   "q": "What is the capital of South Australia?",
+   "options": [
+    "Perth",
+    "Adelaide",
+    "Hobart"
+   ],
+   "answer": 1,
+   "values": false,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 14,
+   "part": 1,
+   "topic": "States",
+   "q": "What is the capital of Western Australia?",
+   "options": [
+    "Perth",
+    "Darwin",
+    "Hobart"
+   ],
+   "answer": 0,
+   "values": false,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 15,
+   "part": 1,
+   "topic": "States",
+   "q": "What is the capital of Tasmania?",
+   "options": [
+    "Hobart",
+    "Sydney",
+    "Canberra"
+   ],
+   "answer": 0,
+   "values": false,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 16,
+   "part": 1,
+   "topic": "States",
+   "q": "What is the capital of Northern Territory?",
+   "options": [
+    "Alice Springs",
+    "Darwin",
+    "Canberra"
+   ],
+   "answer": 1,
+   "values": false,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 17,
+   "part": 1,
+   "topic": "Symbols",
+   "q": "What is Australia's national floral emblem?",
+   "options": [
+    "Waratah",
+    "Golden Wattle",
+    "Eucalyptus"
+   ],
+   "answer": 1,
+   "values": false,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 18,
+   "part": 1,
+   "topic": "Symbols",
+   "q": "What are Australia's national colours?",
+   "options": [
+    "Red White Blue",
+    "Green and Gold",
+    "Blue and Yellow"
+   ],
+   "answer": 1,
+   "values": false,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 19,
+   "part": 1,
+   "topic": "Symbols",
+   "q": "What is depicted on the Commonwealth Coat of Arms?",
+   "options": [
+    "Kangaroo and Koala",
+    "Kangaroo and Emu",
+    "Koala and Platypus"
+   ],
+   "answer": 1,
+   "values": false,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 20,
+   "part": 1,
+   "topic": "Symbols",
+   "q": "What does the Commonwealth Star on the Australian flag represent?",
+   "options": [
+    "The Southern Cross",
+    "The British Empire",
+    "The federation of states and territories"
+   ],
+   "answer": 2,
+   "values": false,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 21,
+   "part": 1,
+   "topic": "Symbols",
+   "q": "How many points does the Commonwealth Star have?",
+   "options": [
+    "Six points",
+    "Five points",
+    "Seven points"
+   ],
+   "answer": 2,
+   "values": false,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 22,
+   "part": 1,
+   "topic": "Symbols",
+   "q": "What is on the other half of Australian flag?",
+   "options": [
+    "Map of Australia",
+    "Southern Cross (5 stars)",
+    "Union Jack only"
+   ],
+   "answer": 1,
+   "values": false,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 23,
+   "part": 1,
+   "topic": "Symbols",
+   "q": "What is Australia's national anthem?",
+   "options": [
+    "Waltzing Matilda",
+    "Advance Australia Fair",
+    "God Save the King"
+   ],
+   "answer": 1,
+   "values": false,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 24,
+   "part": 1,
+   "topic": "Symbols",
+   "q": "When is Australia Day celebrated?",
+   "options": [
+    "1 January",
+    "26 January",
+    "25 April"
+   ],
+   "answer": 1,
+   "values": false,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 25,
+   "part": 1,
+   "topic": "History",
+   "q": "When is Anzac Day?",
+   "options": [
+    "11 November",
+    "25 April",
+    "26 January"
+   ],
+   "answer": 1,
+   "values": false,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 26,
+   "part": 1,
+   "topic": "History",
+   "q": "What does ANZAC stand for?",
+   "options": [
+    "Australian and New Zealand Army Corps",
+    "Australian National Army Corps",
+    "Australian Navy and Air Corps"
+   ],
+   "answer": 0,
+   "values": false,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 27,
+   "part": 1,
+   "topic": "History",
+   "q": "On what day did ANZAC troops land at Gallipoli?",
+   "options": [
+    "26 Jan 1788",
+    "1 Jan 1901",
+    "25 April 1915"
+   ],
+   "answer": 2,
+   "values": false,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 28,
+   "part": 2,
+   "topic": "Freedoms",
+   "q": "Which statement reflects freedom of speech in Australia?",
+   "options": [
+    "People must not criticise the government",
+    "People are free to say and write what they think",
+    "Only journalists have free speech"
+   ],
+   "answer": 1,
+   "values": false,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 29,
+   "part": 2,
+   "topic": "Freedoms",
+   "q": "What is freedom of association?",
+   "options": [
+    "People must join a union",
+    "People must join a political party",
+    "People are free to join or not join any organisation"
+   ],
+   "answer": 2,
+   "values": false,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 30,
+   "part": 2,
+   "topic": "Freedoms",
+   "q": "In Australia, people are free to follow any religion or no religion. This is called?",
+   "options": [
+    "Freedom of assembly",
+    "Rule of law",
+    "Freedom of religion"
+   ],
+   "answer": 2,
+   "values": false,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 31,
+   "part": 2,
+   "topic": "Rule of Law",
+   "q": "What is the Rule of Law?",
+   "options": [
+    "All people including government are bound by law",
+    "Only citizens must obey law",
+    "The Prime Minister is above the law"
+   ],
+   "answer": 0,
+   "values": false,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 32,
+   "part": 2,
+   "topic": "Values phrase",
+   "q": "What does 'a fair go' mean?",
+   "options": [
+    "Everyone should have equal opportunity",
+    "Only rich people get opportunity",
+    "Government decides who succeeds"
+   ],
+   "answer": 0,
+   "values": true,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 33,
+   "part": 2,
+   "topic": "Values",
+   "q": "What is mateship in Australian context?",
+   "options": [
+    "Helping and receiving help, especially in difficult times",
+    "Business partnership",
+    "Only helping family"
+   ],
+   "answer": 0,
+   "values": true,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 34,
+   "part": 3,
+   "topic": "Constitution",
+   "q": "What is the supreme law of Australia by which government must abide?",
+   "options": [
+    "The Australian Constitution",
+    "The British Parliament",
+    "The Prime Minister's orders"
+   ],
+   "answer": 0,
+   "values": false,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 35,
+   "part": 3,
+   "topic": "Constitution",
+   "q": "When did Australian Constitution come into effect?",
+   "options": [
+    "26 January 1788",
+    "1 January 1901",
+    "1900"
+   ],
+   "answer": 1,
+   "values": false,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 36,
+   "part": 3,
+   "topic": "Government levels",
+   "q": "How many levels of government in Australia?",
+   "options": [
+    "Two - Federal and State",
+    "Three - Federal, State/Territory, Local",
+    "Four"
+   ],
+   "answer": 1,
+   "values": false,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 37,
+   "part": 3,
+   "topic": "Head of State",
+   "q": "Who is the Head of State of Australia under constitutional monarchy?",
+   "options": [
+    "Prime Minister",
+    "The King of Australia (King of UK as King of Australia)",
+    "Governor-General"
+   ],
+   "answer": 1,
+   "values": false,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 38,
+   "part": 3,
+   "topic": "Governor-General",
+   "q": "Who represents the King in Australia?",
+   "options": [
+    "Governor-General",
+    "Prime Minister",
+    "Chief Justice"
+   ],
+   "answer": 0,
+   "values": false,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 39,
+   "part": 3,
+   "topic": "Governor",
+   "q": "Who represents the King in each state?",
+   "options": [
+    "Mayor",
+    "Governor",
+    "Premier"
+   ],
+   "answer": 1,
+   "values": false,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 40,
+   "part": 3,
+   "topic": "Parliament",
+   "q": "What are the two houses of Federal Parliament?",
+   "options": [
+    "House of Lords and Commons",
+    "House of Representatives and Senate",
+    "Congress and Senate"
+   ],
+   "answer": 1,
+   "values": false,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 41,
+   "part": 3,
+   "topic": "Parliament",
+   "q": "Where does Federal Parliament meet?",
+   "options": [
+    "Melbourne",
+    "Sydney Opera House",
+    "Parliament House, Canberra"
+   ],
+   "answer": 2,
+   "values": false,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 42,
+   "part": 3,
+   "topic": "Courts",
+   "q": "What is the role of the High Court?",
+   "options": [
+    "Interprets and applies the law, including Constitution",
+    "Makes laws",
+    "Runs elections"
+   ],
+   "answer": 0,
+   "values": false,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 43,
+   "part": 3,
+   "topic": "Executive",
+   "q": "Who is the head of the Australian Government?",
+   "options": [
+    "Prime Minister",
+    "King",
+    "Governor-General"
+   ],
+   "answer": 0,
+   "values": false,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 44,
+   "part": 3,
+   "topic": "Executive",
+   "q": "How is the Prime Minister chosen?",
+   "options": [
+    "Elected directly by all people",
+    "Chosen by King",
+    "Leader of party with majority in House of Representatives"
+   ],
+   "answer": 2,
+   "values": false,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 45,
+   "part": 3,
+   "topic": "Referendum",
+   "q": "What is a referendum?",
+   "options": [
+    "Vote by Parliament only",
+    "Election of Prime Minister",
+    "Vote by all voters on change to Constitution"
+   ],
+   "answer": 2,
+   "values": false,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 46,
+   "part": 3,
+   "topic": "Voting",
+   "q": "What is compulsory for Australian citizens aged 18 and over?",
+   "options": [
+    "Enrol and vote in federal and state elections",
+    "Join a political party",
+    "Pay extra voting tax"
+   ],
+   "answer": 0,
+   "values": false,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 47,
+   "part": 3,
+   "topic": "Voting",
+   "q": "What is the secret ballot?",
+   "options": [
+    "People vote privately, no one can influence how they vote",
+    "Everyone must show how they voted",
+    "Government watches you vote"
+   ],
+   "answer": 0,
+   "values": false,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 48,
+   "part": 3,
+   "topic": "Electoral",
+   "q": "What is on the electoral roll?",
+   "options": [
+    "List of criminals",
+    "List of people registered to vote",
+    "List of taxpayers"
+   ],
+   "answer": 1,
+   "values": false,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 49,
+   "part": 3,
+   "topic": "Law",
+   "q": "Who enforces the law and keeps peace?",
+   "options": [
+    "Parliament",
+    "Police",
+    "Australian Tax Office"
+   ],
+   "answer": 1,
+   "values": false,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 50,
+   "part": 3,
+   "topic": "Law",
+   "q": "What is jury service?",
+   "options": [
+    "Police decide guilt",
+    "Judge alone decides",
+    "Citizens decide if person is guilty or not guilty"
+   ],
+   "answer": 2,
+   "values": false,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 51,
+   "part": 3,
+   "topic": "Law",
+   "q": "What should you do if you see a crime or know someone is planning a serious crime?",
+   "options": [
+    "Ignore it",
+    "Take the law into your own hands",
+    "Report it to the police"
+   ],
+   "answer": 2,
+   "values": false,
+   "key": false,
+   "explanation": "If people suspect someone may be planning a serious crime, they should report it to the authorities as soon as possible, to help keep the community safe."
+  },
+  {
+   "id": 52,
+   "part": 4,
+   "topic": "Values",
+   "q": "Which value: Australia's society values equality of opportunity for all, regardless of background?",
+   "options": [
+    "True - equality and a fair go",
+    "False",
+    "Only for citizens"
+   ],
+   "answer": 0,
+   "values": true,
+   "key": true,
+   "explanation": "Core value: equality"
+  },
+  {
+   "id": 53,
+   "part": 4,
+   "topic": "Values",
+   "q": "Is domestic and family violence against the law in Australia?",
+   "options": [
+    "Only if serious",
+    "No, it is private",
+    "Yes, it is against the law and should be reported to police"
+   ],
+   "answer": 2,
+   "values": true,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 54,
+   "part": 4,
+   "topic": "Values",
+   "q": "In Australia, can you encourage violence against a person or group because of their culture or religion?",
+   "options": [
+    "Yes",
+    "No",
+    "Only if you disagree"
+   ],
+   "answer": 1,
+   "values": true,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 55,
+   "part": 4,
+   "topic": "Values",
+   "q": "Do people in Australia have to follow an Australian value of mutual respect and tolerance for others?",
+   "options": [
+    "Only at work",
+    "Yes",
+    "No"
+   ],
+   "answer": 1,
+   "values": true,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 56,
+   "part": 4,
+   "topic": "Values",
+   "q": "Is it acceptable to refuse to rent a house to someone because of their race?",
+   "options": [
+    "No, discrimination based on race is against the law",
+    "Depends",
+    "Yes"
+   ],
+   "answer": 0,
+   "values": true,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 57,
+   "part": 4,
+   "topic": "Values",
+   "q": "Should people in Australia make an effort to learn English?",
+   "options": [
+    "No, not needed",
+    "Only citizens",
+    "Yes, English is national language important for participation"
+   ],
+   "answer": 2,
+   "values": true,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 58,
+   "part": 4,
+   "topic": "Values",
+   "q": "What pledge do new citizens make?",
+   "options": [
+    "No pledge",
+    "Loyalty to Australia and its people, share democratic beliefs, respect rights and liberties, uphold and obey laws",
+    "Loyalty to former country"
+   ],
+   "answer": 1,
+   "values": true,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 59,
+   "part": 4,
+   "topic": "Values",
+   "q": "Is forced marriage allowed in Australia?",
+   "options": [
+    "Only if cultural",
+    "Yes",
+    "No, it is against the law"
+   ],
+   "answer": 2,
+   "values": true,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 60,
+   "part": 4,
+   "topic": "Values",
+   "q": "What does freedom of religion include in Australia?",
+   "options": [
+    "Must follow one religion",
+    "Freedom to follow any religion or no religion, but must obey law",
+    "No religion allowed"
+   ],
+   "answer": 1,
+   "values": true,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 61,
+   "part": 4,
+   "topic": "Values",
+   "q": "Does Australia allow freedom of speech to include inciting hatred against others?",
+   "options": [
+    "Only online",
+    "Yes, anything allowed",
+    "No, freedom does not include inciting hatred"
+   ],
+   "answer": 2,
+   "values": true,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 62,
+   "part": 4,
+   "topic": "Values",
+   "q": "What is expected about participation in Australian society?",
+   "options": [
+    "Integrate, contribute, take responsibility, help when possible",
+    "No need to participate",
+    "Live separately"
+   ],
+   "answer": 0,
+   "values": true,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 63,
+   "part": 4,
+   "topic": "Values",
+   "q": "Is it important to support mateship and help others in times of crisis as in bushfire example?",
+   "options": [
+    "Only for family",
+    "Yes, Australians come together in times of crisis",
+    "No"
+   ],
+   "answer": 1,
+   "values": true,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 64,
+   "part": 1,
+   "topic": "History",
+   "q": "Who were the first people to live in Australia?",
+   "options": [
+    "Chinese",
+    "Aboriginal and Torres Strait Islander peoples",
+    "British"
+   ],
+   "answer": 1,
+   "values": false,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 65,
+   "part": 1,
+   "topic": "Geography",
+   "q": "What is the Torres Strait?",
+   "options": [
+    "Islands between Queensland and Papua New Guinea",
+    "River in NSW",
+    "Desert in WA"
+   ],
+   "answer": 0,
+   "values": false,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 67,
+   "part": 3,
+   "topic": "Constitutional monarchy",
+   "q": "Australia is a constitutional monarchy. What does this mean?",
+   "options": [
+    "King is Head of State whose powers limited by Constitution",
+    "No King",
+    "King rules directly"
+   ],
+   "answer": 0,
+   "values": false,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 68,
+   "part": 3,
+   "topic": "Government levels",
+   "q": "Which government is responsible for hospitals and schools?",
+   "options": [
+    "Local councils",
+    "State and Territory governments",
+    "Federal government"
+   ],
+   "answer": 1,
+   "values": false,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 69,
+   "part": 3,
+   "topic": "Government levels",
+   "q": "Which government is responsible for passports and defence?",
+   "options": [
+    "Local government",
+    "State",
+    "Federal government"
+   ],
+   "answer": 2,
+   "values": false,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 70,
+   "part": 3,
+   "topic": "Government levels",
+   "q": "Which government is responsible for local roads and rubbish collection?",
+   "options": [
+    "State",
+    "Federal",
+    "Local government"
+   ],
+   "answer": 2,
+   "values": false,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 71,
+   "part": 3,
+   "topic": "Government",
+   "q": "What is the role of local government?",
+   "options": [
+    "Immigration",
+    "Local services like parks, libraries, rubbish",
+    "Defence"
+   ],
+   "answer": 1,
+   "values": false,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 72,
+   "part": 3,
+   "topic": "Elections",
+   "q": "How often are federal elections held?",
+   "options": [
+    "Every year",
+    "Every 5 years",
+    "At least every 3 years"
+   ],
+   "answer": 2,
+   "values": false,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 73,
+   "part": 3,
+   "topic": "Glossary",
+   "q": "What does coalition mean?",
+   "options": [
+    "Joining of two or more political parties to form government",
+    "Court decision",
+    "Single party"
+   ],
+   "answer": 0,
+   "values": false,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 74,
+   "part": 3,
+   "topic": "Parliament",
+   "q": "What is the minimum age to stand for Federal Parliament?",
+   "options": [
+    "21 years",
+    "25 years",
+    "18 years"
+   ],
+   "answer": 2,
+   "values": false,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 76,
+   "part": 3,
+   "topic": "Voting",
+   "q": "Is voting by secret ballot in Australia?",
+   "options": [
+    "Only for some",
+    "No",
+    "Yes"
+   ],
+   "answer": 2,
+   "values": false,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 77,
+   "part": 4,
+   "topic": "Values",
+   "q": "What does secular mean in Australian society?",
+   "options": [
+    "Must follow religion",
+    "Government controls religion",
+    "Separate from religion, no official religion"
+   ],
+   "answer": 2,
+   "values": true,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 78,
+   "part": 2,
+   "topic": "Democracy",
+   "q": "In a parliamentary democracy, how do people vote?",
+   "options": [
+    "For their representatives",
+    "King decides",
+    "Directly for laws"
+   ],
+   "answer": 0,
+   "values": false,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 79,
+   "part": 3,
+   "topic": "ATO",
+   "q": "What is the Australian Taxation Office (ATO) responsible for?",
+   "options": [
+    "Runs hospitals",
+    "Manages tax and superannuation to fund services",
+    "Makes laws"
+   ],
+   "answer": 1,
+   "values": false,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 80,
+   "part": 3,
+   "topic": "Services",
+   "q": "What is Services Australia?",
+   "options": [
+    "Delivers health, social, welfare payments via Medicare, Centrelink",
+    "Court",
+    "Defence force"
+   ],
+   "answer": 0,
+   "values": false,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 81,
+   "part": 4,
+   "topic": "Law",
+   "q": "What is cyber abuse?",
+   "options": [
+    "Using technology to threaten, harass someone, against law",
+    "Playing games",
+    "Using internet"
+   ],
+   "answer": 0,
+   "values": true,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 82,
+   "part": 4,
+   "topic": "Law",
+   "q": "What should you do about cyber abuse in Australia?",
+   "options": [
+    "Retaliate",
+    "Ignore always",
+    "Report to police and platform"
+   ],
+   "answer": 2,
+   "values": true,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 83,
+   "part": 1,
+   "topic": "Symbols",
+   "q": "Which emblem is the golden wattle?",
+   "options": [
+    "Floral emblem",
+    "Animal emblem",
+    "Military emblem"
+   ],
+   "answer": 0,
+   "values": false,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 84,
+   "part": 1,
+   "topic": "Symbols",
+   "q": "Where is Torres Strait Islander flag from?",
+   "options": [
+    "Sydney Harbour",
+    "Islands between QLD and PNG",
+    "Melbourne"
+   ],
+   "answer": 1,
+   "values": false,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 85,
+   "part": 1,
+   "topic": "History",
+   "q": "What is the name of first colony?",
+   "options": [
+    "New South Wales",
+    "Victoria",
+    "Queensland"
+   ],
+   "answer": 0,
+   "values": false,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 86,
+   "part": 3,
+   "topic": "GG",
+   "q": "Who are eligible to be Governor-General?",
+   "options": [
+    "Elected by public",
+    "Appointed by High Court",
+    "Appointed by King on advice of PM"
+   ],
+   "answer": 2,
+   "values": false,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 87,
+   "part": 3,
+   "topic": "GG",
+   "q": "What does Governor-General do?",
+   "options": [
+    "Leads army daily",
+    "Makes laws alone",
+    "Signs Bills into law, performs ceremonial duties"
+   ],
+   "answer": 2,
+   "values": false,
+   "key": true,
+   "explanation": ""
+  },
+  {
+   "id": 88,
+   "part": 3,
+   "topic": "Senate",
+   "q": "What is the role of Senate?",
+   "options": [
+    "Chooses PM alone",
+    "Runs local councils",
+    "Reviews laws, represents states"
+   ],
+   "answer": 2,
+   "values": false,
+   "key": false,
+   "explanation": ""
+  },
+  {
+   "id": 89,
+   "part": 1,
+   "topic": "Symbols",
+   "q": "What is Australia's national gemstone?",
+   "options": [
+    "Sapphire",
+    "Opal",
+    "Diamond"
+   ],
+   "answer": 1,
+   "values": false,
+   "key": false,
+   "explanation": "The opal is Australia's national gemstone. According to Aboriginal legend, a rainbow touched the earth and created the colours of the opal."
+  },
+  {
+   "id": 90,
+   "part": 1,
+   "topic": "Symbols",
+   "q": "What does the yellow circle on the Australian Aboriginal Flag represent?",
+   "options": [
+    "The sun",
+    "The moon",
+    "The desert"
+   ],
+   "answer": 0,
+   "values": false,
+   "key": false,
+   "explanation": "On the Aboriginal Flag, the black top half represents the Aboriginal peoples, the red bottom half represents the earth, and the yellow circle represents the sun."
+  },
+  {
+   "id": 91,
+   "part": 1,
+   "topic": "Symbols",
+   "q": "What is the white symbol in the centre of the Torres Strait Islander Flag?",
+   "options": [
+    "The Southern Cross",
+    "A boomerang",
+    "A dancer's headdress"
+   ],
+   "answer": 2,
+   "values": false,
+   "key": false,
+   "explanation": "The white dancer's headdress is a symbol for all Torres Strait Islanders. The points of the white star represent the island groups."
+  },
+  {
+   "id": 92,
+   "part": 1,
+   "topic": "Symbols",
+   "q": "Which flags are officially recognised in Australia?",
+   "options": [
+    "The Australian National Flag, the Australian Aboriginal Flag and the Torres Strait Islander Flag",
+    "The Union Jack and the Australian National Flag",
+    "Only the Australian National Flag"
+   ],
+   "answer": 0,
+   "values": false,
+   "key": false,
+   "explanation": "The Australian National Flag is the official flag of the nation. The Australian Aboriginal Flag and the Torres Strait Islander Flag are also officially recognised."
+  },
+  {
+   "id": 93,
+   "part": 2,
+   "topic": "Democracy",
+   "q": "In Australia's parliamentary democracy, where does the power of the government come from?",
+   "options": [
+    "The Prime Minister alone",
+    "The King alone",
+    "The Australian people, who vote for representatives in parliament"
+   ],
+   "answer": 2,
+   "values": false,
+   "key": false,
+   "explanation": "The power of the government comes from the Australian people, because citizens vote for people to represent them in parliament."
+  },
+  {
+   "id": 94,
+   "part": 2,
+   "topic": "Freedoms",
+   "q": "Can people in Australia protest against the government?",
+   "options": [
+    "Yes, if the protest is peaceful and within the law",
+    "No, protests are never allowed",
+    "Yes, and they can damage property"
+   ],
+   "answer": 0,
+   "values": false,
+   "key": false,
+   "explanation": "Australians can gather to protest, but protests must be peaceful and must not injure any person or damage property."
+  },
+  {
+   "id": 95,
+   "part": 2,
+   "topic": "Values",
+   "q": "Do men and women have equal rights in Australia?",
+   "options": [
+    "Yes, men and women have equal rights",
+    "Only at work",
+    "No, men have more rights"
+   ],
+   "answer": 0,
+   "values": false,
+   "key": false,
+   "explanation": "Men and women have equal rights in Australia. It is against the law to discriminate against a person because of their gender."
+  },
+  {
+   "id": 96,
+   "part": 2,
+   "topic": "Rule of Law",
+   "q": "Under the Rule of Law, who must obey Australia's laws?",
+   "options": [
+    "Only people born in Australia",
+    "Everyone except the Prime Minister",
+    "Everyone, including government, religious and business leaders and the police"
+   ],
+   "answer": 2,
+   "values": false,
+   "key": false,
+   "explanation": "No person, group or religious rule is above the law. Everyone, including people in positions of power, must obey Australia's laws."
+  },
+  {
+   "id": 97,
+   "part": 2,
+   "topic": "Rule of Law",
+   "q": "If an Australian law and a religious practice conflict, which one must be followed?",
+   "options": [
+    "The religious practice",
+    "Whichever the person prefers",
+    "Australian law"
+   ],
+   "answer": 2,
+   "values": false,
+   "key": false,
+   "explanation": "Where there is a conflict between an Australian law and a religious practice, Australian law prevails. Religious laws have no legal status in Australia."
+  },
+  {
+   "id": 98,
+   "part": 2,
+   "topic": "Democracy",
+   "q": "Which of these is a privilege of Australian citizenship?",
+   "options": [
+    "Not obeying the law",
+    "Applying for an Australian passport",
+    "Not paying tax"
+   ],
+   "answer": 1,
+   "values": false,
+   "key": false,
+   "explanation": "Australian citizens can apply for an Australian passport and re-enter Australia freely."
+  },
+  {
+   "id": 99,
+   "part": 2,
+   "topic": "Democracy",
+   "q": "Which of these is a responsibility of Australian citizens?",
+   "options": [
+    "Joining the army at 18",
+    "Joining a political party",
+    "Serving on a jury if called to do so"
+   ],
+   "answer": 2,
+   "values": false,
+   "key": false,
+   "explanation": "Citizens must obey the law, vote, defend Australia should the need arise, and serve on a jury if called to do so. Service in the Defence Force is voluntary."
+  },
+  {
+   "id": 100,
+   "part": 2,
+   "topic": "Democracy",
+   "q": "Who must vote in federal and state or territory elections?",
+   "options": [
+    "Only people born in Australia",
+    "Everyone living in Australia",
+    "Australian citizens aged 18 years or over"
+   ],
+   "answer": 2,
+   "values": false,
+   "key": false,
+   "explanation": "Voting is a responsibility for Australian citizens aged 18 years or over, and it is compulsory."
+  },
+  {
+   "id": 101,
+   "part": 2,
+   "topic": "Democracy",
+   "q": "While overseas, what can Australian citizens ask for in times of need?",
+   "options": [
+    "Consular help from an Australian government official",
+    "Permission to break local laws",
+    "Help from the Australian army"
+   ],
+   "answer": 0,
+   "values": false,
+   "key": false,
+   "explanation": "Australian citizens can ask for help from an Australian embassy, high commission or consulate overseas. They must still obey the laws of that country."
+  },
+  {
+   "id": 102,
+   "part": 2,
+   "topic": "Democracy",
+   "q": "How do representatives in parliament answer to the people for their decisions?",
+   "options": [
+    "Through the courts only",
+    "Through elections",
+    "They do not have to answer to anyone"
+   ],
+   "answer": 1,
+   "values": false,
+   "key": false,
+   "explanation": "In a parliamentary democracy, representatives in parliament must answer to the people, through elections, for the decisions they make."
+  },
+  {
+   "id": 103,
+   "part": 3,
+   "topic": "Government",
+   "q": "Why does the Australian Constitution divide the power of government between Parliament, the Executive and the judges?",
+   "options": [
+    "So the courts can make all the laws",
+    "To give the Prime Minister all the power",
+    "To stop one person or group from holding all the power"
+   ],
+   "answer": 2,
+   "values": false,
+   "key": false,
+   "explanation": "The Constitution divides power between the legislative (Parliament), executive and judicial (judges) powers, to stop one person or one group from holding all the power."
+  },
+  {
+   "id": 104,
+   "part": 3,
+   "topic": "Parliament",
+   "q": "Who has the power to make and change laws in Australia?",
+   "options": [
+    "Parliament",
+    "The courts",
+    "The Governor-General alone"
+   ],
+   "answer": 0,
+   "values": false,
+   "key": false,
+   "explanation": "Legislative power is the power to make laws. Parliament has the power to make and change the laws in Australia."
+  },
+  {
+   "id": 105,
+   "part": 3,
+   "topic": "Senate",
+   "q": "How many senators does each state elect?",
+   "options": [
+    "12",
+    "6",
+    "2"
+   ],
+   "answer": 0,
+   "values": false,
+   "key": false,
+   "explanation": "Each state elects 12 senators, and the ACT and Northern Territory elect two each, a total of 76 senators."
+  },
+  {
+   "id": 106,
+   "part": 3,
+   "topic": "Parliament",
+   "q": "After a federal election, who forms the Opposition?",
+   "options": [
+    "The judges of the High Court",
+    "The party with the most members in the Senate",
+    "The party or coalition with the second largest number of members in the House of Representatives"
+   ],
+   "answer": 2,
+   "values": false,
+   "key": false,
+   "explanation": "The party or coalition with the second largest number of members in the House of Representatives forms the Opposition. Its leader is the Leader of the Opposition."
+  },
+  {
+   "id": 107,
+   "part": 4,
+   "topic": "Values",
+   "q": "In Australia, can an employer refuse to hire someone because she is a woman?",
+   "options": [
+    "No, this is discrimination and is against the law",
+    "Only if the boss prefers men",
+    "Yes, it is the employer's choice"
+   ],
+   "answer": 0,
+   "values": true,
+   "key": false,
+   "explanation": "It is against the law to discriminate against a person because of their gender. A person should get a job based on their skills and experience."
+  },
+  {
+   "id": 108,
+   "part": 4,
+   "topic": "Law",
+   "q": "Is it acceptable to use violence to settle a disagreement with your neighbour?",
+   "options": [
+    "No, violence is against the law",
+    "Yes, if they started it",
+    "Only if no one sees it"
+   ],
+   "answer": 0,
+   "values": true,
+   "key": false,
+   "explanation": "It is against the law to be violent towards another person. Australians believe in peaceful disagreement."
+  },
+  {
+   "id": 109,
+   "part": 4,
+   "topic": "Law",
+   "q": "Can a person in Australia be married to more than one person at the same time?",
+   "options": [
+    "Yes",
+    "Only if their religion allows it",
+    "No, polygamy is against the law"
+   ],
+   "answer": 2,
+   "values": true,
+   "key": false,
+   "explanation": "Polygamy (being married to more than one person at the same time) is against the law in Australia and can result in severe penalties, including prison."
+  },
+  {
+   "id": 110,
+   "part": 4,
+   "topic": "Values",
+   "q": "What does mutual respect and tolerance mean in Australia?",
+   "options": [
+    "Only respecting people who agree with you",
+    "Only respecting people from your own culture",
+    "Listening to others and respecting their views, even when they are different from your own"
+   ],
+   "answer": 2,
+   "values": true,
+   "key": false,
+   "explanation": "Mutual respect and tolerance means listening to others and respecting their views and opinions, even when they are different from your own."
+  },
+  {
+   "id": 111,
+   "part": 4,
+   "topic": "Law",
+   "q": "Do Australian laws apply to people from other cultures and backgrounds living in Australia?",
+   "options": [
+    "No, they can follow the laws of their former country",
+    "Yes, Australian laws apply to all people in Australia",
+    "Only after they become citizens"
+   ],
+   "answer": 1,
+   "values": true,
+   "key": false,
+   "explanation": "Australian laws apply to all people in Australia. Regardless of your background or culture, you must follow Australian laws."
+  },
+  {
+   "id": 112,
+   "part": 4,
+   "topic": "Values",
+   "q": "In Australia, who can make their own choices about personal matters such as marriage and religion?",
+   "options": [
+    "Only men",
+    "Both men and women",
+    "Only religious leaders"
+   ],
+   "answer": 1,
+   "values": true,
+   "key": false,
+   "explanation": "Both men and women have the right to make their own independent choices about personal matters, such as marriage and religion."
+  },
+  {
+   "id": 113,
+   "part": 4,
+   "topic": "Law",
+   "q": "Is it acceptable to offer money to a police officer to avoid a fine?",
+   "options": [
+    "Only small amounts",
+    "No, even offering a bribe to a police officer is a crime",
+    "Yes, it is normal"
+   ],
+   "answer": 1,
+   "values": true,
+   "key": false,
+   "explanation": "In Australia, it is a serious crime to bribe the police. It is a crime to even offer a bribe to a police officer."
+  }
+ ]
+}

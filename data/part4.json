@@ -1,0 +1,28 @@
+{
+  "part": 4,
+  "title": "Australian values",
+  "questions": [
+    {"id":52,"tp":"Values","k":1,"v":1,"q":"Which value: Australia's society values equality of opportunity for all, regardless of background?","a":"True - equality and a fair go","w":["False","Only for citizens"],"e":"Core value: equality"},
+    {"id":53,"tp":"Values","k":1,"v":1,"q":"Is domestic and family violence against the law in Australia?","a":"Yes, it is against the law and should be reported to police","w":["No, it is private","Only if serious"]},
+    {"id":54,"tp":"Values","k":1,"v":1,"q":"In Australia, can you encourage violence against a person or group because of their culture or religion?","a":"No","w":["Yes","Only if you disagree"]},
+    {"id":55,"tp":"Values","k":1,"v":1,"q":"Do people in Australia have to follow an Australian value of mutual respect and tolerance for others?","a":"Yes","w":["No","Only at work"]},
+    {"id":56,"tp":"Values","k":1,"v":1,"q":"Is it acceptable to refuse to rent a house to someone because of their race?","a":"No, discrimination based on race is against the law","w":["Yes","Depends"]},
+    {"id":57,"tp":"Values","k":1,"v":1,"q":"Should people in Australia make an effort to learn English?","a":"Yes, English is national language important for participation","w":["No, not needed","Only citizens"]},
+    {"id":58,"tp":"Values","k":1,"v":1,"q":"What pledge do new citizens make?","a":"Loyalty to Australia and its people, share democratic beliefs, respect rights and liberties, uphold and obey laws","w":["Loyalty to former country","No pledge"]},
+    {"id":59,"tp":"Values","k":1,"v":1,"q":"Is forced marriage allowed in Australia?","a":"No, it is against the law","w":["Yes","Only if cultural"]},
+    {"id":60,"tp":"Values","v":1,"q":"What does freedom of religion include in Australia?","a":"Freedom to follow any religion or no religion, but must obey law","w":["Must follow one religion","No religion allowed"]},
+    {"id":61,"tp":"Values","k":1,"v":1,"q":"Does Australia allow freedom of speech to include inciting hatred against others?","a":"No, freedom does not include inciting hatred","w":["Yes, anything allowed","Only online"]},
+    {"id":62,"tp":"Values","v":1,"q":"What is expected about participation in Australian society?","a":"Integrate, contribute, take responsibility, help when possible","w":["Live separately","No need to participate"]},
+    {"id":63,"tp":"Values","k":1,"v":1,"q":"Is it important to support mateship and help others in times of crisis as in bushfire example?","a":"Yes, Australians come together in times of crisis","w":["No","Only for family"]},
+    {"id":77,"tp":"Values","v":1,"q":"What does secular mean in Australian society?","a":"Separate from religion, no official religion","w":["Must follow religion","Government controls religion"]},
+    {"id":81,"tp":"Law","v":1,"q":"What is cyber abuse?","a":"Using technology to threaten, harass someone, against law","w":["Using internet","Playing games"]},
+    {"id":82,"tp":"Law","v":1,"q":"What should you do about cyber abuse in Australia?","a":"Report to police and platform","w":["Ignore always","Retaliate"]},
+    {"id":107,"tp":"Values","v":1,"q":"In Australia, can an employer refuse to hire someone because she is a woman?","a":"No, this is discrimination and is against the law","w":["Yes, it is the employer's choice","Only if the boss prefers men"],"e":"It is against the law to discriminate against a person because of their gender. A person should get a job based on their skills and experience."},
+    {"id":108,"tp":"Law","v":1,"q":"Is it acceptable to use violence to settle a disagreement with your neighbour?","a":"No, violence is against the law","w":["Yes, if they started it","Only if no one sees it"],"e":"It is against the law to be violent towards another person. Australians believe in peaceful disagreement."},
+    {"id":109,"tp":"Law","v":1,"q":"Can a person in Australia be married to more than one person at the same time?","a":"No, polygamy is against the law","w":["Yes","Only if their religion allows it"],"e":"Polygamy (being married to more than one person at the same time) is against the law in Australia and can result in severe penalties, including prison."},
+    {"id":110,"tp":"Values","v":1,"q":"What does mutual respect and tolerance mean in Australia?","a":"Listening to others and respecting their views, even when they are different from your own","w":["Only respecting people from your own culture","Only respecting people who agree with you"],"e":"Mutual respect and tolerance means listening to others and respecting their views and opinions, even when they are different from your own."},
+    {"id":111,"tp":"Law","v":1,"q":"Do Australian laws apply to people from other cultures and backgrounds living in Australia?","a":"Yes, Australian laws apply to all people in Australia","w":["No, they can follow the laws of their former country","Only after they become citizens"],"e":"Australian laws apply to all people in Australia. Regardless of your background or culture, you must follow Australian laws."},
+    {"id":112,"tp":"Values","v":1,"q":"In Australia, who can make their own choices about personal matters such as marriage and religion?","a":"Both men and women","w":["Only men","Only religious leaders"],"e":"Both men and women have the right to make their own independent choices about personal matters, such as marriage and religion."},
+    {"id":113,"tp":"Law","v":1,"q":"Is it acceptable to offer money to a police officer to avoid a fine?","a":"No, even offering a bribe to a police officer is a crime","w":["Yes, it is normal","Only small amounts"],"e":"In Australia, it is a serious crime to bribe the police. It is a crime to even offer a bribe to a police officer."}
+  ]
+}

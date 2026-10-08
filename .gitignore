@@ -1,9 +1,9 @@
-node_modules/
-dist/
+node_modules
+dist
+www
 .DS_Store
 *.log
 .env
 .env.*
 .vscode/
 .idea/
-www/
