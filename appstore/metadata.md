@@ -51,7 +51,7 @@ PRIVATE AND SIMPLE
 
 mPractice is an unofficial practice tool. It is not made by, linked to or approved by the Australian Government or the Department of Home Affairs. The questions are not the real test questions. Always check the Home Affairs website for the latest rules.
 
-Made by mStudio.
+Made by mStudio Solutions. Our apps are made for everyday people: clear layouts, large text and no clutter, so they're easy to use at any age.
 
 ## Keywords (100)
 
