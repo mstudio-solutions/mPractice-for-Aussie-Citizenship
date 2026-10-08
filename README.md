@@ -44,7 +44,7 @@ The same page is also packaged as an iPhone app with Capacitor. It works offline
 
 `python3 scripts/build.py --check` fails if the generated files are out of date.
 
-Every push to `main` is published to GitHub Pages by GitHub Actions (`.github/workflows/deploy.yml`). It checks the question bank, then publishes `index.html` and `privacy.html`.
+Every push to `main` is published to GitHub Pages by GitHub Actions (`.github/workflows/deploy.yml`). It runs `npm run build`, which checks the question bank and copies `index.html` and `privacy.html` into `dist/`.
 
 ## Disclaimer
 

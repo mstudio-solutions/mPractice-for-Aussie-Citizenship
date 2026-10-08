@@ -19,14 +19,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Check the question bank in index.html is up to date
-        run: python3 scripts/build.py --check
-      - name: Collect the website files
-        run: mkdir _site && cp index.html privacy.html _site/
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install
+      - run: npm run build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: _site
+          path: dist
 
   deploy:
     needs: build
