@@ -14,7 +14,7 @@ Copy these into App Store Connect. Character limits are in brackets.
 - **Price**: choose in Pricing and Availability
 - **Privacy Policy URL**: https://mstudio-solutions.github.io/mpractice-aussie/privacy/
 - **Support URL**: https://mstudio-solutions.github.io/mpractice-aussie/
-- **Copyright**: 2026 mStudio
+- **Copyright**: 2026 mStudio Solutions
 
 ## Promotional text (170)
 
