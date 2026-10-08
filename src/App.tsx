@@ -45,8 +45,39 @@ const COMPANY = "mStudio";
 const CONTACT_EMAIL = "mstudiosolutions@gmail.com";
 const LOCATION = "Australia";
 const COPYRIGHT_YEAR = "2026";
-const PRIVACY_UPDATED = "7 October 2026";
+const PRIVACY_UPDATED = "8 October 2026";
 const OFFICIAL_SOURCE_URL = "https://immi.homeaffairs.gov.au/citizenship/test-and-interview/our-common-bond";
+
+// In the iOS app (Capacitor), settings, recent scores and progress are saved on
+// the device. The website keeps them only while the tab is open.
+const IS_APP = !!(window as any).Capacitor?.isNativePlatform?.();
+const STORE_KEY = "mpractice-au";
+const BANK_SIG = QUESTIONS.map((q) => q.id).join(",");
+
+type HistoryItem = { date: string; score: number; total: number; passed: boolean; mode: Mode };
+type Saved = {
+  sig: string;
+  mode: Mode;
+  selectedPart: number | null;
+  batchSize: 10 | 20 | 30;
+  timePerQ: number | null;
+  shuffleAnswers: boolean;
+  history: HistoryItem[];
+  deckIds: number[];
+};
+
+function loadSaved(): Partial<Saved> {
+  if (!IS_APP) return {};
+  try {
+    const d = JSON.parse(localStorage.getItem(STORE_KEY) || "null");
+    if (!d) return {};
+    // The question bank changed: keep settings and scores, start a new deck
+    if (d.sig !== BANK_SIG) delete d.deckIds;
+    return d;
+  } catch {
+    return {};
+  }
+}
 
 const PART_META: Record<number, { title: string; color: string; desc: string }> = {
   1: { title: "Australia and its people", color: "#0E4D45", desc: "History, Indigenous culture, states & symbols" },
@@ -75,11 +106,12 @@ function prepareQuestion(raw: RawQ, doShuffle: boolean): PreparedQ {
 }
 
 export default function App() {
-  const [mode, setMode] = useState<Mode>("exam");
-  const [selectedPart, setSelectedPart] = useState<number | null>(1);
-  const [batchSize, setBatchSize] = useState<10 | 20 | 30>(20);
-  const [timePerQ, setTimePerQ] = useState<number | null>(45);
-  const [shuffleAnswers, setShuffleAnswers] = useState(true);
+  const [saved] = useState(loadSaved);
+  const [mode, setMode] = useState<Mode>(saved.mode ?? "exam");
+  const [selectedPart, setSelectedPart] = useState<number | null>(saved.selectedPart !== undefined ? saved.selectedPart : 1);
+  const [batchSize, setBatchSize] = useState<10 | 20 | 30>(saved.batchSize ?? 20);
+  const [timePerQ, setTimePerQ] = useState<number | null>(saved.timePerQ !== undefined ? saved.timePerQ : 45);
+  const [shuffleAnswers, setShuffleAnswers] = useState(saved.shuffleAnswers ?? true);
 
   const [view, setView] = useState<"dashboard" | "quiz" | "result" | "about" | "privacy">("dashboard");
 
@@ -92,8 +124,18 @@ export default function App() {
   const [answers, setAnswers] = useState<AnswerRecord[]>([]);
   const [showFeedback, setShowFeedback] = useState(false);
   const [timeLeft, setTimeLeft] = useState<number>(45);
-  const [history, setHistory] = useState<{ date: string; score: number; total: number; passed: boolean; mode: Mode }[]>([]);
-  const [deckIds, setDeckIds] = useState<number[]>(() => shuffleArr(QUESTIONS.map((q) => q.id)));
+  const [history, setHistory] = useState<HistoryItem[]>(saved.history ?? []);
+  const [deckIds, setDeckIds] = useState<number[]>(() => saved.deckIds?.length ? saved.deckIds : shuffleArr(QUESTIONS.map((q) => q.id)));
+
+  useEffect(() => {
+    if (!IS_APP) return;
+    const data: Saved = { sig: BANK_SIG, mode, selectedPart, batchSize, timePerQ, shuffleAnswers, history, deckIds };
+    try {
+      localStorage.setItem(STORE_KEY, JSON.stringify(data));
+    } catch {
+      // Storage full or blocked: the app still works, it just won't remember
+    }
+  }, [mode, selectedPart, batchSize, timePerQ, shuffleAnswers, history, deckIds]);
 
   const timerRef = useRef<number | null>(null);
 
@@ -526,9 +568,14 @@ export default function App() {
                 </div>
 
                 <div className="rounded-[24px] bg-[var(--paper)] border border-[var(--line)] p-5">
-                  <h4 className="font-bold text-[14px]">Recent Sessions (This Tab Only)</h4>
+                  <div className="flex items-center justify-between gap-2">
+                    <h4 className="font-bold text-[14px]">Recent Sessions ({IS_APP ? "Saved on This Device" : "This Tab Only"})</h4>
+                    {IS_APP && history.length > 0 && (
+                      <button onClick={() => setHistory([])} className="text-[12px] font-bold text-[var(--green)] underline underline-offset-2">Clear</button>
+                    )}
+                  </div>
                   {history.length === 0 ? (
-                    <div className="mt-3 text-[13px] text-[var(--muted)] leading-[1.6]">No history yet. Click Start to begin – scoring will appear here. Cleared when you close the tab for privacy.</div>
+                    <div className="mt-3 text-[13px] text-[var(--muted)] leading-[1.6]">No history yet. Click Start to begin – scoring will appear here. {IS_APP ? "Saved on this device only." : "Cleared when you close the tab for privacy."}</div>
                   ) : (
                     <div className="mt-3 space-y-2 max-h-[260px] overflow-auto pr-1">
                       {history.map((h, i) => (
@@ -546,7 +593,7 @@ export default function App() {
 
                 <div className="rounded-[20px] bg-[#0E4D45] text-[#D7E8E2] p-4 border border-white/10">
                   <div className="text-[12px] font-bold uppercase tracking-widest text-[#8FBEB1]">About {APP_SHORT}</div>
-                  <div className="mt-2 text-[13px] leading-[1.5]">Made by mStudio. Free to use, no sign-up, no ads, no cookies. All questions are built into the app – nothing is sent anywhere.</div>
+                  <div className="mt-2 text-[13px] leading-[1.5]">Made by mStudio. Free to use, no sign-up, no ads, no cookies. All questions are built into the app – your answers are never sent anywhere.</div>
                   <div className="mt-3 flex flex-wrap gap-2">
                     <button onClick={() => openPage("about")} className="text-[12px] px-3 py-1.5 rounded-full bg-[#FFCC33] text-[#0E4D45] font-bold">About mStudio</button>
                     <button onClick={() => openPage("privacy")} className="text-[12px] px-3 py-1.5 rounded-full bg-white/10 border border-white/15 font-bold">Privacy Policy</button>
@@ -678,7 +725,7 @@ export default function App() {
           <div className="max-w-[860px] mx-auto">
             <div className="rounded-[28px] bg-[var(--paper)] border border-[var(--line)] shadow-[0_16px_40px_rgba(0,0,0,0.08)] p-6 md:p-8">
               <div className="flex flex-col md:flex-row gap-6 items-start">
-                <div className="w-[120px] h-[120px] rounded-full grid place-items-center border-[8px] shrink-0" style={{ borderColor: (correctCount / currentQs.length) >= 0.75 && valuesWrong === 0 ? "#1B7A5A" : "#C4503A", background: "#FFFBF2" }}>
+                <div className="w-[120px] h-[120px] rounded-full grid place-items-center border-[8px] shrink-0" style={{ borderColor: correctCount / currentQs.length >= 0.75 && (mode !== "exam" || valuesWrong === 0) ? "#1B7A5A" : "#C4503A", background: "#FFFBF2" }}>
                   <div className="text-center">
                     <div className="text-[32px] font-bold leading-none">{correctCount}/{currentQs.length}</div>
                     <div className="text-[11px] text-[var(--muted)] mt-1 font-bold">{Math.round((correctCount / currentQs.length) * 100)}%</div>
@@ -834,23 +881,31 @@ export default function App() {
             <div className="mt-5 rounded-[20px] bg-[var(--paper)] border border-[var(--line)] p-5 space-y-5 text-[15px] leading-[1.6]">
               <section>
                 <h3 className="font-bold text-[17px]">The short version</h3>
-                <p className="mt-1">{APP_SHORT} does not collect, store or share any personal information. There is no account, no sign-up, no ads and no cookies. We count visits anonymously.</p>
+                <p className="mt-1">{APP_SHORT} does not collect, store or share any personal information. There is no account, no sign-up, no ads and no cookies. {IS_APP ? "The iPhone app does not collect any data at all." : "We count visits anonymously."}</p>
               </section>
               <section>
                 <h3 className="font-bold text-[17px]">What we collect</h3>
-                <p className="mt-1">No personal information. All questions are built into the app. Your answers and scores are never sent to us or to anyone else. We only see anonymous visit counts (see below).</p>
+                <p className="mt-1">No personal information. All questions are built into the app. Your answers and scores are never sent to us or to anyone else.{IS_APP ? "" : " We only see anonymous visit counts (see below)."}</p>
               </section>
               <section>
                 <h3 className="font-bold text-[17px]">Your practice history</h3>
-                <p className="mt-1">Recent scores are kept only in your browser while the page is open. They are cleared when you close the tab. Nothing is saved on a server.</p>
+                <p className="mt-1">
+                  {IS_APP
+                    ? "Your recent scores, your settings and the questions you have already done are saved only on your device, so you can carry on next time. They are never sent to us. You can remove them with the Clear button under Recent Sessions, or by deleting the app."
+                    : "Recent scores are kept only in your browser while the page is open. They are cleared when you close the tab. Nothing is saved on a server."}
+                </p>
               </section>
               <section>
                 <h3 className="font-bold text-[17px]">Cookies, analytics and ads</h3>
-                <p className="mt-1">{APP_SHORT} does not use cookies or advertising. We use <a href="https://www.cloudflare.com/web-analytics/" target="_blank" rel="noopener" className="text-[var(--green)] font-bold underline underline-offset-2">Cloudflare Web Analytics ↗</a> to count visits anonymously. It does not use cookies and does not collect personal information. We only see totals, such as page views, country, browser and whether you use a phone or a computer. See the <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener" className="text-[var(--green)] font-bold underline underline-offset-2">Cloudflare Privacy Policy ↗</a>.</p>
+                {IS_APP ? (
+                  <p className="mt-1">The iPhone app does not use cookies, analytics, tracking or advertising.</p>
+                ) : (
+                  <p className="mt-1">{APP_SHORT} does not use cookies or advertising. We use <a href="https://www.cloudflare.com/web-analytics/" target="_blank" rel="noopener" className="text-[var(--green)] font-bold underline underline-offset-2">Cloudflare Web Analytics ↗</a> to count visits anonymously. It does not use cookies and does not collect personal information. We only see totals, such as page views, country, browser and whether you use a phone or a computer. See the <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener" className="text-[var(--green)] font-bold underline underline-offset-2">Cloudflare Privacy Policy ↗</a>.</p>
+                )}
               </section>
               <section>
                 <h3 className="font-bold text-[17px]">Hosting</h3>
-                <p className="mt-1">The website is hosted on GitHub Pages. Like most web hosts, GitHub may log basic technical data (such as your IP address) for security. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener" className="text-[var(--green)] font-bold underline underline-offset-2">GitHub Privacy Statement ↗</a>.</p>
+                <p className="mt-1">The website is hosted on GitHub Pages. Like most web hosts, GitHub may log basic technical data (such as your IP address) for security. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener" className="text-[var(--green)] font-bold underline underline-offset-2">GitHub Privacy Statement ↗</a>. The iPhone app is downloaded from the App Store, and Apple's own privacy policy applies to the App Store.</p>
               </section>
               <section>
                 <h3 className="font-bold text-[17px]">Links to other sites</h3>

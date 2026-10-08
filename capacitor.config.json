@@ -1,0 +1,11 @@
+{
+  "appId": "com.mstudiosolutions.mpracticeaustralia",
+  "appName": "mPractice AU",
+  "webDir": "www",
+  "backgroundColor": "#F6F1E7",
+  "ios": {
+    "contentInset": "always",
+    "backgroundColor": "#F6F1E7",
+    "scrollEnabled": true
+  }
+}
